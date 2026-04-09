@@ -1412,3 +1412,461 @@ figcaption {
 .blog-back-link:hover i {
     transform: scale(1.1);
 }
+
+
+/* =============================================
+   PROYECTOS - Página índice
+   ============================================= */
+
+.content__projects {
+    padding: 4rem 6rem;
+}
+
+.projects__header {
+    margin-bottom: 4rem;
+}
+
+.projects__title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.projects__subtitle {
+    font-size: 1.6rem;
+    color: var(--ColorSubtitulo);
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+/* Project Card */
+.project-card {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    background: var(--colorPrincipal);
+    border: 1px solid var(--ColorBorder);
+    border-radius: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 300ms ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(4, 180, 224, 0.15);
+    border-color: var(--ColorSecundario);
+}
+
+.project-card__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(135deg, rgba(4, 180, 224, 0.1), rgba(4, 180, 224, 0.05));
+    border-radius: 1.5rem;
+}
+
+.project-card__content {
+    flex: 1;
+}
+
+.project-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-card__title {
+    font-size: 2.2rem;
+    color: var(--ColorTitulo);
+    margin: 0;
+}
+
+.project-card__badge {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: var(--ColorSecundario);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.project-card__description {
+    font-size: 1.4rem;
+    color: var(--ColorTexto);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-card__tag {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: var(--ColorBackground);
+    color: var(--ColorSubtitulo);
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--ColorBorder);
+}
+
+.project-card__link {
+    font-size: 1.4rem;
+    color: var(--ColorSecundario);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: gap 300ms ease;
+}
+
+.project-card:hover .project-card__link {
+    gap: 1.2rem;
+}
+
+
+/* =============================================
+   DENTALCORE - Página de detalle
+   ============================================= */
+
+.content__dentalcore {
+    padding: 3rem 5rem;
+}
+
+/* Breadcrumb */
+.dentalcore__breadcrumb {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--ColorSecundario);
+    text-decoration: none;
+    font-weight: 500;
+    transition: gap 200ms ease;
+}
+
+.breadcrumb__link:hover {
+    gap: 1.2rem;
+}
+
+/* Hero */
+.dentalcore__hero {
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(4, 180, 224, 0.08), rgba(4, 180, 224, 0.02));
+    border-radius: 2rem;
+    border: 1px solid rgba(4, 180, 224, 0.15);
+}
+
+.hero__title-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero__title {
+    font-size: 3.6rem;
+    color: var(--ColorTitulo);
+    margin: 0;
+}
+
+.hero__badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: var(--ColorSecundario);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hero__subtitle {
+    font-size: 1.8rem;
+    color: var(--ColorSecundario);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.hero__description {
+    font-size: 1.5rem;
+    color: var(--ColorTexto);
+    line-height: 1.8;
+    max-width: 80rem;
+    margin-bottom: 2rem;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.hero__btn--primary {
+    background: var(--ColorTitulo);
+    color: white;
+}
+
+.hero__btn--primary:hover {
+    background: var(--ColorSecundario);
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.dentalcore__section {
+    margin-bottom: 4rem;
+}
+
+.section__title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--ColorTitulo);
+}
+
+.section__description {
+    font-size: 1.5rem;
+    color: var(--ColorTexto);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 70rem;
+}
+
+/* Tech Stack Grid */
+.tech-stack__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.tech-stack__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2rem 1rem;
+    background: var(--colorPrincipal);
+    border: 1px solid var(--ColorBorder);
+    border-radius: 1.2rem;
+    transition: all 300ms ease;
+}
+
+.tech-stack__item:hover {
+    border-color: var(--ColorSecundario);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(4, 180, 224, 0.12);
+}
+
+.tech-stack__icon {
+    font-size: 2.8rem;
+    color: var(--ColorSecundario);
+}
+
+.tech-stack__name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ColorTitulo);
+    text-align: center;
+}
+
+/* AI Features Grid */
+.ai-features__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.ai-feature {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--colorPrincipal);
+    border: 1px solid var(--ColorBorder);
+    border-radius: 1.2rem;
+    transition: all 300ms ease;
+}
+
+.ai-feature:hover {
+    border-color: var(--ColorSecundario);
+    box-shadow: 0 4px 12px rgba(4, 180, 224, 0.1);
+}
+
+.ai-feature__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: linear-gradient(135deg, rgba(4, 180, 224, 0.12), rgba(4, 180, 224, 0.04));
+    border-radius: 1rem;
+    color: var(--ColorSecundario);
+    font-size: 1.8rem;
+}
+
+.ai-feature__title {
+    font-size: 1.5rem;
+    color: var(--ColorTitulo);
+    margin-bottom: 0.5rem;
+}
+
+.ai-feature__text {
+    font-size: 1.3rem;
+    color: var(--ColorTexto);
+    line-height: 1.6;
+}
+
+/* Modules Grid */
+.modules__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.module__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 2rem 1.5rem;
+    background: var(--colorPrincipal);
+    border: 1px solid var(--ColorBorder);
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.module__item:hover {
+    border-color: var(--ColorSecundario);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(4, 180, 224, 0.1);
+}
+
+.module__icon {
+    font-size: 2.2rem;
+    color: var(--ColorSecundario);
+    margin-bottom: 0.3rem;
+}
+
+.module__name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ColorTitulo);
+}
+
+.module__detail {
+    font-size: 1.2rem;
+    color: var(--ColorSubtitulo);
+}
+
+/* Architecture Flow */
+.architecture__container {
+    background: var(--colorPrincipal);
+    border: 1px solid var(--ColorBorder);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    overflow-x: auto;
+}
+
+.architecture__flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.architecture__step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--ColorBackground);
+    border-radius: 1.2rem;
+    border: 1px solid var(--ColorBorder);
+    min-width: 14rem;
+}
+
+.architecture__step-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: var(--ColorSecundario);
+    color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.architecture__step-title {
+    font-size: 1.5rem;
+    color: var(--ColorTitulo);
+    margin-bottom: 0.5rem;
+}
+
+.architecture__step-text {
+    font-size: 1.2rem;
+    color: var(--ColorTexto);
+    line-height: 1.5;
+}
+
+.architecture__arrow {
+    color: var(--ColorSecundario);
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+/* Author Section */
+.dentalcore__author {
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(4, 180, 224, 0.06), rgba(4, 180, 224, 0.02));
+    border-radius: 1.5rem;
+    border: 1px solid rgba(4, 180, 224, 0.1);
+}
+
+.author__text {
+    font-size: 1.5rem;
+    color: var(--ColorTexto);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.author__text:last-child {
+    margin-bottom: 0;
+}
