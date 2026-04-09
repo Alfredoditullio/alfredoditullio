@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Logo from "./Logo";
 
 const links = [
@@ -12,16 +13,43 @@ const links = [
     { href: "/contact", label: "Contact" },
 ];
 
+function MobileMenu({
+    isActive,
+    onClose,
+}: {
+    isActive: (href: string) => boolean;
+    onClose: () => void;
+}) {
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => setMounted(true), []);
+    if (!mounted) return null;
+
+    return createPortal(
+        <div className="mobile-menu">
+            <ul className="mobile-menu__links">
+                {links.map((link) => (
+                    <li key={link.href}>
+                        <Link
+                            href={link.href}
+                            className={`mobile-menu__link ${isActive(link.href) ? "mobile-menu__link--active" : ""}`}
+                            onClick={onClose}
+                        >
+                            {link.label}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>,
+        document.body
+    );
+}
+
 export default function TopNav() {
     const pathname = usePathname();
     const [open, setOpen] = useState(false);
 
-    // Close menu on route change
-    useEffect(() => {
-        setOpen(false);
-    }, [pathname]);
+    useEffect(() => setOpen(false), [pathname]);
 
-    // Prevent body scroll when menu is open
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "";
         return () => {
@@ -35,59 +63,42 @@ export default function TopNav() {
     };
 
     return (
-        <nav className="topnav">
-            <div className="container topnav__inner">
-                <Link href="/" className="topnav__brand">
-                    <Logo size={28} idSuffix="-nav" className="topnav__brand-mark" />
-                    Alfredo Di Tullio
-                </Link>
+        <>
+            <nav className="topnav">
+                <div className="container topnav__inner">
+                    <Link href="/" className="topnav__brand">
+                        <Logo size={28} idSuffix="-nav" className="topnav__brand-mark" />
+                        Alfredo Di Tullio
+                    </Link>
 
-                {/* Desktop links */}
-                <ul className="topnav__links topnav__links--desktop">
-                    {links.map((link) => (
-                        <li key={link.href}>
-                            <Link
-                                href={link.href}
-                                className={`topnav__link ${isActive(link.href) ? "topnav__link--active" : ""}`}
-                            >
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-
-                {/* Hamburger button (mobile only) */}
-                <button
-                    type="button"
-                    className="topnav__burger"
-                    onClick={() => setOpen(!open)}
-                    aria-label={open ? "Close menu" : "Open menu"}
-                    aria-expanded={open}
-                >
-                    <span className={`topnav__burger-line ${open ? "topnav__burger-line--open" : ""}`} />
-                    <span className={`topnav__burger-line ${open ? "topnav__burger-line--open" : ""}`} />
-                    <span className={`topnav__burger-line ${open ? "topnav__burger-line--open" : ""}`} />
-                </button>
-            </div>
-
-            {/* Mobile menu overlay */}
-            {open && (
-                <div className="topnav__mobile">
-                    <ul className="topnav__mobile-links">
+                    <ul className="topnav__links topnav__links--desktop">
                         {links.map((link) => (
                             <li key={link.href}>
                                 <Link
                                     href={link.href}
-                                    className={`topnav__mobile-link ${isActive(link.href) ? "topnav__mobile-link--active" : ""}`}
-                                    onClick={() => setOpen(false)}
+                                    className={`topnav__link ${isActive(link.href) ? "topnav__link--active" : ""}`}
                                 >
                                     {link.label}
                                 </Link>
                             </li>
                         ))}
                     </ul>
+
+                    <button
+                        type="button"
+                        className="topnav__burger"
+                        onClick={() => setOpen(!open)}
+                        aria-label={open ? "Close menu" : "Open menu"}
+                        aria-expanded={open}
+                    >
+                        <span className={`topnav__burger-line ${open ? "topnav__burger-line--open" : ""}`} />
+                        <span className={`topnav__burger-line ${open ? "topnav__burger-line--open" : ""}`} />
+                        <span className={`topnav__burger-line ${open ? "topnav__burger-line--open" : ""}`} />
+                    </button>
                 </div>
-            )}
-        </nav>
+            </nav>
+
+            {open && <MobileMenu isActive={isActive} onClose={() => setOpen(false)} />}
+        </>
     );
 }
