@@ -2,22 +2,22 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/i18n/context";
+import { cookieBanner as texts } from "@/i18n/translations/common";
 
 const STORAGE_KEY = "adt_cookie_consent";
-
 type Choice = "accepted" | "declined";
 
 export default function CookieBanner() {
     const [visible, setVisible] = useState(false);
+    const { t } = useLanguage();
 
     useEffect(() => {
-        if (typeof window === "undefined") return;
         try {
             const saved = window.localStorage.getItem(STORAGE_KEY);
             if (!saved) {
-                // Tiny delay so the banner doesn't fight the intro animation
-                const t = window.setTimeout(() => setVisible(true), 1800);
-                return () => window.clearTimeout(t);
+                const timer = setTimeout(() => setVisible(true), 1800);
+                return () => clearTimeout(timer);
             }
         } catch {
             setVisible(true);
@@ -27,9 +27,7 @@ export default function CookieBanner() {
     const choose = (choice: Choice) => {
         try {
             window.localStorage.setItem(STORAGE_KEY, choice);
-        } catch {
-            /* ignore */
-        }
+        } catch { /* ignore */ }
         setVisible(false);
     };
 
@@ -42,27 +40,19 @@ export default function CookieBanner() {
                     <i className="fa-solid fa-cookie-bite"></i>
                 </div>
                 <div className="cookie-banner__text">
-                    <p className="cookie-banner__title">A quick note about cookies</p>
+                    <p className="cookie-banner__title">{t(texts, "title")}</p>
                     <p className="cookie-banner__body">
-                        This site uses only the bare minimum cookies needed for it to
-                        work. No analytics, no tracking, no ads. Read the{" "}
-                        <Link href="/cookies">Cookie Policy</Link> for the full story.
+                        {t(texts, "body")}{" "}
+                        <Link href="/cookies">{t(texts, "policyLink")}</Link>{" "}
+                        {t(texts, "forTheFullStory")}
                     </p>
                 </div>
                 <div className="cookie-banner__actions">
-                    <button
-                        type="button"
-                        className="btn"
-                        onClick={() => choose("declined")}
-                    >
-                        Decline
+                    <button type="button" className="btn" onClick={() => choose("declined")}>
+                        {t(texts, "decline")}
                     </button>
-                    <button
-                        type="button"
-                        className="btn btn--primary"
-                        onClick={() => choose("accepted")}
-                    >
-                        Accept
+                    <button type="button" className="btn btn--primary" onClick={() => choose("accepted")}>
+                        {t(texts, "accept")}
                     </button>
                 </div>
             </div>
