@@ -1,37 +1,41 @@
+"use client";
+
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import DisciplinesSlider from "@/components/DisciplinesSlider";
+import { useLanguage } from "@/i18n/context";
+import { hero, whatIDo, featured, press } from "@/i18n/translations/home";
 
 export default function Home() {
+    const { t } = useLanguage();
+
     return (
         <div className="container page">
             {/* Hero */}
             <Reveal as="section" className="hero hero--split">
                 <div className="hero__text">
-                    <span className="hero__eyebrow">Portfolio · 2025</span>
+                    <span className="hero__eyebrow">{t(hero, "eyebrow")}</span>
                     <h1 className="hero__title">
-                        Alfredo <span className="gradient-text">Di Tullio</span>
+                        {t(hero, "name1")}
+                        <span className="gradient-text">{t(hero, "name2")}</span>
                     </h1>
                     <p className="hero__tagline">
                         <strong className="hero__lead-line">
-                            I never learned how to pick just one thing.
+                            {t(hero, "lead")}
                         </strong>
-                        Trained as a dentist in Argentina. Cooked in Michelin-star
-                        kitchens across Denmark, Norway, Spain and Australia. Philosophy
-                        graduate, tourism technician, author of two books. Today I build
-                        software and websites for whoever needs them — from{" "}
+                        {t(hero, "tagline")}{" "}
                         <strong style={{ color: "var(--fg)", fontWeight: 600 }}>
                             DentalCore
                         </strong>{" "}
-                        to a brand-new site for any business — and write about what
-                        happens when disciplines collide.
+                        {t(hero, "taglineEnd")}
                     </p>
                     <div className="hero__actions">
                         <Link href="/projects" className="btn btn--primary">
-                            View projects <i className="fa-solid fa-arrow-right"></i>
+                            {t(hero, "btnProjects")}{" "}
+                            <i className="fa-solid fa-arrow-right"></i>
                         </Link>
                         <Link href="/about" className="btn">
-                            About me
+                            {t(hero, "btnAbout")}
                         </Link>
                     </div>
                 </div>
@@ -45,18 +49,21 @@ export default function Home() {
                             className="hero__portrait-img"
                         />
                     </div>
-
                     <span className="hero__chip hero__chip--1">
-                        <i className="fa-solid fa-tooth"></i> Dentist
+                        <i className="fa-solid fa-tooth"></i>{" "}
+                        {t(hero, "chipDentist")}
                     </span>
                     <span className="hero__chip hero__chip--2">
-                        <i className="fa-solid fa-code"></i> Full-stack dev
+                        <i className="fa-solid fa-code"></i>{" "}
+                        {t(hero, "chipDev")}
                     </span>
                     <span className="hero__chip hero__chip--3">
-                        <i className="fa-solid fa-feather-pointed"></i> Author · 2 books
+                        <i className="fa-solid fa-feather-pointed"></i>{" "}
+                        {t(hero, "chipAuthor")}
                     </span>
                     <span className="hero__chip hero__chip--4">
-                        <i className="fa-solid fa-book-open"></i> Philosophy BA
+                        <i className="fa-solid fa-book-open"></i>{" "}
+                        {t(hero, "chipPhilosophy")}
                     </span>
                 </div>
             </Reveal>
@@ -66,8 +73,8 @@ export default function Home() {
             {/* What I do */}
             <section className="section">
                 <Reveal>
-                    <p className="section__eyebrow">What I do</p>
-                    <h2 className="section__title">A multidisciplinary practice</h2>
+                    <p className="section__eyebrow">{t(whatIDo, "eyebrow")}</p>
+                    <h2 className="section__title">{t(whatIDo, "title")}</h2>
                 </Reveal>
                 <Reveal delay={1}>
                     <DisciplinesSlider />
@@ -79,27 +86,25 @@ export default function Home() {
             {/* Featured project */}
             <section className="section">
                 <Reveal>
-                    <p className="section__eyebrow">Featured project</p>
-                    <h2 className="section__title">
-                        <span className="gradient-text">DentalCore</span>
-                    </h2>
-                    <p className="section__intro">
-                        A comprehensive clinical platform for dental practices — patient
-                        management, digital odontogram, treatment plans, finance, patient
-                        portal — built on a robust, well-architected core with thoughtful AI
-                        features layered where they actually help.
+                    <p className="section__eyebrow">
+                        {t(featured, "eyebrow")}
                     </p>
+                    <h2 className="section__title">
+                        <span className="gradient-text">
+                            {t(featured, "title")}
+                        </span>
+                    </h2>
+                    <p className="section__intro">{t(featured, "intro")}</p>
                 </Reveal>
                 <Reveal delay={1}>
                     <Link href="/projects/dentalcore" className="card">
-                        <span className="card__label">MVP · In production</span>
-                        <h3 className="card__title">DentalCore</h3>
-                        <p className="card__text">
-                            Patient management, digital odontogram, periodontal charting,
-                            treatment plans, finance and patient portal — built with React 19,
-                            TypeScript and Supabase, with selective AI assistance where it
-                            adds real clinical value.
-                        </p>
+                        <span className="card__label">
+                            {t(featured, "cardLabel")}
+                        </span>
+                        <h3 className="card__title">
+                            {t(featured, "cardTitle")}
+                        </h3>
+                        <p className="card__text">{t(featured, "cardText")}</p>
                         <div className="card__meta">
                             <span className="tag">React 19</span>
                             <span className="tag">TypeScript</span>
@@ -107,7 +112,8 @@ export default function Home() {
                             <span className="tag">Zustand</span>
                         </div>
                         <span className="card__cta">
-                            Read more <i className="fa-solid fa-arrow-right"></i>
+                            {t(featured, "readMore")}{" "}
+                            <i className="fa-solid fa-arrow-right"></i>
                         </span>
                     </Link>
                 </Reveal>
@@ -115,11 +121,11 @@ export default function Home() {
 
             <hr className="divider" />
 
-            {/* As featured in */}
+            {/* Press */}
             <section className="section">
                 <Reveal>
-                    <p className="section__eyebrow">As featured in</p>
-                    <h2 className="section__title">In the press</h2>
+                    <p className="section__eyebrow">{t(press, "eyebrow")}</p>
+                    <h2 className="section__title">{t(press, "title")}</h2>
                 </Reveal>
                 <div className="press-grid">
                     <Reveal delay={1}>
@@ -132,21 +138,24 @@ export default function Home() {
                             <div className="press-tile__image-wrap">
                                 <img
                                     src="/assets/img/portfolio/presentacion.webp"
-                                    alt="Alfredo Di Tullio at the Horizontes Infinitos book launch"
+                                    alt="Horizontes Infinitos book launch"
                                     className="press-tile__image"
                                 />
                             </div>
                             <div className="press-tile__body">
                                 <div className="press-tile__outlet">
-                                    <span className="press-tile__name">Veu Catalana</span>
-                                    <span className="press-tile__year">2025</span>
+                                    <span className="press-tile__name">
+                                        {t(press, "veuName")}
+                                    </span>
+                                    <span className="press-tile__year">
+                                        2025
+                                    </span>
                                 </div>
                                 <p className="press-tile__quote">
-                                    &ldquo;Horizontes Infinitos: philosophy, travel and
-                                    reflection in Alfredo Di Tullio&apos;s new work.&rdquo;
+                                    {t(press, "veuQuote")}
                                 </p>
                                 <span className="press-tile__cta">
-                                    Read review{" "}
+                                    {t(press, "veuCta")}{" "}
                                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                 </span>
                             </div>
@@ -162,21 +171,24 @@ export default function Home() {
                             <div className="press-tile__image-wrap">
                                 <img
                                     src="/assets/img/lanacion-thumb.jpg"
-                                    alt="La Nación feature on Alfredo Di Tullio"
+                                    alt="La Nación feature"
                                     className="press-tile__image"
                                 />
                             </div>
                             <div className="press-tile__body">
                                 <div className="press-tile__outlet">
-                                    <span className="press-tile__name">La Nación</span>
-                                    <span className="press-tile__year">2024</span>
+                                    <span className="press-tile__name">
+                                        {t(press, "lnName")}
+                                    </span>
+                                    <span className="press-tile__year">
+                                        2024
+                                    </span>
                                 </div>
                                 <p className="press-tile__quote">
-                                    &ldquo;Argentina felt incomplete — I found what I was
-                                    looking for on the other side of the world.&rdquo;
+                                    {t(press, "lnQuote")}
                                 </p>
                                 <span className="press-tile__cta">
-                                    Read article{" "}
+                                    {t(press, "lnCta")}{" "}
                                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                 </span>
                             </div>
