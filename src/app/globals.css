@@ -3080,18 +3080,29 @@ a:hover {
     }
 
     .hero__portrait {
-        max-width: 220px;
-        margin: 0 auto;
+        max-width: 240px;
+        margin: 2.5rem auto 0;
+    }
+
+    .hero__portrait-frame {
+        border-radius: 50%;
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+    }
+
+    .hero__portrait-img {
+        object-fit: cover;
+        object-position: center 18%;
     }
 
     .hero__chip {
         font-size: 0.6rem;
         padding: 0.3rem 0.55rem;
     }
-    .hero__chip--1 { top: -8%; left: 10%; }
-    .hero__chip--2 { top: 15%; right: -14%; }
-    .hero__chip--3 { bottom: 20%; left: -6%; }
-    .hero__chip--4 { bottom: -2%; right: 5%; }
+    .hero__chip--1 { top: -8%; left: 5%; }
+    .hero__chip--2 { top: 18%; right: -16%; }
+    .hero__chip--3 { bottom: 22%; left: -8%; }
+    .hero__chip--4 { bottom: -4%; right: 2%; }
 
     .pillars {
         grid-template-columns: 1fr;
