@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: [],
         },
-        sitemap: "https://alfredoditullio.com/sitemap.xml",
+        sitemap: "https://www.alfredoditullio.com/sitemap.xml",
     };
 }

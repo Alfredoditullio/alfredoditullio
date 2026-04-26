@@ -40,3 +40,13 @@ export const fgCard: Dict = {
     },
     cta: { en: "Visit site", es: "Visitar sitio" },
 };
+
+export const carolinaCard: Dict = {
+    label: { en: "Live · Production", es: "Live · Producción" },
+    title: { en: "Carolina Salva Odontología", es: "Carolina Salva Odontología" },
+    text: {
+        en: "Modern, warm-toned landing page for Dr. Carolina Salva's dental practice in Berisso, Buenos Aires. Services, before/after cases, testimonials and WhatsApp booking — designed to reflect her focus on comfort, aesthetics and personalized care.",
+        es: "Landing page moderna y cálida para el consultorio de la Dra. Carolina Salva en Berisso, Buenos Aires. Servicios, casos antes/después, testimonios y reserva por WhatsApp — diseñada para reflejar su enfoque en confort, estética y atención personalizada.",
+    },
+    cta: { en: "Visit site", es: "Visitar sitio" },
+};

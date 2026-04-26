@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     title: "Alfredo Di Tullio — Portfolio",
     description:
         "Dentist, developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry.",
+    metadataBase: new URL("https://www.alfredoditullio.com"),
+    alternates: {
+        canonical: "https://www.alfredoditullio.com",
+    },
 };
 
 export default function RootLayout({
