@@ -19,6 +19,7 @@ export const dcCard: Dict = {
         es: "Plataforma clínica integral para consultorios dentales — gestión de pacientes, odontograma digital, periodontograma, planes de tratamiento, finanzas y portal del paciente — construida sobre un núcleo robusto con asistencia de IA selectiva donde agrega valor clínico real. Ya en producción en una clínica en Misiones, Argentina.",
     },
     readMore: { en: "Read more", es: "Leer más" },
+    role: { en: "CEO & Developer", es: "CEO y Desarrollador" },
 };
 
 export const camilaCard: Dict = {
@@ -39,6 +40,24 @@ export const fgCard: Dict = {
         es: "Plataforma de educación financiera e inversiones pensada para residentes argentinos que buscan formarse y tomar decisiones informadas sobre su dinero. Un sitio Next.js limpio y orientado al contenido, deployado en Vercel.",
     },
     cta: { en: "Visit site", es: "Visitar sitio" },
+    readMore: { en: "Read more", es: "Leer más" },
+    role: { en: "CTO & Co-founder", es: "CTO y Co-fundador" },
+};
+
+export const odontolatamCard: Dict = {
+    label: { en: "Live · Community", es: "Live · Comunidad" },
+    title: { en: "OdontoLatam", es: "OdontoLatam" },
+    text: {
+        en: "The largest community of dentists in Latin America. 5,000+ active professionals across 15 countries sharing 10,000+ clinical cases, a medication compendium, pathology atlas, job board, marketplace, AI tools and weekly live sessions. Founded and led by me as CEO.",
+        es: "La comunidad de odontólogos más grande de América Latina. 5.000+ profesionales activos en 15 países compartiendo 10.000+ casos clínicos, vademécum, atlas de patología, bolsa de trabajo, marketplace, herramientas de IA y sesiones en vivo semanales. Fundada y liderada por mí como CEO.",
+    },
+    cta: { en: "Visit community", es: "Visitar comunidad" },
+    readMore: { en: "Read more", es: "Leer más" },
+    role: { en: "CEO & Founder", es: "CEO y Fundador" },
+    stat1label: { en: "Active dentists", es: "Odontólogos activos" },
+    stat2label: { en: "Countries", es: "Países" },
+    stat3label: { en: "Clinical cases", es: "Casos clínicos" },
+    stat4label: { en: "Articles", es: "Artículos" },
 };
 
 export const carolinaCard: Dict = {

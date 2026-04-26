@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/context";
 import {
     dcHero, dcWhy, dcWhyItems, dcLatam, dcModules,
-    dcAi, dcStack, dcArch, dcBehind,
+    dcAi, dcBehind,
 } from "@/i18n/translations/dentalcore";
 
 const stack = ["React 19","TypeScript","Vite 6","Tailwind CSS","Zustand","Supabase","Gemini 2.0 Flash","Replicate","Web Speech API","Playwright","Vitest","Edge Functions"];
@@ -60,7 +60,7 @@ export default function DentalCore() {
                 areaServed: { "@type": "Place", name: "Latin America" },
             })}} />
 
-            <Link href="/projects" className="back-link"><i className="fa-solid fa-arrow-left"></i> {t(dcArch, "eyebrow") === "Arquitectura" ? "Proyectos" : "Projects"}</Link>
+            <Link href="/projects" className="back-link"><i className="fa-solid fa-arrow-left"></i> {locale === "es" ? "Proyectos" : "Projects"}</Link>
 
             <Reveal as="section" className="project-hero">
                 <span className="project-hero__label">{t(dcHero, "label")}</span>
@@ -134,22 +134,6 @@ export default function DentalCore() {
                     <div className="feature-grid">
                         {aiFeatures.map((f) => (
                             <div key={f.titleEn} className="feature"><h3 className="feature__title">{l === "es" ? f.titleEs : f.titleEn}</h3><p className="feature__text">{l === "es" ? f.textEs : f.textEn}</p></div>
-                        ))}
-                    </div>
-                </Reveal>
-            </section>
-
-            <section className="section">
-                <Reveal><p className="section__eyebrow">{t(dcStack, "eyebrow")}</p><h2 className="section__title">{t(dcStack, "title")}</h2></Reveal>
-                <Reveal delay={1}><div className="stack-grid">{stack.map((s) => (<div key={s} className="stack-item">{s}</div>))}</div></Reveal>
-            </section>
-
-            <section className="section">
-                <Reveal><p className="section__eyebrow">{t(dcArch, "eyebrow")}</p><h2 className="section__title">{t(dcArch, "title")}</h2></Reveal>
-                <Reveal delay={1}>
-                    <div className="architecture">
-                        {architecture.map((a) => (
-                            <div key={a.num} className="arch-step"><p className="arch-step__num">{a.num}</p><h3 className="arch-step__title">{l === "es" ? a.titleEs : a.titleEn}</h3><p className="arch-step__text">{l === "es" ? a.textEs : a.textEn}</p></div>
                         ))}
                     </div>
                 </Reveal>

@@ -1280,6 +1280,13 @@ a:hover {
     transition: all 200ms var(--ease);
 }
 
+.tag--accent {
+    background: var(--accent-soft);
+    border-color: var(--accent-border);
+    color: var(--accent);
+    font-weight: 700;
+}
+
 .card:hover .tag {
     background: var(--accent-soft);
     border-color: var(--accent-border);
@@ -1788,7 +1795,7 @@ a:hover {
 /* ---------- Bento grid ---------- */
 .bento {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 200px;
     gap: 1rem;
 }
@@ -1801,18 +1808,53 @@ a:hover {
 }
 
 .bento__slot--wide {
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: span 2;
 }
 
 .bento__slot--regular {
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: span 1;
 }
 
 .bento__slot--full {
-    grid-column: span 4;
+    grid-column: span 6;
     grid-row: span 1;
+}
+
+.bento__slot--third {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/* Stats row inside tile */
+.bento__stats {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.bento__stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.bento__stat-num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #fff;
+    line-height: 1.1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.bento__stat-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* The tile itself fills its slot */
@@ -2067,6 +2109,10 @@ a:hover {
         grid-row: span 2;
     }
     .bento__slot--regular {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .bento__slot--third {
         grid-column: span 1;
         grid-row: span 1;
     }
@@ -2076,6 +2122,12 @@ a:hover {
     }
     .bento__title--lg {
         font-size: 1.6rem;
+    }
+    .bento__stats {
+        gap: 0.85rem;
+    }
+    .bento__stat-num {
+        font-size: 1.25rem;
     }
 }
 
@@ -2089,13 +2141,16 @@ a:hover {
         grid-row: span 2;
     }
     .bento__slot--regular,
-    .bento__slot--full {
+    .bento__slot--full,
+    .bento__slot--third {
         grid-column: span 1;
         grid-row: span 1;
     }
     .bento__featured-mark {
         top: 1rem;
         right: 1rem;
+        font-size: 0.6rem;
+        padding: 0.3rem 0.65rem;
     }
 }
 
@@ -2514,6 +2569,60 @@ a:hover {
 
 .book-card:hover .book-card__cover {
     transform: rotate(-2deg) scale(1.03);
+}
+
+/* Stats row */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 1.5rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all 300ms var(--ease);
+}
+
+.stat-card:hover {
+    border-color: var(--accent-border);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-card__num {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.stat-card__label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+}
+
+@media (max-width: 768px) {
+    .stats-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Large project screenshot */
