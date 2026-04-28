@@ -10,6 +10,7 @@ import {
     camilaCard,
     fgCard,
     carolinaCard,
+    risusCard,
 } from "@/i18n/translations/projects";
 
 export default function Projects() {
@@ -92,6 +93,21 @@ export default function Projects() {
                             <span className="card__cta">{t(fgCard, "readMore")} <i className="fa-solid fa-arrow-right"></i></span>
                         </div>
                     </Link>
+                </Reveal>
+
+                {/* Risus Dental */}
+                <Reveal delay={4}>
+                    <a href="https://risusdental.vercel.app" target="_blank" rel="noreferrer" className="card project-card">
+                        <div className="project-card__image-wrap">
+                            <img src="/assets/img/portfolio/risusdental.webp" alt="Risus Dental" className="project-card__image" />
+                        </div>
+                        <div className="project-card__body">
+                            <span className="card__label">{t(risusCard, "label")}</span>
+                            <h3 className="card__title">{t(risusCard, "title")}</h3>
+                            <p className="card__text">{t(risusCard, "text")}</p>
+                            <span className="card__cta">{t(risusCard, "cta")} <i className="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </a>
                 </Reveal>
 
                 {/* Camila */}

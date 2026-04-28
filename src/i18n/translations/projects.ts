@@ -60,6 +60,16 @@ export const odontolatamCard: Dict = {
     stat4label: { en: "Articles", es: "Artículos" },
 };
 
+export const risusCard: Dict = {
+    label: { en: "Live · Production", es: "Live · Producción" },
+    title: { en: "Risus Dental", es: "Risus Dental" },
+    text: {
+        en: "A dental clinic that decided to break with everything you'd expect from a dental clinic. The brief was clear: the most inclusive, vibrant and atypical website in the Argentine dental sector. The result is an immersive full-screen slider with interactive 3D sculptures, animated particles, parallax effects and a color palette that owes more to the art world than to the dental office. Each section is a visual universe of its own — from the case gallery to the brand pages of Dr. Rodrigo Melo's personal projects. A project where visual identity doesn't accompany the business: it defines it.",
+        es: "Una clínica odontológica que decidió romper con todo lo que se esperaría de una clínica odontológica. El brief era claro: la web más inclusiva, más vibrante y más atípica del sector dental en Argentina. El resultado es un slider inmersivo de pantalla completa con esculturas 3D interactivas, partículas animadas, efectos de parallax y una paleta de colores que debe más al mundo del arte que al consultorio. Cada sección es un universo visual propio — desde la galería de casos hasta las páginas de marca de los proyectos personales del Dr. Rodrigo Melo. Un proyecto donde la identidad visual no acompaña al negocio: lo define.",
+    },
+    cta: { en: "Visit site", es: "Visitar sitio" },
+};
+
 export const carolinaCard: Dict = {
     label: { en: "Live · Production", es: "Live · Producción" },
     title: { en: "Carolina Salva Odontología", es: "Carolina Salva Odontología" },
