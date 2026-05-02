@@ -1,13 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import DisciplinesSlider from "@/components/DisciplinesSlider";
+import VideoModal from "@/components/VideoModal";
 import { useLanguage } from "@/i18n/context";
 import { hero, whatIDo, featured, press } from "@/i18n/translations/home";
 
 export default function Home() {
     const { t } = useLanguage();
+    const [videoOpen, setVideoOpen] = useState(false);
 
     return (
         <div className="container page">
@@ -194,8 +197,53 @@ export default function Home() {
                             </div>
                         </a>
                     </Reveal>
+                    <Reveal delay={3}>
+                        <button
+                            type="button"
+                            onClick={() => setVideoOpen(true)}
+                            className="press-tile press-tile--video"
+                            aria-label="Watch LN+ interview"
+                        >
+                            <div className="press-tile__image-wrap">
+                                <img
+                                    src="/assets/img/portfolio/lanacion-noruega.webp"
+                                    alt="LN+ interview from Norway"
+                                    className="press-tile__image"
+                                />
+                                <div className="press-tile__play" aria-hidden="true">
+                                    <span className="press-tile__play-btn">
+                                        <i className="fa-solid fa-play"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="press-tile__body">
+                                <div className="press-tile__outlet">
+                                    <span className="press-tile__name">
+                                        {t(press, "lnplusName")}
+                                    </span>
+                                    <span className="press-tile__year">
+                                        2024
+                                    </span>
+                                </div>
+                                <p className="press-tile__quote">
+                                    {t(press, "lnplusQuote")}
+                                </p>
+                                <span className="press-tile__cta">
+                                    {t(press, "lnplusCta")}{" "}
+                                    <i className="fa-solid fa-play"></i>
+                                </span>
+                            </div>
+                        </button>
+                    </Reveal>
                 </div>
             </section>
+
+            <VideoModal
+                open={videoOpen}
+                onClose={() => setVideoOpen(false)}
+                youtubeId="cuXup5NzDe8"
+                title="LN+ — Argentinos en el mundo: Bodø, Noruega"
+            />
         </div>
     );
 }

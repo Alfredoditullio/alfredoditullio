@@ -61,4 +61,10 @@ export const press: Dict = {
         es: '"En Argentina algo le faltaba — halló el destino que buscaba en el mundo."',
     },
     lnCta: { en: "Read article", es: "Leer artículo" },
+    lnplusName: { en: "LN+ TV", es: "LN+ TV" },
+    lnplusQuote: {
+        en: '"Argentinos en el mundo: visiting Bodø in northern Norway."',
+        es: '"Argentinos en el mundo: visitamos Bodø, en el norte de Noruega."',
+    },
+    lnplusCta: { en: "Watch interview", es: "Ver entrevista" },
 };
