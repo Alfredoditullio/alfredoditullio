@@ -6,8 +6,8 @@ export const projectsHero: Dict = {
     title1: { en: "Things I'm ", es: "Lo que estoy " },
     title2: { en: "building", es: "construyendo" },
     tagline: {
-        en: "From clinical software for dentistry to financial education tools — I build robust, well-architected products where I see a real-world need I can solve.",
-        es: "Desde software clínico para odontología hasta herramientas de educación financiera — construyo productos robustos y bien arquitectados donde veo una necesidad real que puedo resolver.",
+        en: "Every project starts with a real problem. From clinical software to financial education to a small business that needed customers — I build websites and platforms that solve a specific pain point, not just look good.",
+        es: "Cada proyecto arranca con un problema real. Desde software clínico hasta educación financiera y un pequeño negocio que necesitaba clientes — construyo sitios web y plataformas que resuelven un dolor concreto, no que solo se vean lindos.",
     },
 };
 
@@ -15,8 +15,8 @@ export const dcCard: Dict = {
     label: { en: "MVP · In production", es: "MVP · En producción" },
     title: { en: "DentalCore", es: "DentalCore" },
     text: {
-        en: "A comprehensive clinical platform for dental practices — patient management, digital odontogram, periodontal charting, treatment plans, finance and patient portal — built on a robust core with selective AI assistance where it adds real clinical value. Already running at a clinic in Misiones, Argentina.",
-        es: "Plataforma clínica integral para consultorios dentales — gestión de pacientes, odontograma digital, periodontograma, planes de tratamiento, finanzas y portal del paciente — construida sobre un núcleo robusto con asistencia de IA selectiva donde agrega valor clínico real. Ya en producción en una clínica en Misiones, Argentina.",
+        en: "The pain: dental management software is built by engineers who never held a handpiece — clunky interfaces, zero automation, no patient communication. The fix: a comprehensive clinical platform built by a practicing dentist, with patient management, digital odontogram, treatment plans, finance and a patient portal. Already running at a clinic in Misiones, Argentina.",
+        es: "El problema: el software dental está hecho por ingenieros que nunca agarraron una turbina — interfaces torpes, cero automatización, sin comunicación con el paciente. La solución: una plataforma clínica integral construida por un odontólogo en ejercicio, con gestión de pacientes, odontograma digital, planes de tratamiento, finanzas y portal del paciente. Ya en producción en una clínica de Misiones, Argentina.",
     },
     readMore: { en: "Read more", es: "Leer más" },
     role: { en: "CEO & Developer", es: "CEO y Desarrollador" },
@@ -26,18 +26,18 @@ export const camilaCard: Dict = {
     label: { en: "Live · Production", es: "Live · Producción" },
     title: { en: "Camila Chesani Odontología", es: "Camila Chesani Odontología" },
     text: {
-        en: "A real-world deployment of DentalCore powering both the public clinic site and the internal practice management for Dr. Camila Chesani in El Dorado, Misiones. Online appointment booking, ten dental specialties and full integration with the clinical platform.",
-        es: "Un despliegue real de DentalCore que alimenta tanto el sitio público de la clínica como la gestión interna para la Dra. Camila Chesani en El Dorado, Misiones. Turnos online, diez especialidades y full integración con la plataforma clínica.",
+        en: "The pain: a solo dentist in El Dorado, Misiones with no online presence — patients had no way to discover her or book appointments without calling. The fix: a public clinic site with online appointment booking, ten dental specialties showcased and full integration with DentalCore for the back-office. Real-world deployment of the platform.",
+        es: "El problema: una odontóloga sola en El Dorado, Misiones sin presencia online — los pacientes no tenían forma de encontrarla ni reservar turno sin llamar. La solución: un sitio público con reserva de turnos online, diez especialidades visibilizadas e integración total con DentalCore para el back-office. Un despliegue real de la plataforma.",
     },
-    cta: { en: "Visit clinic site", es: "Visitar sitio" },
+    cta: { en: "Visit site", es: "Visitar sitio" },
 };
 
 export const fgCard: Dict = {
-    label: { en: "Live · External", es: "Live · Externo" },
+    label: { en: "Live · Platform", es: "Live · Plataforma" },
     title: { en: "FG Capital", es: "FG Capital" },
     text: {
-        en: "Financial education and investment platform aimed at Argentine residents looking to build literacy and make informed decisions about their money. A clean, content-driven Next.js site built and deployed on Vercel.",
-        es: "Plataforma de educación financiera e inversiones pensada para residentes argentinos que buscan formarse y tomar decisiones informadas sobre su dinero. Un sitio Next.js limpio y orientado al contenido, deployado en Vercel.",
+        en: "The pain: most financial education platforms are built for US/EU markets — useless for Argentines dealing with inflation, CEDEARs, plazo fijo and tax rules that don't fit any global template. The fix: a gamified financial education and investment platform built specifically for Argentina's reality, where doing nothing with your money means losing.",
+        es: "El problema: la mayoría de las plataformas de educación financiera están hechas para EE.UU./Europa — inútiles para argentinos lidiando con inflación, CEDEARs, plazo fijo y reglas impositivas que no encajan en ningún molde global. La solución: una plataforma gamificada de educación financiera e inversión hecha específicamente para la realidad argentina, donde no hacer nada con tu plata significa perder.",
     },
     cta: { en: "Visit site", es: "Visitar sitio" },
     readMore: { en: "Read more", es: "Leer más" },
@@ -48,8 +48,8 @@ export const odontolatamCard: Dict = {
     label: { en: "Live · Community", es: "Live · Comunidad" },
     title: { en: "OdontoLatam", es: "OdontoLatam" },
     text: {
-        en: "The largest community of dentists in Latin America. 5,000+ active professionals across 15 countries sharing 10,000+ clinical cases, a medication compendium, pathology atlas, job board, marketplace, AI tools and weekly live sessions. Founded and led by me as CEO.",
-        es: "La comunidad de odontólogos más grande de América Latina. 5.000+ profesionales activos en 15 países compartiendo 10.000+ casos clínicos, vademécum, atlas de patología, bolsa de trabajo, marketplace, herramientas de IA y sesiones en vivo semanales. Fundada y liderada por mí como CEO.",
+        en: "The pain: dentists across Latin America were isolated — especially solo practitioners in smaller cities — with no single place to share clinical cases, find reliable resources or connect with peers who understood their challenges. The fix: the largest community of dentists in Latin America. 5,000+ active professionals across 15 countries sharing 10,000+ clinical cases, vademécum, pathology atlas, job board and weekly live sessions. Founded and led by me as CEO.",
+        es: "El problema: los odontólogos en América Latina estaban aislados — especialmente los profesionales solos en ciudades chicas — sin un lugar único para compartir casos clínicos, encontrar recursos confiables o conectar con colegas que entendieran sus desafíos. La solución: la comunidad de odontólogos más grande de América Latina. 5.000+ profesionales activos en 15 países compartiendo 10.000+ casos clínicos, vademécum, atlas de patología, bolsa de trabajo y sesiones en vivo semanales. Fundada y liderada por mí como CEO.",
     },
     cta: { en: "Visit community", es: "Visitar comunidad" },
     readMore: { en: "Read more", es: "Leer más" },
@@ -64,8 +64,8 @@ export const risusCard: Dict = {
     label: { en: "Live · Production", es: "Live · Producción" },
     title: { en: "Risus Dental", es: "Risus Dental" },
     text: {
-        en: "A dental clinic that decided to break with everything you'd expect from a dental clinic. The brief was clear: the most inclusive, vibrant and atypical website in the Argentine dental sector. The result is an immersive full-screen slider with interactive 3D sculptures, animated particles, parallax effects and a color palette that owes more to the art world than to the dental office. Each section is a visual universe of its own — from the case gallery to the brand pages of Dr. Rodrigo Melo's personal projects. A project where visual identity doesn't accompany the business: it defines it.",
-        es: "Una clínica odontológica que decidió romper con todo lo que se esperaría de una clínica odontológica. El brief era claro: la web más inclusiva, más vibrante y más atípica del sector dental en Argentina. El resultado es un slider inmersivo de pantalla completa con esculturas 3D interactivas, partículas animadas, efectos de parallax y una paleta de colores que debe más al mundo del arte que al consultorio. Cada sección es un universo visual propio — desde la galería de casos hasta las páginas de marca de los proyectos personales del Dr. Rodrigo Melo. Un proyecto donde la identidad visual no acompaña al negocio: lo define.",
+        en: "The pain: dental websites all look the same — sterile, clinical, forgettable. Risus Dental wanted to break with everything you'd expect from the dental sector. The fix: the most inclusive, vibrant and atypical dental website in Argentina — full-screen immersive slider with interactive 3D sculptures, animated particles, parallax effects and a color palette that owes more to art than to medicine. Visual identity isn't an accessory here: it defines the brand.",
+        es: "El problema: las webs dentales se parecen todas — estériles, clínicas, olvidables. Risus Dental quería romper con todo lo que se esperaría del sector. La solución: la web dental más inclusiva, vibrante y atípica de Argentina — slider inmersivo de pantalla completa con esculturas 3D interactivas, partículas animadas, parallax y una paleta que debe más al arte que a la medicina. Acá la identidad visual no es accesorio: define la marca.",
     },
     cta: { en: "Visit site", es: "Visitar sitio" },
 };
@@ -74,8 +74,18 @@ export const carolinaCard: Dict = {
     label: { en: "Live · Production", es: "Live · Producción" },
     title: { en: "Carolina Salva Odontología", es: "Carolina Salva Odontología" },
     text: {
-        en: "Modern, warm-toned landing page for Dr. Carolina Salva's dental practice in Berisso, Buenos Aires. Services, before/after cases, testimonials and WhatsApp booking — designed to reflect her focus on comfort, aesthetics and personalized care.",
-        es: "Landing page moderna y cálida para el consultorio de la Dra. Carolina Salva en Berisso, Buenos Aires. Servicios, casos antes/después, testimonios y reserva por WhatsApp — diseñada para reflejar su enfoque en confort, estética y atención personalizada.",
+        en: "The pain: a young dentist in Berisso building her practice with no website — patients found her only through word of mouth and Instagram, losing potential bookings every week. The fix: a warm-toned, modern landing page that reflects her focus on comfort and aesthetics, with services, before/after cases, testimonials and one-click WhatsApp booking. Designed to convert curious visitors into patients.",
+        es: "El problema: una odontóloga joven en Berisso armando su consultorio sin sitio web — los pacientes la encontraban solo por boca a boca y por Instagram, perdiendo turnos potenciales cada semana. La solución: una landing moderna y cálida que refleja su enfoque en confort y estética, con servicios, casos antes/después, testimonios y reserva por WhatsApp en un click. Diseñada para convertir visitas curiosas en pacientes.",
+    },
+    cta: { en: "Visit site", es: "Visitar sitio" },
+};
+
+export const cheboludoCard: Dict = {
+    label: { en: "Live · Production", es: "Live · Producción" },
+    title: { en: "Che Boludo", es: "Che Boludo" },
+    text: {
+        en: "The pain: an Argentine bakery in Melbourne making the best medialunas, facturas and alfajores in town — but invisible to the thousands of Argentine expats and pastry lovers searching online. WhatsApp orders only, no menu, no delivery info, no way to discover them. The fix: a bold, dark-themed landing page with full menu, pricing, delivery zones across Melbourne CBD and St Kilda, plus one-tap WhatsApp ordering. The flavours of home, finally findable.",
+        es: "El problema: una panadería argentina en Melbourne haciendo las mejores medialunas, facturas y alfajores de la ciudad — pero invisible para los miles de argentinos expats y amantes de la pastelería que buscaban online. Pedidos solo por WhatsApp, sin menú, sin info de delivery, imposible de descubrir. La solución: una landing oscura y bold con menú completo, precios, zonas de delivery por Melbourne CBD y St Kilda, y pedido por WhatsApp en un toque. Los sabores de casa, por fin encontrables.",
     },
     cta: { en: "Visit site", es: "Visitar sitio" },
 };
