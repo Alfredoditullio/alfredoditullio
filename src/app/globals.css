@@ -2703,6 +2703,7 @@ a:hover {
 }
 
 .press-tile__image-wrap {
+    position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     background: var(--bg-subtle);
@@ -2804,38 +2805,11 @@ a:hover {
 
 .press-tile--video {
     cursor: pointer;
-    text-align: left;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    color: inherit;
-    -webkit-appearance: none;
-    appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    box-shadow: none;
-    background-clip: padding-box;
-}
-
-.press-tile--video:focus {
-    outline: none;
-    box-shadow: none;
 }
 
 .press-tile--video:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
-}
-
-.press-tile--video:hover {
-    box-shadow: var(--shadow-md);
-}
-
-.press-tile--video:active {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-3px);
 }
 
 .press-mini {

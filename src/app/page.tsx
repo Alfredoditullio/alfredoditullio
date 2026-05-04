@@ -198,9 +198,16 @@ export default function Home() {
                         </a>
                     </Reveal>
                     <Reveal delay={3}>
-                        <button
-                            type="button"
+                        <div
+                            role="button"
+                            tabIndex={0}
                             onClick={() => setVideoOpen(true)}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault();
+                                    setVideoOpen(true);
+                                }
+                            }}
                             className="press-tile press-tile--video"
                             aria-label="Watch LN+ interview"
                         >
@@ -233,7 +240,7 @@ export default function Home() {
                                     <i className="fa-solid fa-play"></i>
                                 </span>
                             </div>
-                        </button>
+                        </div>
                     </Reveal>
                 </div>
             </section>

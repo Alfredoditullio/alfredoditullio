@@ -128,7 +128,7 @@ export default function Projects() {
 
                 {/* Carolina Salva */}
                 <Reveal delay={4}>
-                    <a href="https://carolinasalvaodontologia.vercel.app" target="_blank" rel="noreferrer" className="card project-card">
+                    <a href="https://landing-brown-kappa.vercel.app/" target="_blank" rel="noreferrer" className="card project-card">
                         <div className="project-card__image-wrap" style={{ background: "#FAF0E6" }}>
                             <img src="/assets/img/portfolio/carolina-salva.webp" alt="Carolina Salva" className="project-card__image" style={{ objectFit: "contain", padding: "1rem" }} />
                         </div>
