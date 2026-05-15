@@ -34,7 +34,7 @@ export const camilaCard: Dict = {
 
 export const fgCard: Dict = {
     label: { en: "Live · Platform", es: "Live · Plataforma" },
-    title: { en: "FG Capital", es: "FG Capital" },
+    title: { en: "FG Academia", es: "FG Academia" },
     text: {
         en: "The pain: most financial education platforms are built for US/EU markets — useless for Argentines dealing with inflation, CEDEARs, plazo fijo and tax rules that don't fit any global template. The fix: a gamified financial education and investment platform built specifically for Argentina's reality, where doing nothing with your money means losing.",
         es: "El problema: la mayoría de las plataformas de educación financiera están hechas para EE.UU./Europa — inútiles para argentinos lidiando con inflación, CEDEARs, plazo fijo y reglas impositivas que no encajan en ningún molde global. La solución: una plataforma gamificada de educación financiera e inversión hecha específicamente para la realidad argentina, donde no hacer nada con tu plata significa perder.",

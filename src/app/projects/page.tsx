@@ -76,11 +76,11 @@ export default function Projects() {
                     </Link>
                 </Reveal>
 
-                {/* FG Capital */}
+                {/* FG Academia */}
                 <Reveal delay={3}>
                     <Link href="/projects/fgcapital" className="card project-card">
                         <div className="project-card__image-wrap">
-                            <img src="/assets/img/portfolio/fgcapital.webp" alt="FG Capital" className="project-card__image" />
+                            <img src="/assets/img/portfolio/fgcapital.webp" alt="FG Academia" className="project-card__image" />
                         </div>
                         <div className="project-card__body">
                             <span className="card__label">{t(fgCard, "label")}</span>

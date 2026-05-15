@@ -20,18 +20,18 @@ export default function FGCapital() {
             <Reveal as="section" className="project-hero">
                 <span className="project-hero__label">{t(fgHero, "label")}</span>
                 <h1 className="project-hero__title">
-                    <span className="gradient-text">FG Capital</span>
+                    <span className="gradient-text">FG Academia</span>
                 </h1>
                 <p className="project-hero__summary">{t(fgHero, "summary")}</p>
                 <div className="hero__actions">
-                    <a href="https://fgcapital.vercel.app/" target="_blank" rel="noreferrer" className="btn btn--primary">
+                    <a href="https://www.fgacademia.com" target="_blank" rel="noreferrer" className="btn btn--primary">
                         {t(fgHero, "btnLive")} <i className="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
             </Reveal>
 
             <Reveal as="section" className="section project-screenshot">
-                <img src="/assets/img/portfolio/fgcapital.webp" alt="FG Capital platform" className="project-screenshot__img" />
+                <img src="/assets/img/portfolio/fgcapital.webp" alt="FG Academia platform" className="project-screenshot__img" />
             </Reveal>
 
             {/* Features */}

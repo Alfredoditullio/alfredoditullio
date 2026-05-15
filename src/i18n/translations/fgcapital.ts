@@ -7,11 +7,11 @@ export const fgHero: Dict = {
         en: "A financial education and investment platform built for Argentine residents. Gamified learning, investment simulators, portfolio tracking, tax tools and a growing community — all designed to make financial literacy accessible and actionable for everyday people.",
         es: "Plataforma de educación financiera e inversiones construida para residentes argentinos. Aprendizaje gamificado, simuladores de inversión, seguimiento de portfolio, herramientas fiscales y una comunidad en crecimiento — todo diseñado para hacer que la educación financiera sea accesible y práctica para la gente de a pie.",
     },
-    btnLive: { en: "Visit fgcapital.vercel.app", es: "Visitar fgcapital.vercel.app" },
+    btnLive: { en: "Visit fgacademia.com", es: "Visitar fgacademia.com" },
 };
 
 export const fgFeatures: Dict = {
-    eyebrow: { en: "What FG Capital offers", es: "Qué ofrece FG Capital" },
+    eyebrow: { en: "What FG Academia offers", es: "Qué ofrece FG Academia" },
     title: { en: "Financial tools for real people", es: "Herramientas financieras para gente real" },
     intro: {
         en: "Not another Wall Street app — this is built for Argentina's unique financial reality: inflation, CEDEARs, plazo fijo and the constant question of what to do with your money.",
@@ -40,10 +40,10 @@ export const fgFeatureItems: { title: Record<Locale, string>; text: Record<Local
 
 export const fgBehind: Dict = {
     eyebrow: { en: "Behind the project", es: "Detrás del proyecto" },
-    title: { en: "Why FG Capital exists", es: "Por qué existe FG Capital" },
+    title: { en: "Why FG Academia exists", es: "Por qué existe FG Academia" },
     p1: {
-        en: "Most financial education platforms are built for US or European markets. They don't account for inflation, local instruments like CEDEARs, or the regulatory landscape in Latin America. FG Capital was built to fill that gap — specifically for Argentina.",
-        es: "La mayoría de las plataformas de educación financiera están hechas para mercados de EE.UU. o Europa. No contemplan la inflación, instrumentos locales como los CEDEARs, ni el panorama regulatorio de América Latina. FG Capital se construyó para llenar ese vacío — específicamente para Argentina.",
+        en: "Most financial education platforms are built for US or European markets. They don't account for inflation, local instruments like CEDEARs, or the regulatory landscape in Latin America. FG Academia was built to fill that gap — specifically for Argentina.",
+        es: "La mayoría de las plataformas de educación financiera están hechas para mercados de EE.UU. o Europa. No contemplan la inflación, instrumentos locales como los CEDEARs, ni el panorama regulatorio de América Latina. FG Academia se construyó para llenar ese vacío — específicamente para Argentina.",
     },
     p2: {
         en: "The goal is simple: make it easy for anyone — not just finance people — to understand what to do with their money in a country where doing nothing means losing.",
