@@ -27,7 +27,7 @@ export default function Cookies() {
                 </Reveal>
                 <Reveal><h2>{t(tx, "h4")}</h2><p>{t(tx, "p4")}</p></Reveal>
                 <Reveal><h2>{t(tx, "h5")}</h2><p>{t(tx, "p5")}</p></Reveal>
-                <Reveal><h2>{t(tx, "h6")}</h2><p>{t(tx, "p6")} <a href="mailto:ditullioalfredo@gmail.com">ditullioalfredo@gmail.com</a>.</p></Reveal>
+                <Reveal><h2>{t(tx, "h6")}</h2><p>{t(tx, "p6")} <a href="mailto:info@alfredoditullio.com">info@alfredoditullio.com</a>.</p></Reveal>
             </article>
         </div>
     );

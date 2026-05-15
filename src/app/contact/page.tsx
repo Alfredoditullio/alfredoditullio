@@ -14,7 +14,7 @@ type Item = {
 };
 
 const items: Item[] = [
-    { label: "Email", value: "ditullioalfredo@gmail.com", href: "mailto:ditullioalfredo@gmail.com", icon: "fa-solid fa-envelope" },
+    { label: "Email", value: "info@alfredoditullio.com", href: "mailto:info@alfredoditullio.com", icon: "fa-solid fa-envelope" },
     { label: "WhatsApp", value: "Send me a message", href: "https://wa.me/61404809925", icon: "fa-brands fa-whatsapp", external: true },
     { label: "LinkedIn", value: "alfredo-di-tullio", href: "https://www.linkedin.com/in/alfredo-di-tullio/", icon: "fa-brands fa-linkedin-in", external: true },
     { label: "Instagram", value: "@alfred.ditu", href: "https://www.instagram.com/alfred.ditu", icon: "fa-brands fa-instagram", external: true },

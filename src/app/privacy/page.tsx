@@ -14,7 +14,7 @@ export default function Privacy() {
                 <p className="hero__tagline">{t(tx, "subtitle")}</p>
             </Reveal>
             <article className="legal">
-                <Reveal><h2>{t(tx, "h1")}</h2><p>{t(tx, "p1")} <a href="mailto:ditullioalfredo@gmail.com">ditullioalfredo@gmail.com</a>.</p></Reveal>
+                <Reveal><h2>{t(tx, "h1")}</h2><p>{t(tx, "p1")} <a href="mailto:info@alfredoditullio.com">info@alfredoditullio.com</a>.</p></Reveal>
                 <Reveal><h2>{t(tx, "h2")}</h2><p>{t(tx, "p2")}</p></Reveal>
                 <Reveal><h2>{t(tx, "h3")}</h2><p>{t(tx, "p3")} <a href="/cookies">{t(tx, "cookieLink")}</a>.</p></Reveal>
                 <Reveal><h2>{t(tx, "h4")}</h2><p>{t(tx, "p4")}</p></Reveal>

@@ -110,7 +110,7 @@ export default function About() {
                             </div>
                             <div className="meta-list__item">
                                 <span className="meta-list__label">{t(aboutMeta, "email")}</span>
-                                <span className="meta-list__value">ditullioalfredo@gmail.com</span>
+                                <span className="meta-list__value">info@alfredoditullio.com</span>
                             </div>
                             <div className="meta-list__item">
                                 <span className="meta-list__label">{t(aboutMeta, "languages")}</span>
