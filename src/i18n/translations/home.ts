@@ -23,6 +23,12 @@ export const hero: Dict = {
     chipDev: { en: "Full-stack dev", es: "Desarrollador" },
     chipAuthor: { en: "Author · 2 books", es: "Autor · 2 libros" },
     chipPhilosophy: { en: "Philosophy BA", es: "Lic. en Filosofía" },
+    cardName: { en: "Alfredo Di Tullio", es: "Alfredo Di Tullio" },
+    cardRole: {
+        en: "Dentist · Developer · Writer",
+        es: "Odontólogo · Desarrollador · Escritor",
+    },
+    cardCta: { en: "Get in touch", es: "Contactame" },
 };
 
 export const whatIDo: Dict = {

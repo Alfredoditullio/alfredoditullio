@@ -5,6 +5,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import DisciplinesSlider from "@/components/DisciplinesSlider";
 import VideoModal from "@/components/VideoModal";
+import HeroCard from "@/components/HeroCard";
 import { useLanguage } from "@/i18n/context";
 import { hero, whatIDo, featured, press } from "@/i18n/translations/home";
 
@@ -43,31 +44,22 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="hero__portrait">
+                <div className="hero__card-wrap">
                     <div className="hero__portrait-blob"></div>
-                    <div className="hero__portrait-frame">
-                        <img
-                            src="/assets/img/portfolio/nueva.webp"
-                            alt="Alfredo Di Tullio"
-                            className="hero__portrait-img"
-                        />
-                    </div>
-                    <span className="hero__chip hero__chip--1">
-                        <i className="fa-solid fa-tooth"></i>{" "}
-                        {t(hero, "chipDentist")}
-                    </span>
-                    <span className="hero__chip hero__chip--2">
-                        <i className="fa-solid fa-code"></i>{" "}
-                        {t(hero, "chipDev")}
-                    </span>
-                    <span className="hero__chip hero__chip--3">
-                        <i className="fa-solid fa-feather-pointed"></i>{" "}
-                        {t(hero, "chipAuthor")}
-                    </span>
-                    <span className="hero__chip hero__chip--4">
-                        <i className="fa-solid fa-book-open"></i>{" "}
-                        {t(hero, "chipPhilosophy")}
-                    </span>
+                    <HeroCard
+                        photoSrc="/assets/img/portfolio/nueva.webp"
+                        photoAlt="Alfredo Di Tullio"
+                        name={t(hero, "cardName")}
+                        role={t(hero, "cardRole")}
+                        chips={[
+                            { icon: "fa-solid fa-tooth", label: t(hero, "chipDentist") },
+                            { icon: "fa-solid fa-code", label: t(hero, "chipDev") },
+                            { icon: "fa-solid fa-feather-pointed", label: t(hero, "chipAuthor") },
+                            { icon: "fa-solid fa-book-open", label: t(hero, "chipPhilosophy") },
+                        ]}
+                        ctaLabel={t(hero, "cardCta")}
+                        ctaHref="/contact"
+                    />
                 </div>
             </Reveal>
 
