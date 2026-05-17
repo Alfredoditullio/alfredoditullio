@@ -326,8 +326,8 @@ a:hover {
 .reveal {
     opacity: 0;
     transform: translateY(24px);
-    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
-    will-change: opacity, transform;
+    transition: opacity 700ms var(--ease), transform 700ms var(--ease), filter 800ms var(--ease);
+    will-change: opacity, transform, filter;
 }
 
 .reveal.is-visible {
@@ -348,15 +348,217 @@ a:hover {
     transition-delay: 320ms;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .reveal {
+/* ---- Blur-to-focus reveal for titles ---- */
+.reveal--blur {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(30px) scale(0.97);
+    transition:
+        opacity 900ms var(--ease),
+        filter 1000ms var(--ease),
+        transform 900ms var(--ease);
+}
+
+.reveal--blur.is-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+}
+
+/* ---- Slide-in from left ---- */
+.reveal--left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+}
+
+.reveal--left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---- Slide-in from right ---- */
+.reveal--right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+}
+
+.reveal--right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---- Scale-up reveal ---- */
+.reveal--scale {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 800ms var(--ease), transform 800ms var(--ease-bounce);
+}
+
+.reveal--scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ---- Divider expand animation ---- */
+.divider {
+    transform: scaleX(0);
+    transition: transform 1000ms var(--ease);
+}
+
+.divider.is-visible {
+    transform: scaleX(1);
+}
+
+/* ---- Scroll progress bar (right side) ---- */
+.scroll-progress {
+    position: fixed;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.scroll-progress__dot {
+    width: 3px;
+    height: 20px;
+    border-radius: 3px;
+    background: var(--border);
+    transition: background 400ms ease, height 400ms ease, box-shadow 400ms ease;
+    cursor: pointer;
+}
+
+.scroll-progress__dot.is-active {
+    background: var(--accent);
+    height: 32px;
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
+}
+
+/* ---- Parallax container ---- */
+.parallax-wrap {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.parallax-wrap img {
+    transition: transform 0.1s linear;
+    will-change: transform;
+    scale: 1.08;
+}
+
+/* ---- Staggered text (letter by letter) ---- */
+.stagger-text {
+    display: block;
+}
+
+.stagger-text span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(20px);
+    transition: opacity 500ms var(--ease), filter 600ms var(--ease), transform 500ms var(--ease);
+}
+
+.stagger-text.is-visible span {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* Gradient text inside stagger: apply gradient to each letter span */
+.stagger-text.gradient-text {
+    background: none;
+    -webkit-text-fill-color: unset;
+}
+
+.stagger-text.gradient-text span {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease-in-out infinite;
+}
+
+/* ---- Tooltip ---- */
+.tooltip-trigger {
+    position: relative;
+    cursor: default;
+}
+
+.tooltip {
+    display: block;
+    z-index: 9999;
+    pointer-events: none;
+    max-width: 280px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12),
+                0 0 0 1px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    transform: scale(0.96);
+    animation: tooltip-in 200ms var(--ease) forwards;
+}
+
+@keyframes tooltip-in {
+    to {
         opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ---- Glow on hover for interactive cards ---- */
+.card,
+.press-tile,
+.contact-item {
+    transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
+}
+
+.card:hover,
+.press-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px -12px rgba(99, 102, 241, 0.2),
+                0 0 0 1px rgba(99, 102, 241, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal--blur,
+    .reveal--left,
+    .reveal--right,
+    .reveal--scale {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+    .divider {
+        transform: scaleX(1);
+        transition: none;
+    }
+    .stagger-text span {
+        opacity: 1;
+        filter: none;
         transform: none;
         transition: none;
     }
     body::before,
     .gradient-text {
         animation: none;
+    }
+    .scroll-progress {
+        display: none;
     }
 }
 
@@ -610,6 +812,20 @@ a:hover {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+}
+
+/* ---------- Fluid background ---------- */
+.fluid-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fluid-bg--visible {
+    opacity: 1;
 }
 
 /* Split hero with portrait */

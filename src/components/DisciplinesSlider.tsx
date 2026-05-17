@@ -1,23 +1,26 @@
 "use client";
 
-import { animate, motion, useMotionValue } from "framer-motion";
+import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "@/i18n/context";
 import { disciplines } from "@/i18n/translations/disciplines";
 
 export default function DisciplinesSlider() {
     const { locale } = useLanguage();
-    const containerRef = useRef<HTMLDivElement>(null);
-    const [width, setWidth] = useState(0);
+    const trackRef = useRef<HTMLDivElement>(null);
+    const [trackWidth, setTrackWidth] = useState(0);
     const x = useMotionValue(0);
+    const [paused, setPaused] = useState(false);
+    const speed = 0.5; // px per frame
+
+    // Duplicate items for seamless loop
+    const items = [...disciplines, ...disciplines];
 
     useEffect(() => {
         const measure = () => {
-            if (containerRef.current) {
-                setWidth(
-                    containerRef.current.scrollWidth -
-                        containerRef.current.offsetWidth
-                );
+            if (trackRef.current) {
+                // Half the track = one full set of cards
+                setTrackWidth(trackRef.current.scrollWidth / 2);
             }
         };
         measure();
@@ -25,57 +28,36 @@ export default function DisciplinesSlider() {
         return () => window.removeEventListener("resize", measure);
     }, []);
 
-    const scrollTo = (direction: "left" | "right") => {
-        const currentX = x.get();
-        const containerWidth = containerRef.current?.offsetWidth || 0;
-        const scrollAmount = containerWidth * 0.8;
-        let newX =
-            direction === "left"
-                ? currentX + scrollAmount
-                : currentX - scrollAmount;
-        newX = Math.max(Math.min(newX, 0), -width);
-        animate(x, newX, {
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-            mass: 1,
-        });
-    };
+    useAnimationFrame(() => {
+        if (paused || trackWidth === 0) return;
+        let newX = x.get() - speed;
+        // When we've scrolled one full set, reset to 0
+        if (Math.abs(newX) >= trackWidth) {
+            newX = 0;
+        }
+        x.set(newX);
+    });
 
     return (
-        <div className="slider">
-            <button
-                type="button"
-                onClick={() => scrollTo("left")}
-                className="slider__nav slider__nav--left"
-                aria-label="Scroll left"
-            >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
-            <button
-                type="button"
-                onClick={() => scrollTo("right")}
-                className="slider__nav slider__nav--right"
-                aria-label="Scroll right"
-            >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
-
-            <motion.div
-                ref={containerRef}
-                className="slider__viewport"
-                whileTap={{ cursor: "grabbing" }}
-            >
+        <div
+            className="slider"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+        >
+            <motion.div className="slider__viewport">
                 <motion.div
+                    ref={trackRef}
                     drag="x"
-                    dragConstraints={{ right: 0, left: -width }}
+                    dragConstraints={{ right: 0, left: -(trackWidth || 0) }}
                     dragElastic={0.1}
+                    onDragStart={() => setPaused(true)}
+                    onDragEnd={() => setPaused(false)}
                     style={{ x }}
                     className="slider__track"
                 >
-                    {disciplines.map((d) => (
+                    {items.map((d, idx) => (
                         <motion.div
-                            key={d.id}
+                            key={`${d.id}-${idx}`}
                             className="slider__card"
                             whileHover={{ y: -10 }}
                             transition={{ duration: 0.3 }}

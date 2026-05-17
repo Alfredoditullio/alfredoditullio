@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import StaggerText from "@/components/StaggerText";
+import ScrollProgress from "@/components/ScrollProgress";
 import DisciplinesSlider from "@/components/DisciplinesSlider";
 import VideoModal from "@/components/VideoModal";
 import HeroCard from "@/components/HeroCard";
@@ -15,59 +17,74 @@ export default function Home() {
 
     return (
         <div className="container page">
+            <ScrollProgress />
+
             {/* Hero */}
-            <Reveal as="section" className="hero hero--split">
+            <Reveal as="section" className="hero hero--split" id="hero">
                 <div className="hero__text">
-                    <span className="hero__eyebrow">{t(hero, "eyebrow")}</span>
+                    <Reveal variant="left">
+                        <span className="hero__eyebrow">{t(hero, "eyebrow")}</span>
+                    </Reveal>
                     <h1 className="hero__title">
-                        {t(hero, "name1")}
-                        <span className="gradient-text">{t(hero, "name2")}</span>
+                        <StaggerText as="span" className="" delayPerChar={35}>
+                            {t(hero, "name1")}
+                        </StaggerText>
+                        <StaggerText as="span" className="gradient-text" delayPerChar={35}>
+                            {t(hero, "name2")}
+                        </StaggerText>
                     </h1>
-                    <p className="hero__tagline">
-                        <strong className="hero__lead-line">
-                            {t(hero, "lead")}
-                        </strong>
-                        {t(hero, "tagline")}{" "}
-                        <strong style={{ color: "var(--fg)", fontWeight: 600 }}>
-                            DentalCore
-                        </strong>{" "}
-                        {t(hero, "taglineEnd")}
-                    </p>
-                    <div className="hero__actions">
-                        <Link href="/projects" className="btn btn--primary">
-                            {t(hero, "btnProjects")}{" "}
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                        <Link href="/about" className="btn">
-                            {t(hero, "btnAbout")}
-                        </Link>
-                    </div>
+                    <Reveal delay={2}>
+                        <p className="hero__tagline">
+                            <strong className="hero__lead-line">
+                                {t(hero, "lead")}
+                            </strong>
+                            {t(hero, "tagline")}{" "}
+                            <strong style={{ color: "var(--fg)", fontWeight: 600 }}>
+                                DentalCore
+                            </strong>{" "}
+                            {t(hero, "taglineEnd")}
+                        </p>
+                    </Reveal>
+                    <Reveal delay={3}>
+                        <div className="hero__actions">
+                            <Link href="/projects" className="btn btn--primary">
+                                {t(hero, "btnProjects")}{" "}
+                                <i className="fa-solid fa-arrow-right"></i>
+                            </Link>
+                            <Link href="/about" className="btn">
+                                {t(hero, "btnAbout")}
+                            </Link>
+                        </div>
+                    </Reveal>
                 </div>
 
-                <div className="hero__card-wrap">
-                    <div className="hero__portrait-blob"></div>
-                    <HeroCard
-                        photoSrc="/assets/img/portfolio/nueva.webp"
-                        photoAlt="Alfredo Di Tullio"
-                        name={t(hero, "cardName")}
-                        role={t(hero, "cardRole")}
-                        chips={[
-                            { icon: "fa-solid fa-tooth", label: t(hero, "chipDentist") },
-                            { icon: "fa-solid fa-code", label: t(hero, "chipDev") },
-                            { icon: "fa-solid fa-feather-pointed", label: t(hero, "chipAuthor") },
-                            { icon: "fa-solid fa-book-open", label: t(hero, "chipPhilosophy") },
-                        ]}
-                        ctaLabel={t(hero, "cardCta")}
-                        ctaHref="/contact"
-                    />
-                </div>
+                <Reveal variant="scale" delay={1}>
+                    <div className="hero__card-wrap">
+                        <div className="hero__portrait-blob"></div>
+                        <HeroCard
+                            photoSrc="/assets/img/portfolio/nueva.webp"
+                            photoAlt="Alfredo Di Tullio"
+                            name={t(hero, "cardName")}
+                            role={t(hero, "cardRole")}
+                            chips={[
+                                { icon: "fa-solid fa-tooth", label: t(hero, "chipDentist") },
+                                { icon: "fa-solid fa-code", label: t(hero, "chipDev") },
+                                { icon: "fa-solid fa-feather-pointed", label: t(hero, "chipAuthor") },
+                                { icon: "fa-solid fa-book-open", label: t(hero, "chipPhilosophy") },
+                                { icon: "fa-solid fa-compass", label: t(hero, "chipTourism") },
+                            ]}
+                            ctaLabel={t(hero, "cardCta")}
+                            ctaHref="/contact"
+                        />
+                    </div>
+                </Reveal>
             </Reveal>
 
-            <hr className="divider" />
+            <Reveal as="hr" className="divider" />
 
             {/* What I do */}
-            <section className="section">
-                <Reveal>
+            <section className="section" id="what-i-do">
+                <Reveal variant="blur">
                     <p className="section__eyebrow">{t(whatIDo, "eyebrow")}</p>
                     <h2 className="section__title">{t(whatIDo, "title")}</h2>
                 </Reveal>
@@ -76,11 +93,11 @@ export default function Home() {
                 </Reveal>
             </section>
 
-            <hr className="divider" />
+            <Reveal as="hr" className="divider" />
 
             {/* Featured project */}
-            <section className="section">
-                <Reveal>
+            <section className="section" id="featured">
+                <Reveal variant="blur">
                     <p className="section__eyebrow">
                         {t(featured, "eyebrow")}
                     </p>
@@ -91,7 +108,7 @@ export default function Home() {
                     </h2>
                     <p className="section__intro">{t(featured, "intro")}</p>
                 </Reveal>
-                <Reveal delay={1}>
+                <Reveal variant="scale" delay={1}>
                     <Link href="/projects/dentalcore" className="card">
                         <span className="card__label">
                             {t(featured, "cardLabel")}
@@ -114,16 +131,16 @@ export default function Home() {
                 </Reveal>
             </section>
 
-            <hr className="divider" />
+            <Reveal as="hr" className="divider" />
 
             {/* Press */}
-            <section className="section">
-                <Reveal>
+            <section className="section" id="press">
+                <Reveal variant="blur">
                     <p className="section__eyebrow">{t(press, "eyebrow")}</p>
                     <h2 className="section__title">{t(press, "title")}</h2>
                 </Reveal>
                 <div className="press-grid">
-                    <Reveal delay={1}>
+                    <Reveal variant="left" delay={1}>
                         <a
                             href="https://veucatalana.cat/horizontes-infinitos-filosofia-viajes-y-reflexion-en-la-nueva-obra-de-alfredo-di-tullio/"
                             target="_blank"
@@ -189,7 +206,7 @@ export default function Home() {
                             </div>
                         </a>
                     </Reveal>
-                    <Reveal delay={3}>
+                    <Reveal variant="right" delay={3}>
                         <div
                             role="button"
                             tabIndex={0}

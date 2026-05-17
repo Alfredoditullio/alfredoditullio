@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Providers from "@/components/Providers";
 import TopNav from "@/components/TopNav";
 import IntroAnimation from "@/components/IntroAnimation";
+import FluidBackground from "@/components/FluidBackground";
 import CookieBanner from "@/components/CookieBanner";
 import Link from "next/link";
 import "./globals.css";
@@ -38,6 +39,7 @@ export default function RootLayout({
                         <div className="bg-fx__blob bg-fx__blob--pink"></div>
                     </div>
                     <IntroAnimation />
+                    <FluidBackground />
                     <TopNav />
                     <main>{children}</main>
                     <footer className="footer">

@@ -13,6 +13,10 @@ export const hero: Dict = {
         en: "Trained as a dentist in Argentina. Cooked in Michelin-star kitchens across Denmark, Norway, Spain and Australia. Philosophy graduate, tourism technician, author of two books. Today I build software and websites for whoever needs them — from",
         es: "Odontólogo formado en Argentina. Cociné en restaurantes con estrella Michelin en Dinamarca, Noruega, España y Australia. Licenciado en Filosofía, técnico en turismo, autor de dos libros. Hoy construyo software y sitios web para quien los necesite — desde",
     },
+    tipAuthor: {
+        en: "En búsqueda del sentido (2023) & Horizontes Infinitos (2025)",
+        es: "En búsqueda del sentido (2023) y Horizontes Infinitos (2025)",
+    },
     taglineEnd: {
         en: "to a brand-new site for any business — and write about what happens when disciplines collide.",
         es: "hasta un sitio nuevo para cualquier negocio — y escribo sobre lo que pasa cuando las disciplinas chocan.",
@@ -23,6 +27,7 @@ export const hero: Dict = {
     chipDev: { en: "Full-stack dev", es: "Desarrollador" },
     chipAuthor: { en: "Author · 2 books", es: "Autor · 2 libros" },
     chipPhilosophy: { en: "Philosophy BA", es: "Lic. en Filosofía" },
+    chipTourism: { en: "Tourism Technician", es: "Téc. en Turismo" },
     cardName: { en: "Alfredo Di Tullio", es: "Alfredo Di Tullio" },
     cardRole: {
         en: "Dentist · Developer · Writer",
