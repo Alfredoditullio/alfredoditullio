@@ -15,6 +15,15 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://www.alfredoditullio.com",
     },
+    icons: {
+        icon: [
+            { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+            { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+        ],
+        apple: [
+            { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+        ],
+    },
 };
 
 export default function RootLayout({
