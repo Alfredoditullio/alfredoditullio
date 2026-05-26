@@ -7,13 +7,18 @@ import CookieBanner from "@/components/CookieBanner";
 import Link from "next/link";
 import "./globals.css";
 
+const BASE = "https://www.alfredoditullio.com";
+
 export const metadata: Metadata = {
-    title: "Alfredo Di Tullio — Portfolio",
+    title: {
+        default: "Alfredo Di Tullio — Dentist, Developer & Writer",
+        template: "%s | Alfredo Di Tullio",
+    },
     description:
-        "Dentist, developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry.",
-    metadataBase: new URL("https://www.alfredoditullio.com"),
+        "Dentist, full-stack developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry. Author of two books on philosophy and travel.",
+    metadataBase: new URL(BASE),
     alternates: {
-        canonical: "https://www.alfredoditullio.com",
+        canonical: BASE,
     },
     icons: {
         icon: [
@@ -24,6 +29,79 @@ export const metadata: Metadata = {
             { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
         ],
     },
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: BASE,
+        siteName: "Alfredo Di Tullio",
+        title: "Alfredo Di Tullio — Dentist, Developer & Writer",
+        description:
+            "Dentist, full-stack developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry.",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Alfredo Di Tullio — Dentist, Developer & Writer",
+        description:
+            "Dentist, full-stack developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": `${BASE}/#website`,
+            url: BASE,
+            name: "Alfredo Di Tullio",
+            description: "Personal portfolio — dentist, developer and writer",
+            publisher: { "@id": `${BASE}/#person` },
+            inLanguage: ["en", "es"],
+        },
+        {
+            "@type": "Person",
+            "@id": `${BASE}/#person`,
+            name: "Alfredo Di Tullio",
+            url: BASE,
+            email: "info@alfredoditullio.com",
+            jobTitle: ["Dentist", "Full-Stack Developer", "Writer"],
+            description:
+                "Argentinian dentist (UNLP), full-stack developer building DentalCore, philosophy graduate, tourism technician, author of two books, former Michelin-star cook.",
+            alumniOf: [
+                { "@type": "EducationalOrganization", name: "Universidad Nacional de La Plata" },
+                { "@type": "EducationalOrganization", name: "Universidad TECH" },
+                { "@type": "EducationalOrganization", name: "UNTREF" },
+            ],
+            knowsAbout: [
+                "Dentistry",
+                "Full-Stack Development",
+                "React",
+                "TypeScript",
+                "Supabase",
+                "Philosophy",
+                "Tourism",
+                "Gastronomy",
+                "Writing",
+            ],
+            sameAs: [
+                "https://www.linkedin.com/in/alfredo-di-tullio/",
+                "https://www.instagram.com/alfred.ditu",
+                "https://www.facebook.com/alfreditullio",
+                "https://github.com/Alfredoditullio",
+            ],
+        },
+    ],
 };
 
 export default function RootLayout({
@@ -39,6 +117,10 @@ export default function RootLayout({
                     href="/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
                 />
                 <link rel="stylesheet" href="/assets/fonts/poppins/poppins.css" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </head>
             <body>
                 <Providers>

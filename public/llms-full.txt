@@ -1,0 +1,143 @@
+# Alfredo Di Tullio — Complete Profile
+
+## Personal Information
+
+- **Full name:** Alfredo Di Tullio
+- **Nationality:** Argentinian
+- **Current location:** Barcelona, Spain
+- **Email:** info@alfredoditullio.com
+- **Website:** https://www.alfredoditullio.com
+- **LinkedIn:** https://www.linkedin.com/in/alfredo-di-tullio/
+- **Instagram:** @alfred.ditu
+- **Facebook:** alfreditullio
+- **GitHub:** Alfredoditullio
+
+## Professional Summary
+
+Alfredo Di Tullio is a multidisciplinary professional who has built a career across five distinct fields: dentistry, software development, gastronomy, philosophy, and tourism. Born and raised in Argentina, he trained as a dentist at the Universidad Nacional de La Plata (UNLP, graduated 2013) and practiced clinically for several years. He then embarked on an international culinary career, spending six years cooking in professional kitchens across Denmark, Norway, Spain, and Australia, including a stint at a Michelin-starred restaurant.
+
+While abroad, he pursued academic studies in philosophy (B.A. from Universidad TECH, 2023) and tourism (University Technician from UNTREF, 2024). He authored two books exploring philosophy, meaning, and travel. In 2020, he began teaching himself software development and now builds full-stack web applications, with his flagship project being DentalCore — a comprehensive clinical platform for dentistry.
+
+He is currently based in Barcelona, Spain, where he works as a freelance developer and writer.
+
+## Education
+
+1. **Dentistry (Odontología)** — Universidad Nacional de La Plata (UNLP), Argentina, 2013
+2. **International Chef Diploma** — IGA (Instituto de Gastronomía Argentina), 2018
+3. **B.A. in Philosophy (Licenciatura en Filosofía)** — Universidad TECH, 2023
+4. **University Technician in Tourism (Técnico Universitario en Turismo)** — UNTREF, 2024
+
+## Professional Experience
+
+### Dentistry
+- Trained at UNLP, one of Argentina's top dental schools
+- Years of clinical practice in Argentina
+- Deep domain expertise informs his dental software (DentalCore)
+
+### Gastronomy
+- Six years cooking professionally in international kitchens
+- Countries: Denmark, Norway, Spain, Australia
+- Worked in a Michelin-starred restaurant
+- International Chef Diploma from IGA (2018)
+
+### Software Development (2020–present)
+- Self-taught full-stack developer
+- Primary stack: React 19, TypeScript, Next.js, Supabase, Zustand
+- Additional tools: Tailwind CSS, Vite, Playwright, Vitest
+- AI integration: Google Gemini 2.0 Flash, Replicate
+- Freelance web development and consulting
+
+### Writing & Philosophy
+- B.A. in Philosophy (Universidad TECH, 2023)
+- Author of two published books (see Books section)
+- Writes about meaning, travel, and the intersection of disciplines
+
+### Tourism
+- Certified Tourism Technician (UNTREF, 2024)
+- Extensive travel across Europe, Asia, and Oceania
+- Tourism expertise informs his writing and worldview
+
+## Software Projects
+
+### DentalCore (dentalcore.app)
+- **Type:** Clinical Decision Support System (CDSS) for dentistry
+- **Status:** Active development (MVP)
+- **URL:** https://dentalcore.app
+- **Portfolio page:** https://www.alfredoditullio.com/projects/dentalcore
+- **Stack:** React 19, TypeScript, Vite 6, Supabase (Auth, PostgreSQL, Storage, Edge Functions), Zustand (20 domain stores), Tailwind CSS, Google Gemini 2.0 Flash AI
+- **Key features:**
+  - Digital odontogram with 47 finding codes
+  - AI-powered clinical diagnostics (14 specialized prompts via Gemini)
+  - Treatment planning with inference engine
+  - Periodontogram and periodontal charting
+  - Endodontics, surgery, orthodontics, and whitening modules
+  - Practice management (appointments, patients, agenda)
+  - Financial tools (payments, cashbox, insurance billing)
+  - Patient portal (mobile-first, magic link auth)
+  - Lab portal for dental laboratory orders
+  - Marketing tools (campaigns, leads, segmentation)
+  - Inventory management
+  - Audit logging (INFO/SUCCESS/WARNING/CRITICAL)
+  - Multi-tenancy via RLS with clinic_id
+  - Smile Designer (AI-powered via Replicate)
+  - Voice commands (Web Speech API, es-AR, Rustpotter wake word)
+  - Legal compliance: Ley 26.529 (Argentina) — consent templates, immutable evolution notes
+- **Architecture:** Component → useStore() → Zustand store → Repository → Supabase (PostgreSQL)
+- **Testing:** Vitest (unit) + Playwright (E2E, 15 specs)
+- **Routes:** 60+ routes via React Router v7
+
+### OdontoLatam (odontolatam.com)
+- **Type:** Dental industry portal
+- **Status:** Active
+- **URL:** https://odontolatam.com
+- **Portfolio page:** https://www.alfredoditullio.com/projects/odontolatam
+- **Description:** Portal connecting dental professionals, clinics and suppliers across Latin America
+
+### FG Academia (fgacademia.com)
+- **Type:** Educational platform
+- **Status:** Active
+- **URL:** https://www.fgacademia.com
+- **Portfolio page:** https://www.alfredoditullio.com/projects/fgcapital
+- **Description:** Educational platform for financial and business training
+
+## Books
+
+### En búsqueda del sentido (2023)
+- **Language:** Spanish
+- **Theme:** Philosophy, meaning, identity, purpose
+- **Description:** A philosophical exploration of meaning, identity and purpose through the lens of travel and lived experience. The book examines how crossing borders — physical and intellectual — shapes our understanding of ourselves and the world.
+
+### Horizontes Infinitos (2025)
+- **Language:** Spanish
+- **Theme:** Philosophy, travel, reflection
+- **Description:** Philosophy, travel and reflection — a journey through infinite horizons of thought and geography. The second book expands on the author's travels and philosophical investigations, weaving together narratives from multiple countries and disciplines.
+- **Press coverage:** Featured in Veu Catalana (2025) with a book launch event
+
+## Press & Media
+
+1. **Veu Catalana** (2025): Coverage of "Horizontes Infinitos" book launch
+   - URL: https://veucatalana.cat/horizontes-infinitos-filosofia-viajes-y-reflexion-en-la-nueva-obra-de-alfredo-di-tullio/
+
+2. **La Nación** (2024): Feature article about Alfredo's life abroad
+   - URL: https://www.lanacion.com.ar/lifestyle/en-argentina-algo-le-faltaba-y-hallo-el-destino-que-buscaba-en-el-mundo-este-paraiso-me-dio-tiempo-nid08052024/
+
+3. **LN+ (La Nación Plus)** (2024): TV interview — "Argentinos en el mundo: Bodø, Noruega"
+   - YouTube: https://www.youtube.com/watch?v=cuXup5NzDe8
+
+## Technical Skills
+
+- **Languages:** TypeScript, JavaScript, SQL, HTML, CSS
+- **Frontend:** React 19, Next.js, Vite, Tailwind CSS, Framer Motion
+- **Backend:** Supabase (PostgreSQL, Auth, Storage, Edge Functions)
+- **State management:** Zustand
+- **AI/ML:** Google Gemini 2.0 Flash, Replicate
+- **Testing:** Vitest, Playwright
+- **Tools:** Git, GitHub, Vercel, VS Code
+- **Design patterns:** Repository pattern, Domain stores, Optimistic locking, Multi-tenancy via RLS
+
+## Languages Spoken
+
+- Spanish (native — Argentine Spanish)
+- English (professional)
+- Norwegian (conversational)
+- Danish (basic)

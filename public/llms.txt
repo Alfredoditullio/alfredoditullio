@@ -1,0 +1,41 @@
+# Alfredo Di Tullio — Personal Portfolio
+
+> Alfredo Di Tullio is an Argentinian dentist, full-stack developer, philosophy graduate, tourism technician, and author based in Barcelona, Spain.
+
+## About
+
+Alfredo Di Tullio graduated as a dentist from the Universidad Nacional de La Plata (UNLP) in Argentina. He spent six years cooking professionally in Michelin-star kitchens across Denmark, Norway, Spain, and Australia. He holds a B.A. in Philosophy from Universidad TECH and is a certified Tourism Technician from UNTREF. He is the author of two books: "En búsqueda del sentido" (2023) and "Horizontes Infinitos" (2025). Today he builds software and websites, with his main project being DentalCore.
+
+## Projects
+
+- **DentalCore** (dentalcore.app): A comprehensive clinical decision support system for dentistry. AI-powered diagnostics, digital odontogram with 47 finding codes, treatment planning with inference engine, periodontogram, endodontics, surgery, orthodontics, practice management, patient portal, and financial tools. Built with React 19, TypeScript, Supabase, Zustand, and Google Gemini AI. URL: https://www.alfredoditullio.com/projects/dentalcore
+
+- **OdontoLatam** (odontolatam.com): Dental industry portal connecting professionals, clinics and suppliers across Latin America. URL: https://www.alfredoditullio.com/projects/odontolatam
+
+- **FG Academia** (fgacademia.com): Educational platform for financial and business training. URL: https://www.alfredoditullio.com/projects/fgcapital
+
+## Books
+
+- **En búsqueda del sentido** (2023): A philosophical exploration of meaning, identity and purpose through the lens of travel and lived experience.
+- **Horizontes Infinitos** (2025): Philosophy, travel and reflection — a journey through infinite horizons of thought and geography.
+
+## Contact
+
+- Website: https://www.alfredoditullio.com
+- Email: info@alfredoditullio.com
+- LinkedIn: https://www.linkedin.com/in/alfredo-di-tullio/
+- Instagram: https://www.instagram.com/alfred.ditu
+- Location: Barcelona, Spain
+
+## Technical Stack
+
+React 19, TypeScript, Next.js, Supabase (Auth, PostgreSQL, Storage, Edge Functions), Zustand, Tailwind CSS, Vite, Google Gemini AI, Playwright, Vitest.
+
+## Links
+
+- Portfolio: https://www.alfredoditullio.com
+- About: https://www.alfredoditullio.com/about
+- Projects: https://www.alfredoditullio.com/projects
+- Books: https://www.alfredoditullio.com/books
+- Contact: https://www.alfredoditullio.com/contact
+- Full details: https://www.alfredoditullio.com/llms-full.txt
