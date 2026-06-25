@@ -33,63 +33,8 @@ export default function DentalCore() {
     const { locale, t } = useLanguage();
     const l = locale;
 
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        name: "DentalCore",
-        applicationCategory: "HealthApplication",
-        applicationSubCategory: "Clinical Decision Support System",
-        operatingSystem: "Web",
-        url: "https://www.dentalcore.app",
-        description: "First Clinical Decision Support System (CDSS) for dentistry in Latin America. World's first dental software with integrated oral pathology diagnostic motor. 7 clinical engines, 100 coded oral pathologies, free forever for early oral cancer detection.",
-        keywords: "software dental, CDSS dental, sistema apoyo decision clinica odontologia, motor clinico, diagnostico patologia oral, cancer oral, deteccion temprana, software dental Argentina, software dental Mexico, software dental Latinoamerica, dental clinical decision support, dental practice management",
-        offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-            description: "Free forever — full oral pathology diagnostic motor included, no credit card",
-        },
-        author: {
-            "@type": "Person",
-            name: "Alfredo Di Tullio",
-            jobTitle: "Dentist, CEO & Founder",
-            url: "https://www.alfredoditullio.com",
-            identifier: {
-                "@type": "PropertyValue",
-                propertyID: "ORCID",
-                value: "0009-0008-7398-9549",
-                url: "https://orcid.org/0009-0008-7398-9549",
-            },
-        },
-        citation: {
-            "@type": "ScholarlyArticle",
-            name: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
-            url: "https://zenodo.org/records/20821942",
-            identifier: "10.5281/zenodo.20821942",
-            datePublished: "2026-06-23",
-        },
-        areaServed: { "@type": "Place", name: "Latin America" },
-        inLanguage: ["es", "en"],
-        featureList: [
-            "First dental Clinical Decision Support System (CDSS)",
-            "Oral pathology diagnostic motor — 100 coded pathologies",
-            "Free forever oral cancer early detection module",
-            "Medical interconsultation motor (18 conditions × 9 procedures)",
-            "Pharmacological interaction checker",
-            "Pediatric dose calculator",
-            "Treatment planning motor with 7 phases",
-            "Radiographic analysis with computer vision",
-            "Voice-to-text clinical notes in Spanish",
-            "WhatsApp bot with 9 automations",
-            "MercadoPago integrated payments",
-            "Real-time epidemiological surveillance network for Latin America",
-        ],
-    };
-
     return (
         <div className="container page">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
             <Link href="/projects" className="back-link">
                 <i className="fa-solid fa-arrow-left"></i>{" "}
                 {l === "es" ? "Proyectos" : "Projects"}
