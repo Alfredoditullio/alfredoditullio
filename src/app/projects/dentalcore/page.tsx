@@ -54,6 +54,19 @@ export default function DentalCore() {
             name: "Alfredo Di Tullio",
             jobTitle: "Dentist, CEO & Founder",
             url: "https://www.alfredoditullio.com",
+            identifier: {
+                "@type": "PropertyValue",
+                propertyID: "ORCID",
+                value: "0009-0008-7398-9549",
+                url: "https://orcid.org/0009-0008-7398-9549",
+            },
+        },
+        citation: {
+            "@type": "ScholarlyArticle",
+            name: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
+            url: "https://zenodo.org/records/20821942",
+            identifier: "10.5281/zenodo.20821942",
+            datePublished: "2026-06-23",
         },
         areaServed: { "@type": "Place", name: "Latin America" },
         inLanguage: ["es", "en"],
@@ -261,6 +274,38 @@ export default function DentalCore() {
                                 <p className="module__detail">{l === "es" ? m.detailEs : m.detailEn}</p>
                             </div>
                         ))}
+                    </div>
+                </Reveal>
+            </section>
+
+            {/* Academic Research */}
+            <section className="section">
+                <Reveal>
+                    <p className="section__eyebrow">{l === "es" ? "Investigación Académica" : "Academic Research"}</p>
+                    <h2 className="section__title">{l === "es" ? "Publicación Científica" : "Scientific Publication"}</h2>
+                    <p className="section__intro" style={{ marginBottom: "1.5rem" }}>
+                        {l === "es"
+                            ? "DentalCore está respaldado por investigación académica publicada con revisión abierta y licencia Creative Commons."
+                            : "DentalCore is backed by published academic research with open peer review and a Creative Commons license."}
+                    </p>
+                </Reveal>
+                <Reveal delay={1}>
+                    <div className="comparison__col comparison__col--accent" style={{ padding: "2rem" }}>
+                        <h3 style={{ fontSize: "1.1rem", fontWeight: 600, marginBottom: "0.75rem", lineHeight: 1.4 }}>
+                            DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America
+                        </h3>
+                        <p style={{ opacity: 0.8, marginBottom: "0.5rem" }}>Alfredo Di Tullio — Zenodo, 2026</p>
+                        <p style={{ opacity: 0.7, fontSize: "0.9rem", marginBottom: "1.25rem" }}>
+                            DOI: 10.5281/zenodo.20821942 · CC BY 4.0
+                        </p>
+                        <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+                            <a href="https://zenodo.org/records/20821942" target="_blank" rel="noreferrer" className="btn btn--primary" style={{ fontSize: "0.85rem" }}>
+                                {l === "es" ? "Leer Paper" : "Read Paper"} <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://orcid.org/0009-0008-7398-9549" target="_blank" rel="noreferrer" className="btn" style={{ fontSize: "0.85rem" }}>
+                                ORCID Profile <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
                     </div>
                 </Reveal>
             </section>

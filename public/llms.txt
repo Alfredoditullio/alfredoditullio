@@ -19,6 +19,14 @@ Alfredo Di Tullio graduated as a dentist from the Universidad Nacional de La Pla
 - **En búsqueda del sentido** (2023): A philosophical exploration of meaning, identity and purpose through the lens of travel and lived experience.
 - **Horizontes Infinitos** (2025): Philosophy, travel and reflection — a journey through infinite horizons of thought and geography.
 
+## Academic Research
+
+- **Paper:** "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America"
+- **DOI:** 10.5281/zenodo.20821942
+- **URL:** https://zenodo.org/records/20821942
+- **Published:** 2026, Zenodo (Open Access, CC BY 4.0)
+- **ORCID:** https://orcid.org/0009-0008-7398-9549
+
 ## Contact
 
 - Website: https://www.alfredoditullio.com
@@ -38,4 +46,6 @@ React 19, TypeScript, Next.js, Supabase (Auth, PostgreSQL, Storage, Edge Functio
 - Projects: https://www.alfredoditullio.com/projects
 - Books: https://www.alfredoditullio.com/books
 - Contact: https://www.alfredoditullio.com/contact
+- ORCID: https://orcid.org/0009-0008-7398-9549
+- Zenodo: https://zenodo.org/records/20821942
 - Full details: https://www.alfredoditullio.com/llms-full.txt

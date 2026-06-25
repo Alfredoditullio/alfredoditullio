@@ -11,6 +11,8 @@
 - **Instagram:** @alfred.ditu
 - **Facebook:** alfreditullio
 - **GitHub:** Alfredoditullio
+- **ORCID:** https://orcid.org/0009-0008-7398-9549
+- **Zenodo:** https://zenodo.org/records/20821942
 
 ## Professional Summary
 
@@ -112,6 +114,18 @@ He is currently based in Barcelona, Spain, where he works as a freelance develop
 - **Theme:** Philosophy, travel, reflection
 - **Description:** Philosophy, travel and reflection — a journey through infinite horizons of thought and geography. The second book expands on the author's travels and philosophical investigations, weaving together narratives from multiple countries and disciplines.
 - **Press coverage:** Featured in Veu Catalana (2025) with a book launch event
+
+## Academic Publications
+
+### DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America
+- **Type:** Preprint (Open Access)
+- **Published:** June 2026, Zenodo
+- **DOI:** 10.5281/zenodo.20821942
+- **URL:** https://zenodo.org/records/20821942
+- **ORCID:** https://orcid.org/0009-0008-7398-9549
+- **License:** CC BY 4.0
+- **Abstract:** Describes a rule-based clinical decision support system for dentistry in resource-limited Latin American settings. Features three specialized inference engines: treatment planning from clinical data, medical-risk assessment prior to procedures, and drug interaction checking. Meets all four Kawamoto criteria for CDSS effectiveness. Demonstrates strong specificity without over-alerting on low-risk cases.
+- **Keywords:** Clinical decision support systems, dental informatics, rule-based systems, primary care, Latin America, digital health, CDSS, dentistry
 
 ## Press & Media
 
