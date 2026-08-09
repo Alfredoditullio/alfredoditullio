@@ -4,8 +4,9 @@ import Reveal from "@/components/Reveal";
 import TiltCard from "@/components/TiltCard";
 import PhotoCarousel from "@/components/PhotoCarousel";
 import { useLanguage } from "@/i18n/context";
+import Link from "next/link";
 import {
-    aboutHero, aboutEducation, aboutExperience, aboutOtc, aboutMeta,
+    aboutHero, aboutByline, aboutEducation, aboutExperience, aboutOtc, aboutMeta,
     educationItems, experienceItems, otcItems,
 } from "@/i18n/translations/about";
 
@@ -34,6 +35,20 @@ export default function About() {
                 <div>
                     <Reveal>
                         <p className="about__intro">{t(aboutHero, "intro")}</p>
+                    </Reveal>
+
+                    <Reveal delay={1}>
+                        <p className="about__byline">
+                            {t(aboutByline, "authorPre")}
+                            <Link href="/books/inteligencia-artificial-para-odontologos" className="about__byline-link">
+                                {t(aboutByline, "book")}
+                            </Link>
+                            {t(aboutByline, "authorPost")}
+                            <Link href="/projects/dentalcore" className="about__byline-link">
+                                {t(aboutByline, "founder")}
+                            </Link>
+                            {t(aboutByline, "founderPost")}
+                        </p>
                     </Reveal>
 
                     <section className="section">

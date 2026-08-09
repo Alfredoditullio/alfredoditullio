@@ -10,6 +10,19 @@ export const booksTexts: Dict = {
         es: "Escribir siempre fue mi forma de darle sentido a las cosas — desde la experiencia clínica hasta la filosofía y los viajes.",
     },
     latestEyebrow: { en: "Latest release", es: "Último lanzamiento" },
+    iaSubtitle: { en: "AI & dentistry · 2026", es: "IA y odontología · 2026" },
+    iaTitle: {
+        en: "Inteligencia artificial para odontólogos",
+        es: "Inteligencia artificial para odontólogos",
+    },
+    iaText: {
+        en: "My third book (2026): a guide for dentists to understand, use and question AI in the clinic — written by a dentist, for dentists, in the language spoken in the operatory rather than at tech conferences. It draws on what I learned founding DentalCore, and gives you the vocabulary to tell real tools from smoke.",
+        es: "Mi tercer libro (2026): una guía para que los odontólogos comprendan, usen y cuestionen la IA en el consultorio — escrita por un odontólogo, para odontólogos, en el idioma que se habla en el sillón y no en las conferencias de tecnología. Nace de lo que aprendí fundando DentalCore, y te da el vocabulario para distinguir las herramientas reales del humo.",
+    },
+    iaBtnRead: { en: "Read the story", es: "Leer la historia" },
+    iaBtnAmazon: { en: "Buy on Amazon", es: "Comprar en Amazon" },
+    iaBtnPrev: { en: "Previous books", es: "Libros anteriores" },
+    prevEyebrow: { en: "Also by Alfredo", es: "También de Alfredo" },
     hiSubtitle: { en: "Philosophy & travel · 2025", es: "Filosofía y viajes · 2025" },
     hiTitle: { en: "Horizontes Infinitos", es: "Horizontes Infinitos" },
     hiText: {

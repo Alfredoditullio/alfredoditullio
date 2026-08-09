@@ -46,6 +46,24 @@ export default function Home() {
                         </p>
                     </Reveal>
                     <Reveal delay={3}>
+                        <p className="hero__byline">
+                            {t(hero, "bylineAuthorPre")}
+                            <Link
+                                href="/books/inteligencia-artificial-para-odontologos"
+                                className="hero__byline-link"
+                            >
+                                {t(hero, "bylineBook")}
+                            </Link>
+                            {t(hero, "bylineMid")}
+                            <Link
+                                href="/projects/dentalcore"
+                                className="hero__byline-link"
+                            >
+                                {t(hero, "bylineFounder")}
+                            </Link>
+                        </p>
+                    </Reveal>
+                    <Reveal delay={3}>
                         <div className="hero__actions">
                             <Link href="/projects" className="btn btn--primary">
                                 {t(hero, "btnProjects")}{" "}

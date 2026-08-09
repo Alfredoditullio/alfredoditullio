@@ -11,6 +11,23 @@ export const aboutHero: Dict = {
     },
 };
 
+export const aboutByline: Dict = {
+    authorPre: { en: "I'm the author of ", es: "Soy autor de " },
+    book: {
+        en: "Inteligencia artificial para odontólogos",
+        es: "Inteligencia artificial para odontólogos",
+    },
+    authorPost: {
+        en: " (2026) — a guide to AI in the dental clinic — as well as Horizontes Infinitos (2025) and En búsqueda del sentido (2023). And I'm the founder of ",
+        es: " (2026) — una guía sobre la IA en el consultorio —, además de Horizontes Infinitos (2025) y En búsqueda del sentido (2023). Y soy el fundador de ",
+    },
+    founder: { en: "DentalCore", es: "DentalCore" },
+    founderPost: {
+        en: ", clinical software for dental practices.",
+        es: ", el software clínico para consultorios odontológicos.",
+    },
+};
+
 export const aboutEducation: Dict = {
     eyebrow: { en: "Education", es: "Formación" },
 };

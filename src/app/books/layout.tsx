@@ -7,6 +7,17 @@ const jsonLd = {
         {
             "@type": "Book",
             position: 1,
+            name: "Inteligencia artificial para odontólogos",
+            author: { "@type": "Person", name: "Alfredo Di Tullio" },
+            datePublished: "2026",
+            description:
+                "Una guía en español para que los odontólogos comprendan, usen y cuestionen la IA en el consultorio. Escrita por un odontólogo, fundador de DentalCore.",
+            inLanguage: "es",
+            url: "https://www.alfredoditullio.com/books/inteligencia-artificial-para-odontologos",
+        },
+        {
+            "@type": "Book",
+            position: 2,
             name: "En búsqueda del sentido",
             author: { "@type": "Person", name: "Alfredo Di Tullio" },
             datePublished: "2023",
@@ -17,7 +28,7 @@ const jsonLd = {
         },
         {
             "@type": "Book",
-            position: 2,
+            position: 3,
             name: "Horizontes Infinitos",
             author: { "@type": "Person", name: "Alfredo Di Tullio" },
             datePublished: "2025",
@@ -32,12 +43,12 @@ const jsonLd = {
 export const metadata: Metadata = {
     title: "Books",
     description:
-        "Books by Alfredo Di Tullio — En búsqueda del sentido (2023) and Horizontes Infinitos (2025). Philosophy, travel and reflection.",
+        "Books by Alfredo Di Tullio — Inteligencia artificial para odontólogos (2026), Horizontes Infinitos (2025) and En búsqueda del sentido (2023). AI in dentistry, philosophy, travel and reflection.",
     alternates: { canonical: "https://www.alfredoditullio.com/books" },
     openGraph: {
         title: "Books by Alfredo Di Tullio",
         description:
-            "En búsqueda del sentido (2023) & Horizontes Infinitos (2025) — philosophy, travel and meaning.",
+            "Inteligencia artificial para odontólogos (2026), Horizontes Infinitos (2025) & En búsqueda del sentido (2023).",
         url: "https://www.alfredoditullio.com/books",
     },
 };

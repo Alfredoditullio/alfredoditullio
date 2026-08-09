@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/context";
 import { booksTexts as tx } from "@/i18n/translations/books";
@@ -25,6 +26,38 @@ export default function Books() {
 
             <section className="section">
                 <Reveal><p className="section__eyebrow">{t(tx, "latestEyebrow")}</p></Reveal>
+                <Reveal delay={1}>
+                    <article className="book-card">
+                        <Link
+                            href="/books/inteligencia-artificial-para-odontologos"
+                            className="book-card__cover book-card__cover--placeholder book-cover--placeholder"
+                            aria-label={t(tx, "iaTitle")}
+                        >
+                            <span className="book-cover__initials">IA</span>
+                        </Link>
+                        <div>
+                            <p className="book-card__subtitle">{t(tx, "iaSubtitle")}</p>
+                            <h2 className="book-card__title">
+                                <Link href="/books/inteligencia-artificial-para-odontologos" className="book-card__title-link">
+                                    {t(tx, "iaTitle")}
+                                </Link>
+                            </h2>
+                            <p className="book-card__text">{t(tx, "iaText")}</p>
+                            <div className="hero__actions">
+                                <Link href="/books/inteligencia-artificial-para-odontologos" className="btn btn--primary">
+                                    {t(tx, "iaBtnRead")} <i className="fa-solid fa-arrow-right"></i>
+                                </Link>
+                                <a href="https://www.amazon.com.au/Inteligencia-Artificial-para-odont%C3%B3logos-inteligencia/dp/B0HD5T5V8N/" target="_blank" rel="noreferrer" className="btn">
+                                    {t(tx, "iaBtnAmazon")} <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </Reveal>
+            </section>
+
+            <section className="section">
+                <Reveal><p className="section__eyebrow">{t(tx, "prevEyebrow")}</p></Reveal>
                 <Reveal delay={1}>
                     <article className="book-card">
                         <img src="/assets/img/portfolio/horizontes-infinitos.webp" alt="Horizontes Infinitos" className="book-card__cover" />
