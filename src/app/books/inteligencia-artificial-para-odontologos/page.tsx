@@ -39,11 +39,11 @@ export default function IaOdontologos() {
                     </div>
                 </div>
 
-                <figure className="books-hero__figure">
+                <figure className="books-hero__figure books-hero__figure--cover">
                     <img
                         src="/assets/img/portfolio/ia-odontologos.webp"
                         alt="Inteligencia artificial para odontólogos — Alfredo Di Tullio"
-                        className="books-hero__image book-cover__img"
+                        className="book-cover__img"
                         width={800}
                         height={1199}
                     />
