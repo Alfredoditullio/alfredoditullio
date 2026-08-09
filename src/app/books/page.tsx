@@ -30,10 +30,16 @@ export default function Books() {
                     <article className="book-card">
                         <Link
                             href="/books/inteligencia-artificial-para-odontologos"
-                            className="book-card__cover book-card__cover--placeholder book-cover--placeholder"
+                            className="book-card__cover-link"
                             aria-label={t(tx, "iaTitle")}
                         >
-                            <span className="book-cover__initials">IA</span>
+                            <img
+                                src="/assets/img/portfolio/ia-odontologos.webp"
+                                alt="Inteligencia artificial para odontólogos"
+                                className="book-card__cover"
+                                width={800}
+                                height={1199}
+                            />
                         </Link>
                         <div>
                             <p className="book-card__subtitle">{t(tx, "iaSubtitle")}</p>

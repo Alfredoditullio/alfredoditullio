@@ -40,17 +40,13 @@ export default function IaOdontologos() {
                 </div>
 
                 <figure className="books-hero__figure">
-                    <div
-                        className="book-cover book-cover--placeholder"
-                        role="img"
-                        aria-label={t(tx, "title")}
-                    >
-                        <span className="book-cover__initials">
-                            {t(tx, "coverInitials")}
-                        </span>
-                        <span className="book-cover__title">{t(tx, "title")}</span>
-                        <span className="book-cover__author">Alfredo Di Tullio</span>
-                    </div>
+                    <img
+                        src="/assets/img/portfolio/ia-odontologos.webp"
+                        alt="Inteligencia artificial para odontólogos — Alfredo Di Tullio"
+                        className="books-hero__image book-cover__img"
+                        width={800}
+                        height={1199}
+                    />
                     <figcaption className="books-hero__caption">
                         {t(tx, "coverCaption")}
                     </figcaption>
