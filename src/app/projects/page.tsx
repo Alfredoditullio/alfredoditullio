@@ -7,11 +7,8 @@ import {
     projectsHero,
     dcCard,
     odontolatamCard,
-    camilaCard,
     fgCard,
-    carolinaCard,
     risusCard,
-    cheboludoCard,
 } from "@/i18n/translations/projects";
 
 export default function Projects() {
@@ -111,50 +108,10 @@ export default function Projects() {
                     </a>
                 </Reveal>
 
-                {/* Camila */}
-                <Reveal delay={4}>
-                    <a href="https://camila.dentalcore.app/" target="_blank" rel="noreferrer" className="card project-card">
-                        <div className="project-card__image-wrap">
-                            <img src="/assets/img/portfolio/camila.webp" alt="Camila Chesani" className="project-card__image" />
-                        </div>
-                        <div className="project-card__body">
-                            <span className="card__label">{t(camilaCard, "label")}</span>
-                            <h3 className="card__title">{t(camilaCard, "title")}</h3>
-                            <p className="card__text">{t(camilaCard, "text")}</p>
-                            <span className="card__cta">{t(camilaCard, "cta")} <i className="fa-solid fa-arrow-up-right-from-square"></i></span>
-                        </div>
-                    </a>
-                </Reveal>
-
-                {/* Carolina Salva */}
-                <Reveal delay={4}>
-                    <a href="https://landing-brown-kappa.vercel.app/" target="_blank" rel="noreferrer" className="card project-card">
-                        <div className="project-card__image-wrap" style={{ background: "#FAF0E6" }}>
-                            <img src="/assets/img/portfolio/carolina-salva.webp" alt="Carolina Salva" className="project-card__image" style={{ objectFit: "contain", padding: "1rem" }} />
-                        </div>
-                        <div className="project-card__body">
-                            <span className="card__label">{t(carolinaCard, "label")}</span>
-                            <h3 className="card__title">{t(carolinaCard, "title")}</h3>
-                            <p className="card__text">{t(carolinaCard, "text")}</p>
-                            <span className="card__cta">{t(carolinaCard, "cta")} <i className="fa-solid fa-arrow-up-right-from-square"></i></span>
-                        </div>
-                    </a>
-                </Reveal>
-
-                {/* Che Boludo */}
-                <Reveal delay={4}>
-                    <a href="https://che-boludo.vercel.app" target="_blank" rel="noreferrer" className="card project-card">
-                        <div className="project-card__image-wrap">
-                            <img src="/assets/img/portfolio/cheboludo.webp" alt="Che Boludo" className="project-card__image" />
-                        </div>
-                        <div className="project-card__body">
-                            <span className="card__label">{t(cheboludoCard, "label")}</span>
-                            <h3 className="card__title">{t(cheboludoCard, "title")}</h3>
-                            <p className="card__text">{t(cheboludoCard, "text")}</p>
-                            <span className="card__cta">{t(cheboludoCard, "cta")} <i className="fa-solid fa-arrow-up-right-from-square"></i></span>
-                        </div>
-                    </a>
-                </Reveal>
+                {/* Hidden from the UI on request — Camila Chesani, Carolina Salva
+                    and Che Boludo. Their copy is still defined in
+                    translations/projects.ts (camilaCard, carolinaCard, cheboludoCard)
+                    if they ever need to be restored. */}
             </section>
         </div>
     );
