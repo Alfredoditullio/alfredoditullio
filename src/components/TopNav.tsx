@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Logo from "./Logo";
 import { useLanguage } from "@/i18n/context";
+import { localizedPath, stripLocale } from "@/i18n/routing";
 import { nav } from "@/i18n/translations/common";
 
 const links = [
@@ -21,12 +22,14 @@ function MobileMenu({
     t,
     locale,
     toggleLocale,
+    href,
 }: {
     isActive: (href: string) => boolean;
     onClose: () => void;
     t: (dict: Record<string, Record<string, string>>, key: string) => string;
     locale: string;
     toggleLocale: () => void;
+    href: (bare: string) => string;
 }) {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []);
@@ -38,7 +41,7 @@ function MobileMenu({
                 {links.map((link) => (
                     <li key={link.href}>
                         <Link
-                            href={link.href}
+                            href={href(link.href)}
                             className={`mobile-menu__link ${isActive(link.href) ? "mobile-menu__link--active" : ""}`}
                             onClick={onClose}
                         >
@@ -78,9 +81,12 @@ export default function TopNav() {
         };
     }, [open]);
 
-    const isActive = (href: string) => {
-        if (href === "/") return pathname === "/";
-        return pathname === href || pathname?.startsWith(href + "/");
+    const bare = stripLocale(pathname ?? "/");
+    const href = (barePath: string) => localizedPath(barePath, locale);
+
+    const isActive = (target: string) => {
+        if (target === "/") return bare === "/";
+        return bare === target || bare.startsWith(target + "/");
     };
 
     const toggleLocale = () => setLocale(locale === "en" ? "es" : "en");
@@ -89,7 +95,7 @@ export default function TopNav() {
         <>
             <nav className="topnav">
                 <div className="container topnav__inner">
-                    <Link href="/" className="topnav__brand">
+                    <Link href={href("/")} className="topnav__brand">
                         <Logo
                             size={28}
                             idSuffix="-nav"
@@ -102,7 +108,7 @@ export default function TopNav() {
                         {links.map((link) => (
                             <li key={link.href}>
                                 <Link
-                                    href={link.href}
+                                    href={href(link.href)}
                                     className={`topnav__link ${isActive(link.href) ? "topnav__link--active" : ""}`}
                                 >
                                     {t(nav, link.key)}
@@ -148,6 +154,7 @@ export default function TopNav() {
                     t={t}
                     locale={locale}
                     toggleLocale={toggleLocale}
+                    href={href}
                 />
             )}
         </>

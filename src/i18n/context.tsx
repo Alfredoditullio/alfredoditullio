@@ -8,14 +8,18 @@ import {
     useCallback,
     type ReactNode,
 } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { localizedPath, stripLocale, type Locale } from "./routing";
 
-export type Locale = "en" | "es";
+export type { Locale };
 
 type Translations = Record<string, Record<Locale, string>>;
 
 type LanguageContextValue = {
     locale: Locale;
     setLocale: (l: Locale) => void;
+    /** Public path of the current page in the given locale. */
+    pathIn: (l: Locale) => string;
     t: (dict: Translations, key: string) => string;
     showPopup: boolean;
     dismissPopup: () => void;
@@ -25,40 +29,62 @@ const STORAGE_KEY = "adt_lang";
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-    const [locale, setLocaleState] = useState<Locale>("en");
+/**
+ * The locale is owned by the URL (/about = English, /es/about = Spanish),
+ * so it is passed in from the server layout. Switching language navigates
+ * to the equivalent URL instead of mutating client state.
+ */
+export function LanguageProvider({
+    locale,
+    children,
+}: {
+    locale: Locale;
+    children: ReactNode;
+}) {
+    const router = useRouter();
+    const pathname = usePathname();
     const [showPopup, setShowPopup] = useState(false);
-    const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
-        try {
-            const saved = localStorage.getItem(STORAGE_KEY) as Locale | null;
-            if (saved && (saved === "en" || saved === "es")) {
-                setLocaleState(saved);
-            } else {
-                // First visit — show popup after intro animation
-                const timer = setTimeout(() => setShowPopup(true), 2200);
-                return () => clearTimeout(timer);
+    const pathIn = useCallback(
+        (l: Locale) => localizedPath(stripLocale(pathname ?? "/"), l),
+        [pathname]
+    );
+
+    const setLocale = useCallback(
+        (l: Locale) => {
+            try {
+                localStorage.setItem(STORAGE_KEY, l);
+            } catch {
+                // localStorage not available
             }
-        } catch {
-            // localStorage not available
-        }
-    }, []);
+            setShowPopup(false);
+            if (l !== locale) router.push(pathIn(l));
+        },
+        [locale, pathIn, router]
+    );
 
-    const setLocale = useCallback((l: Locale) => {
-        setLocaleState(l);
+    // Offer the language choice once, on a visitor's first visit only.
+    useEffect(() => {
+        let saved: string | null = null;
         try {
-            localStorage.setItem(STORAGE_KEY, l);
+            saved = localStorage.getItem(STORAGE_KEY);
         } catch {
-            // ignore
+            // localStorage not available — don't nag
+            return;
         }
-        document.documentElement.lang = l;
+        if (saved === "en" || saved === "es") return;
+        const timer = setTimeout(() => setShowPopup(true), 2200);
+        return () => clearTimeout(timer);
     }, []);
 
     const dismissPopup = useCallback(() => {
         setShowPopup(false);
-    }, []);
+        try {
+            localStorage.setItem(STORAGE_KEY, locale);
+        } catch {
+            // ignore
+        }
+    }, [locale]);
 
     const t = useCallback(
         (dict: Translations, key: string): string => {
@@ -67,16 +93,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         [locale]
     );
 
-    // Update html lang on mount
-    useEffect(() => {
-        if (mounted) {
-            document.documentElement.lang = locale;
-        }
-    }, [locale, mounted]);
-
     return (
         <LanguageContext.Provider
-            value={{ locale, setLocale, t, showPopup, dismissPopup }}
+            value={{ locale, setLocale, pathIn, t, showPopup, dismissPopup }}
         >
             {children}
         </LanguageContext.Provider>

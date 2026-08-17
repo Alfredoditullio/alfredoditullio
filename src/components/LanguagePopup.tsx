@@ -8,10 +8,8 @@ export default function LanguagePopup() {
 
     if (!showPopup) return null;
 
-    const choose = (l: Locale) => {
-        setLocale(l);
-        dismissPopup();
-    };
+    // setLocale persists the choice, closes the popup and navigates.
+    const choose = (l: Locale) => setLocale(l);
 
     return (
         <div className="lang-popup" role="dialog" aria-modal="true">

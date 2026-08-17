@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, MouseEvent } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 
 type Chip = { icon: string; label: string };
 

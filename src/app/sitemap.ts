@@ -1,20 +1,23 @@
 import type { MetadataRoute } from "next";
-
-const BASE = "https://www.alfredoditullio.com";
+import { locales, localizedUrl, routes } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
-        { url: BASE, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
-        { url: `${BASE}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-        { url: `${BASE}/projects`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-        { url: `${BASE}/projects/dentalcore`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-        { url: `${BASE}/projects/odontolatam`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-        { url: `${BASE}/projects/fgcapital`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-        { url: `${BASE}/books`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-        { url: `${BASE}/books/inteligencia-artificial-para-odontologos`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-        { url: `${BASE}/contact`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.7 },
-        { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
-        { url: `${BASE}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
-        { url: `${BASE}/cookies`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
-    ];
+    const lastModified = new Date();
+
+    // Every route is listed once per locale, each entry declaring the full
+    // set of language alternates so search engines pair them correctly.
+    return routes.flatMap(({ path, priority, changeFrequency }) =>
+        locales.map((locale) => ({
+            url: localizedUrl(path, locale),
+            lastModified,
+            changeFrequency,
+            priority,
+            alternates: {
+                languages: {
+                    en: localizedUrl(path, "en"),
+                    "es-AR": localizedUrl(path, "es"),
+                },
+            },
+        }))
+    );
 }

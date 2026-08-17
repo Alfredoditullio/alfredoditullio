@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/i18n/context";
 import { cookieBanner as texts } from "@/i18n/translations/common";
