@@ -247,7 +247,7 @@ export default function DentalCore() {
                             <a href="https://zenodo.org/records/20821942" target="_blank" rel="noreferrer" className="btn btn--primary" style={{ fontSize: "0.85rem" }}>
                                 {l === "es" ? "Leer Paper" : "Read Paper"} <i className="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
-                            <a href="https://orcid.org/0009-0008-7398-9549" target="_blank" rel="noreferrer" className="btn" style={{ fontSize: "0.85rem" }}>
+                            <a href="https://orcid.org/0009-0008-7398-9549" target="_blank" rel="me noopener noreferrer" className="btn" style={{ fontSize: "0.85rem" }}>
                                 ORCID Profile <i className="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         </div>

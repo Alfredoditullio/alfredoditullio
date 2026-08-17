@@ -33,7 +33,6 @@ export const aboutAuthority: Dict = {
         en: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.20821942 · CC BY 4.0",
         es: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.20821942 · CC BY 4.0",
     },
-    orcid: { en: "ORCID: 0009-0008-7398-9549", es: "ORCID: 0009-0008-7398-9549" },
 };
 
 export const aboutByline: Dict = {

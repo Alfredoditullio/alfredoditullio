@@ -78,9 +78,28 @@ export default function About() {
                                 {t(aboutAuthority, "researchTitle")}
                             </h3>
                             <p className="research-card__meta">
-                                {t(aboutAuthority, "researchMeta")} ·{" "}
-                                {t(aboutAuthority, "orcid")}
+                                {t(aboutAuthority, "researchMeta")}
                             </p>
+                        </a>
+
+                        {/* Official ORCID badge. rel="me" ties this page to the
+                            ORCID record, which is the identity anchor shared
+                            with dentalcore.app. */}
+                        <a
+                            id="cy-effective-orcid-url"
+                            className="orcid-badge"
+                            href="https://orcid.org/0009-0008-7398-9549"
+                            target="orcid.widget"
+                            rel="me noopener noreferrer"
+                        >
+                            <img
+                                src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                                alt="ORCID iD icon"
+                                width={16}
+                                height={16}
+                                className="orcid-badge__icon"
+                            />
+                            https://orcid.org/0009-0008-7398-9549
                         </a>
                     </Reveal>
 
