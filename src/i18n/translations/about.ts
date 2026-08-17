@@ -11,6 +11,31 @@ export const aboutHero: Dict = {
     },
 };
 
+export const aboutAuthority: Dict = {
+    credPre: {
+        en: "I'm a licensed dentist (M.N. 40.973) currently completing a Master's in Artificial Intelligence applied to Dentistry, and a member of the ",
+        es: "Soy odontólogo matriculado (M.N. 40.973), actualmente cursando una Maestría en Inteligencia Artificial aplicada a la Odontología, y miembro de la ",
+    },
+    rcaa: {
+        en: "Red de Científicos Argentinos en Australia (RCAA)",
+        es: "Red de Científicos Argentinos en Australia (RCAA)",
+    },
+    credPost: {
+        en: ". My research on clinical decision support in dentistry is published and openly available:",
+        es: ". Mi investigación sobre apoyo a la decisión clínica en odontología está publicada y disponible en abierto:",
+    },
+    researchLabel: { en: "Published research", es: "Investigación publicada" },
+    researchTitle: {
+        en: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
+        es: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
+    },
+    researchMeta: {
+        en: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.20821942 · CC BY 4.0",
+        es: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.20821942 · CC BY 4.0",
+    },
+    orcid: { en: "ORCID: 0009-0008-7398-9549", es: "ORCID: 0009-0008-7398-9549" },
+};
+
 export const aboutByline: Dict = {
     authorPre: { en: "I'm the author of ", es: "Soy autor de " },
     book: {

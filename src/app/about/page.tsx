@@ -6,7 +6,7 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 import { useLanguage } from "@/i18n/context";
 import Link from "next/link";
 import {
-    aboutHero, aboutByline, aboutEducation, aboutExperience, aboutOtc, aboutMeta,
+    aboutHero, aboutByline, aboutAuthority, aboutEducation, aboutExperience, aboutOtc, aboutMeta,
     educationItems, experienceItems, otcItems,
 } from "@/i18n/translations/about";
 
@@ -49,6 +49,39 @@ export default function About() {
                             </Link>
                             {t(aboutByline, "founderPost")}
                         </p>
+                    </Reveal>
+
+                    <Reveal delay={2}>
+                        <p className="about__byline">
+                            {t(aboutAuthority, "credPre")}
+                            <a
+                                href="https://www.rcaa.org.au/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="about__byline-link"
+                            >
+                                {t(aboutAuthority, "rcaa")}
+                            </a>
+                            {t(aboutAuthority, "credPost")}
+                        </p>
+                        <a
+                            href="https://zenodo.org/records/20821942"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="research-card"
+                        >
+                            <span className="research-card__label">
+                                <i className="fa-solid fa-flask"></i>{" "}
+                                {t(aboutAuthority, "researchLabel")}
+                            </span>
+                            <h3 className="research-card__title">
+                                {t(aboutAuthority, "researchTitle")}
+                            </h3>
+                            <p className="research-card__meta">
+                                {t(aboutAuthority, "researchMeta")} ·{" "}
+                                {t(aboutAuthority, "orcid")}
+                            </p>
+                        </a>
                     </Reveal>
 
                     <section className="section">

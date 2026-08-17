@@ -62,6 +62,17 @@ export const featured: Dict = {
         es: "Gestión de pacientes, odontograma digital, periodontograma, planes de tratamiento, finanzas y portal del paciente — hecho con React 19, TypeScript y Supabase, con asistencia de IA selectiva donde agrega valor clínico real.",
     },
     readMore: { en: "Read more", es: "Leer más" },
+    btnVisit: { en: "Visit dentalcore.app", es: "Visitar dentalcore.app" },
+    btnPaper: { en: "Read the published research", es: "Leer la investigación publicada" },
+    researchLabel: { en: "Published research", es: "Investigación publicada" },
+    researchTitle: {
+        en: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
+        es: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
+    },
+    researchMeta: {
+        en: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.20821942 · CC BY 4.0",
+        es: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.20821942 · CC BY 4.0",
+    },
 };
 
 export const press: Dict = {

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         template: "%s | Alfredo Di Tullio",
     },
     description:
-        "Dentist, full-stack developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry. Author of two books on philosophy and travel.",
+        "Dentist (M.N. 40.973), researcher and full-stack developer. Founder and creator of DentalCore, the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Author of «Inteligencia Artificial para Odontólogos» and two books on philosophy and travel.",
     metadataBase: new URL(BASE),
     alternates: {
         canonical: BASE,
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         locale: "en_US",
         url: BASE,
         siteName: "Alfredo Di Tullio",
-        title: "Alfredo Di Tullio — Dentist, Developer & Writer",
+        title: "Alfredo Di Tullio — Dentist, Researcher & Developer",
         description:
-            "Dentist, full-stack developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry.",
+            "Dentist, researcher and full-stack developer. Founder of DentalCore, the first dental CDSS in Latin America. Author of «Inteligencia Artificial para Odontólogos».",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Alfredo Di Tullio — Dentist, Developer & Writer",
+        title: "Alfredo Di Tullio — Dentist, Researcher & Developer",
         description:
-            "Dentist, full-stack developer and writer. Building DentalCore, a comprehensive clinical platform for dentistry.",
+            "Dentist, researcher and full-stack developer. Founder of DentalCore, the first dental CDSS in Latin America. Author of «Inteligencia Artificial para Odontólogos».",
     },
     robots: {
         index: true,
@@ -75,16 +75,23 @@ const jsonLd = {
             name: "Alfredo Di Tullio",
             url: BASE,
             email: "info@alfredoditullio.com",
-            jobTitle: ["Dentist", "Full-Stack Developer", "Writer"],
+            jobTitle: ["Dentist", "Researcher", "Full-Stack Developer", "Writer"],
             description:
-                "Argentinian dentist (UNLP), full-stack developer building DentalCore, philosophy graduate, tourism technician, author of two books, former Michelin-star cook.",
+                "Argentinian dentist (UNLP, M.N. 40.973) and researcher in artificial intelligence applied to dentistry. Founder and creator of DentalCore, the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Author of «Inteligencia Artificial para Odontólogos». Philosophy graduate, tourism technician, former Michelin-star cook.",
             alumniOf: [
                 { "@type": "EducationalOrganization", name: "Universidad Nacional de La Plata" },
                 { "@type": "EducationalOrganization", name: "Universidad TECH" },
                 { "@type": "EducationalOrganization", name: "UNTREF" },
             ],
             knowsAbout: [
+                "Artificial intelligence in dentistry",
+                "Clinical decision support systems (CDSS)",
+                "Deep learning",
+                "Machine learning",
+                "Health data interoperability (HL7 FHIR)",
+                "Dental informatics",
                 "Dentistry",
+                "Oral pathology",
                 "Full-Stack Development",
                 "React",
                 "TypeScript",
@@ -94,13 +101,38 @@ const jsonLd = {
                 "Gastronomy",
                 "Writing",
             ],
+            memberOf: {
+                "@type": "Organization",
+                name: "Red de Científicos Argentinos en Australia (RCAA)",
+                alternateName: "Network of Argentine Scientists in Australia",
+            },
+            hasCredential: [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: "Professional license",
+                    name: "Matrícula Nacional de Odontólogo — M.N. 40.973",
+                    recognizedBy: {
+                        "@type": "Organization",
+                        name: "Ministerio de Salud, Argentina",
+                    },
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: "Master's degree (in progress)",
+                    name: "Master's in Artificial Intelligence applied to Dentistry",
+                },
+            ],
+            worksFor: { "@id": "https://dentalcore.app/#organization" },
+            founder: { "@id": "https://dentalcore.app/#organization" },
             sameAs: [
+                "https://dentalcore.app",
+                "https://dentalcore.app/about#alfredo-di-tullio",
+                "https://orcid.org/0009-0008-7398-9549",
+                "https://zenodo.org/records/20821942",
                 "https://www.linkedin.com/in/alfredo-di-tullio/",
                 "https://www.instagram.com/alfred.ditu",
                 "https://www.facebook.com/alfreditullio",
                 "https://github.com/Alfredoditullio",
-                "https://orcid.org/0009-0008-7398-9549",
-                "https://zenodo.org/records/20821942",
             ],
             identifier: {
                 "@type": "PropertyValue",
@@ -110,10 +142,37 @@ const jsonLd = {
             },
         },
         {
+            "@type": "Organization",
+            "@id": "https://dentalcore.app/#organization",
+            name: "DentalCore",
+            url: "https://dentalcore.app",
+            description:
+                "The first Clinical Decision Support System (CDSS) for dentistry in Latin America.",
+            founder: { "@id": `${BASE}/#person` },
+        },
+        {
+            "@type": "Book",
+            "@id": `${BASE}/books/inteligencia-artificial-para-odontologos#book`,
+            name: "Inteligencia Artificial para Odontólogos",
+            alternateName:
+                "Inteligencia artificial para odontólogos: una guía para comprender, usar y cuestionar la IA en el consultorio",
+            author: { "@id": `${BASE}/#person` },
+            about: "Artificial intelligence in dentistry",
+            url: `${BASE}/books/inteligencia-artificial-para-odontologos`,
+            inLanguage: "es",
+            datePublished: "2026",
+            description:
+                "A guide for dentists to understand, use and question artificial intelligence in the dental practice — written by a dentist, for dentists.",
+            sameAs:
+                "https://www.amazon.com.au/Inteligencia-Artificial-para-odont%C3%B3logos-inteligencia/dp/B0HD5T5V8N/",
+        },
+        {
             "@type": "ScholarlyArticle",
             "@id": "https://doi.org/10.5281/zenodo.20821942",
             name: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
             author: { "@id": `${BASE}/#person` },
+            about: { "@id": "https://dentalcore.app/#organization" },
+            mentions: { "@id": "https://dentalcore.app/#organization" },
             datePublished: "2026-06-23",
             description:
                 "A rule-based clinical decision support system for dentistry in resource-limited Latin American settings, featuring three inference engines for treatment planning, medical-risk assessment, and drug interaction checking.",

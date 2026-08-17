@@ -53,11 +53,17 @@ const jsonLd = {
     },
     author: {
         "@type": "Person",
+        "@id": "https://www.alfredoditullio.com/#person",
         name: "Alfredo Di Tullio",
-        jobTitle: "Dentist, CEO & Founder",
+        jobTitle: "Dentist, Researcher, CEO & Founder",
         url: "https://www.alfredoditullio.com",
+        description:
+            "Dentist (M.N. 40.973) and researcher in artificial intelligence applied to dentistry, currently completing a Master's in the field. Member of the Red de Científicos Argentinos en Australia (RCAA). Founder and creator of DentalCore.",
         sameAs: [
+            "https://dentalcore.app",
+            "https://dentalcore.app/about#alfredo-di-tullio",
             "https://orcid.org/0009-0008-7398-9549",
+            "https://zenodo.org/records/20821942",
             "https://www.linkedin.com/in/alfredo-di-tullio/",
         ],
         identifier: {

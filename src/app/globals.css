@@ -5035,3 +5035,47 @@ a:hover {
         width: 220px;
     }
 }
+
+/* ---------- Published research card (authority signal) ---------- */
+.research-card {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 1.75rem;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-lg);
+    background: var(--bg-subtle);
+    text-decoration: none;
+    transition: all 300ms var(--ease);
+}
+
+.research-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-border);
+    border-left-color: var(--accent);
+    box-shadow: var(--shadow-lg);
+}
+
+.research-card__label {
+    display: inline-block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+}
+
+.research-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--fg);
+    margin-bottom: 0.6rem;
+}
+
+.research-card__meta {
+    font-size: 0.8125rem;
+    color: var(--fg-muted);
+    letter-spacing: 0.01em;
+}

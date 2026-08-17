@@ -147,6 +147,49 @@ export default function Home() {
                         </span>
                     </Link>
                 </Reveal>
+
+                <Reveal delay={2}>
+                    <div className="hero__actions" style={{ marginTop: "1.5rem" }}>
+                        <a
+                            href="https://dentalcore.app"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn btn--primary"
+                        >
+                            {t(featured, "btnVisit")}{" "}
+                            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a
+                            href="https://zenodo.org/records/20821942"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn"
+                        >
+                            {t(featured, "btnPaper")}
+                        </a>
+                    </div>
+                </Reveal>
+
+                {/* Published research — the strongest authority signal, kept visible */}
+                <Reveal delay={3}>
+                    <a
+                        href="https://zenodo.org/records/20821942"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="research-card"
+                    >
+                        <span className="research-card__label">
+                            <i className="fa-solid fa-flask"></i>{" "}
+                            {t(featured, "researchLabel")}
+                        </span>
+                        <h3 className="research-card__title">
+                            {t(featured, "researchTitle")}
+                        </h3>
+                        <p className="research-card__meta">
+                            {t(featured, "researchMeta")}
+                        </p>
+                    </a>
+                </Reveal>
             </section>
 
             <Reveal as="hr" className="divider" />
