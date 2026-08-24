@@ -4,11 +4,11 @@ import { alternatesFor, isLocale, localizedUrl } from "@/i18n/routing";
 const base: Metadata = {
     title: "About",
     description:
-        "Alfredo Di Tullio — Argentinian dentist, full-stack developer, philosophy graduate, tourism technician, author of two books, and former Michelin-star cook. Based in Barcelona.",
+        "Alfredo Di Tullio — Argentinian dentist (M.N. 40.973), researcher and full-stack developer based in Melbourne, Australia. Founder and creator of DentalCore, author of «Inteligencia Artificial para Odontólogos», philosophy graduate and former Michelin-star cook.",
     openGraph: {
         title: "About Alfredo Di Tullio",
         description:
-            "Dentist, developer, writer — a multidisciplinary journey from Buenos Aires to Barcelona.",
+            "Dentist, researcher and developer — the multidisciplinary path behind DentalCore and «Inteligencia Artificial para Odontólogos».",
         url: "https://www.alfredoditullio.com/about",
     },
 };

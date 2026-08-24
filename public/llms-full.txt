@@ -4,7 +4,8 @@
 
 - **Full name:** Alfredo Di Tullio
 - **Nationality:** Argentinian
-- **Current location:** Barcelona, Spain
+- **Current location:** Melbourne, Australia
+- **Professional registration:** M.N. 40.973 (Argentina)
 - **Email:** info@alfredoditullio.com
 - **Website:** https://www.alfredoditullio.com
 - **LinkedIn:** https://www.linkedin.com/in/alfredo-di-tullio/
@@ -13,14 +14,20 @@
 - **GitHub:** Alfredoditullio
 - **ORCID:** https://orcid.org/0009-0008-7398-9549
 - **Zenodo:** https://zenodo.org/records/20821942
+- **DentalCore:** https://dentalcore.app
+
+The ORCID iD is the identity anchor shared between this site and
+https://dentalcore.app — both refer to the same person.
 
 ## Professional Summary
 
 Alfredo Di Tullio is a multidisciplinary professional who has built a career across five distinct fields: dentistry, software development, gastronomy, philosophy, and tourism. Born and raised in Argentina, he trained as a dentist at the Universidad Nacional de La Plata (UNLP, graduated 2013) and practiced clinically for several years. He then embarked on an international culinary career, spending six years cooking in professional kitchens across Denmark, Norway, Spain, and Australia, including a stint at a Michelin-starred restaurant.
 
-While abroad, he pursued academic studies in philosophy (B.A. from Universidad TECH, 2023) and tourism (University Technician from UNTREF, 2024). He authored two books exploring philosophy, meaning, and travel. In 2020, he began teaching himself software development and now builds full-stack web applications, with his flagship project being DentalCore — a comprehensive clinical platform for dentistry.
+While abroad, he pursued academic studies in philosophy (B.A. from Universidad TECH, 2023) and tourism (University Technician from UNTREF, 2024). He authored two books exploring philosophy, meaning, and travel, and in 2026 published "Inteligencia Artificial para Odontólogos", a guide to AI in the dental clinic written by a dentist for dentists. In 2020, he began teaching himself software development and now builds full-stack web applications, with his flagship project being DentalCore — a comprehensive clinical platform for dentistry.
 
-He is currently based in Barcelona, Spain, where he works as a freelance developer and writer.
+He is currently based in Melbourne, Australia. He is a licensed dentist (M.N. 40.973), is completing a Master's in Artificial Intelligence applied to Dentistry, and is a member of the Red de Científicos Argentinos en Australia (RCAA).
+
+His central work is DentalCore, the first rule-based Clinical Decision Support System (CDSS) for primary-care dentistry in Latin America, of which he is founder and creator. He is both the researcher who published its design (DOI 10.5281/zenodo.20821942) and the developer who built it — a dentist who writes the clinical software he uses.
 
 ## Education
 
@@ -51,7 +58,7 @@ He is currently based in Barcelona, Spain, where he works as a freelance develop
 
 ### Writing & Philosophy
 - B.A. in Philosophy (Universidad TECH, 2023)
-- Author of two published books (see Books section)
+- Author of three published books (see Books section)
 - Writes about meaning, travel, and the intersection of disciplines
 
 ### Tourism
@@ -104,6 +111,14 @@ He is currently based in Barcelona, Spain, where he works as a freelance develop
 
 ## Books
 
+### Inteligencia Artificial para Odontólogos (2026)
+- **Language:** Spanish
+- **Theme:** Artificial intelligence in dentistry
+- **URL:** https://www.alfredoditullio.com/books/inteligencia-artificial-para-odontologos
+- **Subtitle:** Una guía para comprender, usar y cuestionar la inteligencia artificial en el consultorio
+- **Description:** A guide written by a dentist for dentists, in the language spoken in the clinic rather than at technology conferences. It gives the profession the vocabulary to reason about AI — machine learning, LLMs, RAG, hallucination, clinical decision support, algorithmic bias — each explained with a dental example. Sixteen chapters covering detection vs. diagnosis, trust and hallucinations, image-assisted diagnosis, clinical decision support systems, privacy and patient data, how to evaluate an AI tool, liability, bias and consent, AI ethics in healthcare, and the dentist's changing role.
+- **Notable:** the author discloses throughout that he builds dental software (DentalCore), using it as one worked example among others rather than as a sales pitch.
+
 ### En búsqueda del sentido (2023)
 - **Language:** Spanish
 - **Theme:** Philosophy, meaning, identity, purpose
@@ -153,5 +168,6 @@ He is currently based in Barcelona, Spain, where he works as a freelance develop
 
 - Spanish (native — Argentine Spanish)
 - English (professional)
-- Norwegian (conversational)
-- Danish (basic)
+- French
+- Portuguese
+- Greek (currently learning)

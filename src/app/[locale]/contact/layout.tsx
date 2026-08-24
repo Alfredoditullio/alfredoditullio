@@ -4,11 +4,11 @@ import { alternatesFor, isLocale, localizedUrl } from "@/i18n/routing";
 const base: Metadata = {
     title: "Contact",
     description:
-        "Get in touch with Alfredo Di Tullio — available for freelance web development, dental software consulting, and writing collaborations. Based in Barcelona, Spain.",
+        "Get in touch with Alfredo Di Tullio — available for freelance web development, dental software consulting, and writing collaborations. Based in Melbourne, Australia.",
     openGraph: {
         title: "Contact Alfredo Di Tullio",
         description:
-            "Available for freelance development, consulting and collaborations. Based in Barcelona.",
+            "Available for freelance development, consulting and collaborations. Based in Melbourne, Australia.",
         url: "https://www.alfredoditullio.com/contact",
     },
 };
