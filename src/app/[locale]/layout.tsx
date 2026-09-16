@@ -123,11 +123,23 @@ const jsonLd = {
                 "Gastronomy",
                 "Writing",
             ],
-            memberOf: {
-                "@type": "Organization",
-                name: "Red de Científicos Argentinos en Australia (RCAA)",
-                alternateName: "Network of Argentine Scientists in Australia",
-            },
+            memberOf: [
+                {
+                    "@type": "Organization",
+                    name: "Sociedad Argentina de Investigación Odontológica (SAIO)",
+                    alternateName: "Argentine Society for Dental Research",
+                },
+                {
+                    "@type": "Organization",
+                    name: "American Academy of Artificial Intelligence in Dentistry (AAAI-D)",
+                    alternateName: "Academia Americana de Inteligencia Artificial en Odontología",
+                },
+                {
+                    "@type": "Organization",
+                    name: "Red de Científicos Argentinos en Australia (RCAA)",
+                    alternateName: "Network of Argentine Scientists in Australia",
+                },
+            ],
             hasCredential: [
                 {
                     "@type": "EducationalOccupationalCredential",
@@ -142,6 +154,25 @@ const jsonLd = {
                     "@type": "EducationalOccupationalCredential",
                     credentialCategory: "Master's degree (in progress)",
                     name: "Master's in Artificial Intelligence applied to Dentistry",
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: "Certificate",
+                    name: "Artificial Intelligence in Health — online coursework",
+                    recognizedBy: {
+                        "@type": "CollegeOrUniversity",
+                        name: "Stanford University",
+                        alternateName: "Stanford Online",
+                    },
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: "Certificate",
+                    name: "Artificial Intelligence in Health — online coursework",
+                    recognizedBy: {
+                        "@type": "CollegeOrUniversity",
+                        name: "Johns Hopkins University",
+                    },
                 },
             ],
             worksFor: { "@id": "https://dentalcore.app/#organization" },

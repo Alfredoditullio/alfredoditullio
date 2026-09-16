@@ -12,17 +12,37 @@ export const aboutHero: Dict = {
 };
 
 export const aboutAuthority: Dict = {
-    credPre: {
-        en: "I'm a licensed dentist (M.N. 40.973) currently completing a Master's in Artificial Intelligence applied to Dentistry, and a member of the ",
-        es: "Soy odontólogo matriculado (M.N. 40.973), actualmente cursando una Maestría en Inteligencia Artificial aplicada a la Odontología, y miembro de la ",
+    cred: {
+        en: "I'm a licensed dentist (M.N. 40.973) currently completing a Master's in Artificial Intelligence applied to Dentistry. My research on clinical decision support in dentistry is published and openly available:",
+        es: "Soy odontólogo matriculado (M.N. 40.973), actualmente cursando una Maestría en Inteligencia Artificial aplicada a la Odontología. Mi investigación sobre apoyo a la decisión clínica en odontología está publicada y disponible en abierto:",
     },
-    rcaa: {
+    membershipsLabel: {
+        en: "Memberships",
+        es: "Membresías",
+    },
+    trainingLabel: {
+        en: "Continuing education in AI for health",
+        es: "Formación continua en IA para la salud",
+    },
+    saio: {
+        en: "Sociedad Argentina de Investigación Odontológica (SAIO)",
+        es: "Sociedad Argentina de Investigación Odontológica (SAIO)",
+    },
+    aaaid: {
+        en: "American Academy of Artificial Intelligence in Dentistry (AAAI-D)",
+        es: "Academia Americana de Inteligencia Artificial en Odontología (AAAI-D)",
+    },
+    rcaaFull: {
         en: "Red de Científicos Argentinos en Australia (RCAA)",
         es: "Red de Científicos Argentinos en Australia (RCAA)",
     },
-    credPost: {
-        en: ". My research on clinical decision support in dentistry is published and openly available:",
-        es: ". Mi investigación sobre apoyo a la decisión clínica en odontología está publicada y disponible en abierto:",
+    stanford: {
+        en: "AI in Health · Stanford Online",
+        es: "IA en Salud · Stanford Online",
+    },
+    hopkins: {
+        en: "AI in Health · Johns Hopkins University (online)",
+        es: "IA en Salud · Johns Hopkins University (online)",
     },
     researchLabel: { en: "Published research", es: "Investigación publicada" },
     researchTitle: {

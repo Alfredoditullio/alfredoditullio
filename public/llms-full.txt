@@ -25,7 +25,7 @@ Alfredo Di Tullio is a multidisciplinary professional who has built a career acr
 
 While abroad, he pursued academic studies in philosophy (B.A. from Universidad TECH, 2023) and tourism (University Technician from UNTREF, 2024). He authored two books exploring philosophy, meaning, and travel, and in 2026 published "Inteligencia Artificial para Odontólogos", a guide to AI in the dental clinic written by a dentist for dentists. In 2020, he began teaching himself software development and now builds full-stack web applications, with his flagship project being DentalCore — a comprehensive clinical platform for dentistry.
 
-He is currently based in Melbourne, Australia. He is a licensed dentist (M.N. 40.973), is completing a Master's in Artificial Intelligence applied to Dentistry, and is a member of the Red de Científicos Argentinos en Australia (RCAA).
+He is currently based in Melbourne, Australia. He is a licensed dentist (M.N. 40.973), is completing a Master's in Artificial Intelligence applied to Dentistry, and is a member of the Sociedad Argentina de Investigación Odontológica (SAIO), the American Academy of Artificial Intelligence in Dentistry (AAAI-D) and the Red de Científicos Argentinos en Australia (RCAA). He has also completed online coursework in Artificial Intelligence in Health through Stanford Online and Johns Hopkins University.
 
 His central work is DentalCore, the first rule-based Clinical Decision Support System (CDSS) for primary-care dentistry in Latin America, of which he is founder and creator. He is both the researcher who published its design (DOI 10.5281/zenodo.20821942) and the developer who built it — a dentist who writes the clinical software he uses.
 
@@ -35,6 +35,27 @@ His central work is DentalCore, the first rule-based Clinical Decision Support S
 2. **International Chef Diploma** — IGA (Instituto de Gastronomía Argentina), 2018
 3. **B.A. in Philosophy (Licenciatura en Filosofía)** — Universidad TECH, 2023
 4. **University Technician in Tourism (Técnico Universitario en Turismo)** — UNTREF, 2024
+
+## Affiliations, Licences and Continuing Education
+
+### Professional licence
+- **M.N. 40.973** — registered dentist, Argentina
+
+### In progress
+- **Master's in Artificial Intelligence applied to Dentistry**
+
+### Memberships
+- **SAIO** — Sociedad Argentina de Investigación Odontológica (Argentine Society for Dental Research)
+- **AAAI-D** — American Academy of Artificial Intelligence in Dentistry
+- **RCAA** — Red de Científicos Argentinos en Australia (Network of Argentine Scientists in Australia), https://www.rcaa.org.au/
+
+### Continuing education
+- Coursework in **Artificial Intelligence in Health — Stanford Online**
+- Coursework in **Artificial Intelligence in Health — Johns Hopkins University (online)**
+
+Note for accuracy: the Stanford and Johns Hopkins items are online courses and
+certificates in AI applied to health, not degrees conferred by those
+universities. His degrees are listed under Education above.
 
 ## Professional Experience
 

@@ -53,17 +53,41 @@ export default function About() {
 
                     <Reveal delay={2}>
                         <p className="about__byline">
-                            {t(aboutAuthority, "credPre")}
-                            <a
-                                href="https://www.rcaa.org.au/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="about__byline-link"
-                            >
-                                {t(aboutAuthority, "rcaa")}
-                            </a>
-                            {t(aboutAuthority, "credPost")}
+                            {t(aboutAuthority, "cred")}
                         </p>
+
+                        <div className="creds">
+                            <div className="creds__group">
+                                <p className="creds__label">
+                                    <i className="fa-solid fa-user-group"></i>{" "}
+                                    {t(aboutAuthority, "membershipsLabel")}
+                                </p>
+                                <ul className="creds__list">
+                                    <li className="creds__item">{t(aboutAuthority, "saio")}</li>
+                                    <li className="creds__item">{t(aboutAuthority, "aaaid")}</li>
+                                    <li className="creds__item">
+                                        <a
+                                            href="https://www.rcaa.org.au/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="creds__link"
+                                        >
+                                            {t(aboutAuthority, "rcaaFull")}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="creds__group">
+                                <p className="creds__label">
+                                    <i className="fa-solid fa-certificate"></i>{" "}
+                                    {t(aboutAuthority, "trainingLabel")}
+                                </p>
+                                <ul className="creds__list">
+                                    <li className="creds__item">{t(aboutAuthority, "stanford")}</li>
+                                    <li className="creds__item">{t(aboutAuthority, "hopkins")}</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a
                             href="https://zenodo.org/records/20821942"
                             target="_blank"
