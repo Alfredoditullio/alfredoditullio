@@ -46,7 +46,7 @@ export default function DentalCore() {
                 <h1 className="project-hero__title"><span className="gradient-text">DentalCore</span></h1>
                 <p className="project-hero__summary">{t(dcHero, "summary")}</p>
                 <div className="hero__actions">
-                    <a href="https://www.dentalcore.app/" target="_blank" rel="noreferrer" className="btn btn--primary">
+                    <a href="https://dentalcore.app" target="_blank" rel="noreferrer" className="btn btn--primary">
                         {t(dcHero, "btnLive")} <i className="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                     <a href="https://dentalcore.app/blog/dentalcore-para-consultorios-chicos" target="_blank" rel="noreferrer" className="btn">
@@ -116,18 +116,9 @@ export default function DentalCore() {
                         </ul>
                     </div>
                 </Reveal>
-                <Reveal delay={3}>
-                    <div className="callout">
-                        <h3 className="callout__title">
-                            <i className="fa-solid fa-globe-americas"></i>{" "}
-                            {t(dcPathology, "epidemiologyTitle")}
-                        </h3>
-                        <p>{t(dcPathology, "epidemiologyText")}</p>
-                    </div>
-                </Reveal>
             </section>
 
-            {/* 7 clinical engines */}
+            {/* 17 clinical engines */}
             <section className="section">
                 <Reveal>
                     <p className="section__eyebrow">{t(dcEngines, "eyebrow")}</p>

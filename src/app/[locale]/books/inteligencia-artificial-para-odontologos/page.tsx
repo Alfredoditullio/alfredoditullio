@@ -116,7 +116,7 @@ export default function IaOdontologos() {
                     <p className="article__p">
                         {t(tx, "s5p2")}{" "}
                         <a
-                            href="https://www.dentalcore.app/"
+                            href="https://dentalcore.app"
                             target="_blank"
                             rel="noreferrer"
                             className="article__link"

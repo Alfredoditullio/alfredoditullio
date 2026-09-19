@@ -4,7 +4,7 @@ import { alternatesFor, isLocale, localizedUrl } from "@/i18n/routing";
 const base: Metadata = {
     title: "DentalCore — Clinical Decision Support System for Dentistry in Latin America",
     description:
-        "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Features AI-powered oral pathology diagnostics (100 coded pathologies), digital odontogram with 47 finding codes, 7 clinical engines, treatment planning, pharmacological interaction checker, and practice management. Created by dentist and developer Alfredo Di Tullio. Published research: DOI 10.5281/zenodo.20821942.",
+        "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Features AI-powered oral pathology diagnostics, digital odontogram with 47 finding codes, 17 clinical engines, treatment planning, pharmacological interaction checker, and practice management. Created by dentist and developer Alfredo Di Tullio. Published research: DOI 10.5281/zenodo.20821942.",
     openGraph: {
         title: "DentalCore — First Dental CDSS for Latin America",
         description:
@@ -56,9 +56,9 @@ const jsonLd = {
     applicationCategory: "HealthApplication",
     applicationSubCategory: "Clinical Decision Support System",
     operatingSystem: "Web",
-    url: "https://www.dentalcore.app",
+    url: "https://dentalcore.app",
     description:
-        "First Clinical Decision Support System (CDSS) for dentistry in Latin America. World's first dental software with integrated oral pathology diagnostic motor. 7 clinical engines, 100 coded oral pathologies, free forever for early oral cancer detection.",
+        "First Clinical Decision Support System (CDSS) for dentistry in Latin America. World's first dental software with integrated oral pathology diagnostic motor. 17 clinical engines, coded oral pathologies, free forever for early oral cancer detection.",
     keywords:
         "software dental, CDSS dental, sistema apoyo decision clinica odontologia, motor clinico, diagnostico patologia oral, cancer oral, deteccion temprana, software dental Argentina, software dental Mexico, software dental Latinoamerica, dental clinical decision support, dental practice management",
     offers: {
@@ -103,7 +103,7 @@ const jsonLd = {
     inLanguage: ["es", "en"],
     featureList: [
         "First dental Clinical Decision Support System (CDSS)",
-        "Oral pathology diagnostic motor — 100 coded pathologies",
+        "Oral pathology diagnostic motor — coded pathologies",
         "Free forever oral cancer early detection module",
         "Medical interconsultation motor (18 conditions × 9 procedures)",
         "Pharmacological interaction checker",
@@ -113,7 +113,6 @@ const jsonLd = {
         "Voice-to-text clinical notes in Spanish",
         "WhatsApp bot with 9 automations",
         "MercadoPago integrated payments",
-        "Real-time epidemiological surveillance network for Latin America",
     ],
 };
 
@@ -135,8 +134,8 @@ export default function DentalCoreLayout({ children }: { children: React.ReactNo
                     <h2>What is DentalCore?</h2>
                     <p>
                         DentalCore is a comprehensive clinical platform that goes beyond traditional practice
-                        management software. It features 7 clinical engines that actively assist dentists
-                        during patient care: an oral pathology diagnostic motor with 100 coded pathologies
+                        management software. It features 17 clinical engines that actively assist dentists
+                        during patient care: an oral pathology diagnostic motor with coded pathologies
                         (the first of its kind in dental software worldwide), a pharmacological interaction
                         checker, a medical interconsultation motor covering 18 conditions across 9 dental
                         procedures, a pediatric dose calculator, and a treatment planning engine with 7 phases.
@@ -144,7 +143,7 @@ export default function DentalCoreLayout({ children }: { children: React.ReactNo
                     <h2>Key Features</h2>
                     <ul>
                         <li>Digital odontogram with 47 clinical finding codes</li>
-                        <li>Oral pathology diagnostic motor — 100 coded pathologies</li>
+                        <li>Oral pathology diagnostic motor — coded pathologies</li>
                         <li>Free oral cancer early detection module</li>
                         <li>Pharmacological interaction checker</li>
                         <li>Medical interconsultation motor (18 conditions × 9 procedures)</li>
@@ -156,7 +155,6 @@ export default function DentalCoreLayout({ children }: { children: React.ReactNo
                         <li>MercadoPago integrated payments</li>
                         <li>Patient portal with mobile-first access</li>
                         <li>Periodontal charting and endodontics modules</li>
-                        <li>Epidemiological surveillance network for Latin America</li>
                     </ul>
                     <h2>Academic Research</h2>
                     <p>
@@ -169,7 +167,7 @@ export default function DentalCoreLayout({ children }: { children: React.ReactNo
                     <p>Argentina, México, Colombia, Chile, Perú, Ecuador, Uruguay, Paraguay, Bolivia, Costa Rica, República Dominicana, Guatemala.</p>
                     <h2>Technology</h2>
                     <p>Built with React 19, TypeScript, Supabase (Auth, PostgreSQL, Storage, Edge Functions), Zustand, Google Gemini AI, and Vite.</p>
-                    <p>Visit: <a href="https://www.dentalcore.app">dentalcore.app</a></p>
+                    <p>Visit: <a href="https://dentalcore.app">dentalcore.app</a></p>
                 </article>
             </noscript>
             {children}

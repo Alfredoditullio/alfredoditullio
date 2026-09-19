@@ -53,14 +53,9 @@ export const dcPathology: Dict = {
     source1: { en: "Bagán, Jiménez, Murillo — Medicina Bucal (4th ed.)", es: "Bagán, Jiménez, Murillo — Medicina Bucal (4ª ed.)" },
     source2: { en: "Neville, Damm, Allen, Chi — Oral and Maxillofacial Pathology (4th ed.)", es: "Neville, Damm, Allen, Chi — Oral and Maxillofacial Pathology (4ª ed.)" },
     source3: { en: "Sapp, Eversole, Wysocki — Patología Oral y Maxilofacial Contemporánea (2nd ed.)", es: "Sapp, Eversole, Wysocki — Patología Oral y Maxilofacial Contemporánea (2ª ed.)" },
-    epidemiologyTitle: { en: "Epidemiological surveillance network", es: "Red de vigilancia epidemiológica" },
-    epidemiologyText: {
-        en: "Anonymized clinical data feeds the first structured epidemiological database of oral pathology in Latin America — a real-time heat map of lesion concentration by region. Personal data never leaves the system.",
-        es: "Los datos clínicos anonimizados alimentan la primera base de datos epidemiológica estructurada de patología oral en América Latina — un mapa de calor en tiempo real de la concentración de lesiones por región. Los datos personales nunca salen del sistema.",
-    },
 };
 
-// REPLACED: dcAi → dcEngines (7 clinical engines, not "AI features")
+// REPLACED: dcAi → dcEngines (17 clinical engines, not "AI features")
 export const dcEngines: Dict = {
     eyebrow: { en: "Clinical intelligence", es: "Inteligencia clínica" },
     title: { en: "Seven clinical engines, not generative AI", es: "Siete motores clínicos, no IA generativa" },
@@ -73,7 +68,7 @@ export const dcEngines: Dict = {
 export const dcEngineItems: { title: Record<Locale, string>; text: Record<Locale, string> }[] = [
     {
         title: { en: "1. Oral pathology motor", es: "1. Motor de patología oral" },
-        text: { en: "Evaluates 100 coded oral pathologies. Generates primary diagnosis, ranked differentials, management protocol and biopsy indication in under 2 minutes.", es: "Evalúa 100 patologías orales codificadas. Genera diagnóstico principal, diferenciales rankeados, protocolo de manejo e indicación de biopsia en menos de 2 minutos." },
+        text: { en: "Evaluates coded oral pathologies. Generates primary diagnosis, ranked differentials, management protocol and biopsy indication in under 2 minutes.", es: "Evalúa patologías orales codificadas. Genera diagnóstico principal, diferenciales rankeados, protocolo de manejo e indicación de biopsia en menos de 2 minutos." },
     },
     {
         title: { en: "2. Medical interconsultation motor", es: "2. Motor de interconsulta médica" },

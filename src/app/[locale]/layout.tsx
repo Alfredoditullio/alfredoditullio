@@ -99,7 +99,7 @@ const jsonLd = {
             email: "info@alfredoditullio.com",
             jobTitle: ["Dentist", "Researcher", "Full-Stack Developer", "Writer"],
             description:
-                "Argentinian dentist (UNLP, M.N. 40.973) and researcher in artificial intelligence applied to dentistry. Founder and creator of DentalCore, the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Author of «Inteligencia Artificial para Odontólogos». Philosophy graduate, tourism technician, former Michelin-star cook.",
+                "Argentinian dentist (UNLP, M.N. 40.973) and researcher in artificial intelligence applied to dentistry. Founder and creator of DentalCore, a health information system (HIS) for dentistry with clinical decision support (CDSS) built around 17 clinical engines. He also directs DentalCore Academy, its continuing-education arm, where he teaches artificial intelligence applied to dentistry. Author of «Inteligencia Artificial para Odontólogos». Philosophy graduate, tourism technician, former Michelin-star cook.",
             alumniOf: [
                 { "@type": "EducationalOrganization", name: "Universidad Nacional de La Plata" },
                 { "@type": "EducationalOrganization", name: "Universidad TECH" },
@@ -127,12 +127,14 @@ const jsonLd = {
                 {
                     "@type": "Organization",
                     name: "Sociedad Argentina de Investigación Odontológica (SAIO)",
-                    alternateName: "Argentine Society for Dental Research",
+                    alternateName: "Argentine Society for Dental Research — Argentine Division of the IADR",
+                    url: "https://saio.org.ar/",
                 },
                 {
                     "@type": "Organization",
                     name: "American Academy of Artificial Intelligence in Dentistry (AAAI-D)",
                     alternateName: "Academia Americana de Inteligencia Artificial en Odontología",
+                    url: "https://aaai-d.org/",
                 },
                 {
                     "@type": "Organization",
@@ -176,10 +178,11 @@ const jsonLd = {
                 },
             ],
             worksFor: { "@id": "https://dentalcore.app/#organization" },
-            founder: { "@id": "https://dentalcore.app/#organization" },
             sameAs: [
                 "https://dentalcore.app",
                 "https://dentalcore.app/about#alfredo-di-tullio",
+                "https://dentalcore.app/academy",
+                "https://iaenodontologia.com",
                 "https://orcid.org/0009-0008-7398-9549",
                 "https://zenodo.org/records/20821942",
                 "https://www.linkedin.com/in/alfredo-di-tullio/",
@@ -200,7 +203,20 @@ const jsonLd = {
             name: "DentalCore",
             url: "https://dentalcore.app",
             description:
-                "The first Clinical Decision Support System (CDSS) for dentistry in Latin America.",
+                "Health information system for dentistry with clinical decision support (CDSS), for Argentina and Latin America.",
+            founder: { "@id": `${BASE}/#person` },
+            subOrganization: { "@id": "https://dentalcore.app/academy#organization" },
+        },
+        {
+            // Misma entidad que declara dentalcore.app: se referencia por su @id
+            // canónico en vez de crear una escuela nueva con el mismo nombre.
+            "@type": "EducationalOrganization",
+            "@id": "https://dentalcore.app/academy#organization",
+            name: "DentalCore Academy",
+            url: "https://dentalcore.app/academy",
+            description:
+                "Continuing-education arm of DentalCore. Live online courses on artificial intelligence applied to dentistry.",
+            parentOrganization: { "@id": "https://dentalcore.app/#organization" },
             founder: { "@id": `${BASE}/#person` },
         },
         {

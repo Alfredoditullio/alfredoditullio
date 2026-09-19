@@ -65,7 +65,7 @@ const jsonLd = {
                 "@type": "SoftwareApplication",
                 name: "DentalCore",
                 applicationCategory: "HealthApplication",
-                url: "https://www.dentalcore.app/",
+                url: "https://dentalcore.app",
             },
         },
     ],
