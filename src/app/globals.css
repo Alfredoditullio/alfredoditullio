@@ -5174,3 +5174,129 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------- Screen-reader-only utility ---------- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------- Hobby folder (About · Beyond the CV) ---------- */
+.hobby-folder {
+    display: grid;
+    /* The pill cloud is ~2*spread wide and centred on the folder, so the
+       preview is capped to leave it clear room on the right. */
+    grid-template-columns: minmax(0, 320px) 1fr;
+    align-items: end;
+    gap: 2.5rem;
+    /* Room for the pills, which float up out of the folder. */
+    padding-top: 190px;
+}
+
+.hobby-folder__preview {
+    margin: 0;
+    min-width: 0;
+}
+
+.hobby-folder__frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+
+.hobby-folder__photo,
+.hobby-folder__fallback,
+.hobby-folder__idle {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 320ms var(--ease);
+}
+
+.hobby-folder__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hobby-folder__photo[data-show] {
+    opacity: 1;
+}
+
+.hobby-folder__fallback,
+.hobby-folder__idle {
+    display: grid;
+    place-content: center;
+    gap: 0.75rem;
+    justify-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--fg-muted);
+    font-size: 0.875rem;
+}
+
+.hobby-folder__fallback {
+    opacity: 1;
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradient-shift 10s ease-in-out infinite;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.hobby-folder__idle[data-show] {
+    opacity: 1;
+}
+
+.hobby-folder__idle i {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.hobby-folder__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    min-height: 3.25rem;
+}
+
+.hobby-folder__caption-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--fg);
+}
+
+.hobby-folder__caption-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--fg-muted);
+}
+
+.hobby-folder__stage {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 860px) {
+    .hobby-folder {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-top: 200px;
+    }
+    .hobby-folder__stage {
+        order: -1;
+    }
+}

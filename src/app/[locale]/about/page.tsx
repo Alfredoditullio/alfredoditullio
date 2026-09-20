@@ -1,13 +1,13 @@
 "use client";
 
 import Reveal from "@/components/Reveal";
-import TiltCard from "@/components/TiltCard";
+import HobbyFolder from "@/components/HobbyFolder";
 import PhotoCarousel from "@/components/PhotoCarousel";
 import { useLanguage } from "@/i18n/context";
 import Link from "@/components/LocaleLink";
 import {
     aboutHero, aboutByline, aboutAuthority, aboutEducation, aboutExperience, aboutOtc, aboutMeta,
-    educationItems, experienceItems, otcItems,
+    educationItems, experienceItems,
 } from "@/i18n/translations/about";
 
 const hobbySlides = [
@@ -166,17 +166,9 @@ export default function About() {
                             <p className="section__eyebrow">{t(aboutOtc, "eyebrow")}</p>
                             <h2 className="section__title">{t(aboutOtc, "title")}</h2>
                         </Reveal>
-                        <div className="otc-grid">
-                            {otcItems.map((item, i) => (
-                                <Reveal key={item.icon} delay={((i % 4) + 1) as 1 | 2 | 3 | 4}>
-                                    <TiltCard className="otc-card">
-                                        <div className="otc-card__icon"><i className={item.icon}></i></div>
-                                        <h3 className="otc-card__title">{item.title[locale]}</h3>
-                                        <p className="otc-card__text">{item.text[locale]}</p>
-                                    </TiltCard>
-                                </Reveal>
-                            ))}
-                        </div>
+                        <Reveal delay={1}>
+                            <HobbyFolder />
+                        </Reveal>
                     </section>
                 </div>
 
