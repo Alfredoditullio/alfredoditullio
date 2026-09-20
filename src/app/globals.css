@@ -5191,29 +5191,51 @@ a:hover {
 /* ---------- Hobby folder (About · Beyond the CV) ---------- */
 .hobby-folder {
     display: grid;
-    /* The pill cloud is ~2*spread wide and centred on the folder, so the
-       preview is capped to leave it clear room on the right. */
-    grid-template-columns: minmax(0, 320px) 1fr;
+    /* Frame and folder share a row so their bottoms align; the caption
+       sits under the frame only. */
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+        "frame   stage"
+        "caption .";
+    gap: 0.9rem 2rem;
     align-items: end;
-    gap: 2.5rem;
-    /* Room for the pills, which float up out of the folder. */
-    padding-top: 190px;
-}
-
-.hobby-folder__preview {
-    margin: 0;
-    min-width: 0;
+    /* Headroom for the lowest row of pills. The rest of the cloud is
+       absolutely positioned and simply floats over the section above,
+       so no dead space is reserved for a folder that is usually shut. */
+    padding: 5.5rem 1.75rem 1.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--bg-subtle);
 }
 
 .hobby-folder__frame {
+    grid-area: frame;
     position: relative;
     width: 100%;
+    max-width: 340px;
     aspect-ratio: 4 / 3;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    background: var(--bg-subtle);
+    background: var(--bg);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-md);
+}
+
+.hobby-folder__caption {
+    grid-area: caption;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-width: 340px;
+    min-height: 3.5rem;
+    margin: 0;
+}
+
+.hobby-folder__stage {
+    grid-area: stage;
+    align-self: end;
+    display: flex;
+    justify-content: center;
 }
 
 .hobby-folder__photo,
@@ -5265,14 +5287,6 @@ a:hover {
     color: var(--accent);
 }
 
-.hobby-folder__caption {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    margin-top: 1rem;
-    min-height: 3.25rem;
-}
-
 .hobby-folder__caption-title {
     font-size: 1rem;
     font-weight: 700;
@@ -5285,18 +5299,19 @@ a:hover {
     color: var(--fg-muted);
 }
 
-.hobby-folder__stage {
-    display: flex;
-    justify-content: center;
-}
-
 @media (max-width: 860px) {
     .hobby-folder {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding-top: 200px;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "stage"
+            "frame"
+            "caption";
+        justify-items: center;
+        gap: 1.5rem;
+        padding-top: 7rem;
     }
-    .hobby-folder__stage {
-        order: -1;
+    .hobby-folder__caption {
+        text-align: center;
     }
 }
+

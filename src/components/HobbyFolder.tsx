@@ -40,8 +40,7 @@ export default function HobbyFolder() {
                 ))}
             </ul>
 
-            <figure className="hobby-folder__preview" aria-hidden="true">
-                <div className="hobby-folder__frame">
+            <div className="hobby-folder__frame" aria-hidden="true">
                     {/* All photos are mounted so switching cross-fades instantly. */}
                     {otcItems.map((item, i) => {
                         const p = PHOTOS[item.title.en];
@@ -77,9 +76,9 @@ export default function HobbyFolder() {
                                 : "Open the folder and hover a note"}
                         </span>
                     </div>
-                </div>
+            </div>
 
-                <figcaption className="hobby-folder__caption">
+            <p className="hobby-folder__caption" aria-hidden="true">
                     {current ? (
                         <>
                             <strong className="hobby-folder__caption-title">
@@ -94,8 +93,7 @@ export default function HobbyFolder() {
                             {t(aboutOtc, "title")}
                         </span>
                     )}
-                </figcaption>
-            </figure>
+            </p>
 
             <div className="hobby-folder__stage">
                 <FolderFloat
