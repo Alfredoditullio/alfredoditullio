@@ -68,7 +68,7 @@ export const dcEngines: Dict = {
 export const dcEngineItems: { title: Record<Locale, string>; text: Record<Locale, string> }[] = [
     {
         title: { en: "1. Oral pathology motor", es: "1. Motor de patología oral" },
-        text: { en: "Evaluates coded oral pathologies. Generates primary diagnosis, ranked differentials, management protocol and biopsy indication in under 2 minutes.", es: "Evalúa patologías orales codificadas. Genera diagnóstico principal, diferenciales rankeados, protocolo de manejo e indicación de biopsia en menos de 2 minutos." },
+        text: { en: "Evaluates the findings you record against 62 clinically audited entities. Returns a presumptive with ranked differentials, what is still missing, management and biopsy indication — plus referral criteria with cited sources.", es: "Evalúa los hallazgos que cargás contra 62 entidades auditadas clínicamente. Devuelve un presuntivo con diferenciales rankeados, qué falta evaluar, manejo e indicación de biopsia — más criterios de derivación con la fuente citada." },
     },
     {
         title: { en: "2. Medical interconsultation motor", es: "2. Motor de interconsulta médica" },

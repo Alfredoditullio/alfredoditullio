@@ -4,11 +4,11 @@ import { alternatesFor, isLocale, localizedUrl } from "@/i18n/routing";
 const base: Metadata = {
     title: "DentalCore — Clinical Decision Support System for Dentistry in Latin America",
     description:
-        "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Features AI-powered oral pathology diagnostics, digital odontogram with 47 finding codes, 17 clinical engines, treatment planning, pharmacological interaction checker, and practice management. Created by dentist and developer Alfredo Di Tullio. Published research: DOI 10.5281/zenodo.20821942.",
+        "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. Features a rule-based oral pathology detection engine with 62 clinically audited entities, digital odontogram with 47 finding codes, 17 clinical engines, treatment planning, pharmacological interaction checker, and practice management. Created by dentist and developer Alfredo Di Tullio. Published research: DOI 10.5281/zenodo.20821942.",
     openGraph: {
         title: "DentalCore — First Dental CDSS for Latin America",
         description:
-            "First Clinical Decision Support System for dentistry in Latin America. AI-powered oral pathology diagnostics, digital odontogram, treatment planning, and practice management. By Alfredo Di Tullio.",
+            "First Clinical Decision Support System for dentistry in Latin America. Rule-based oral pathology detection, digital odontogram, treatment planning, and practice management. By Alfredo Di Tullio.",
         url: "https://www.alfredoditullio.com/projects/dentalcore",
     },
     keywords: [
@@ -19,7 +19,7 @@ const base: Metadata = {
         "dental informatics",
         "odontogram digital",
         "dental AI",
-        "oral pathology diagnostic",
+        "oral pathology detection",
         "practice management",
         "rule-based clinical decision support",
         "primary care dentistry",
