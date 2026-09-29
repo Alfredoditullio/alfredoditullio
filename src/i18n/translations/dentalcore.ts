@@ -5,7 +5,7 @@ export const dcHero: Dict = {
     label: { en: "First CDSS for dentistry · In production", es: "Primer CDSS para odontología · En producción" },
     summary: {
         en: "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. It moves beyond traditional management software (PMS): 17 rule-based clinical engines actively support diagnosis, treatment planning, prescribing and risk assessment — including the world's first dental software with an integrated oral pathology detection engine. Built from the chair, for the chair.",
-        es: "DentalCore es el primer Sistema de Apoyo a la Decisión Clínica (CDSS) para odontología en América Latina. Va más allá del software de gestión tradicional (PMS): 17 motores clínicos de reglas asisten activamente en el diagnóstico, planificación de tratamientos, prescripción y evaluación de riesgo — incluyendo el primer software dental del mundo con motor integrado de diagnóstico de patología oral. Diseñado desde el sillón, para el sillón.",
+        es: "DentalCore es el primer Sistema de Apoyo a la Decisión Clínica (CDSS) para odontología en América Latina. Va más allá del software de gestión tradicional (PMS): 17 motores clínicos de reglas asisten activamente en el diagnóstico, planificación de tratamientos, prescripción y evaluación de riesgo — incluyendo el primer software dental del mundo con motor integrado de detección de patología oral. Diseñado desde el sillón, para el sillón.",
     },
     btnLive: { en: "Visit dentalcore.app", es: "Visitar dentalcore.app" },
     btnBlog: { en: "Read for solo dentists", es: "Leer para consultorios chicos" },
