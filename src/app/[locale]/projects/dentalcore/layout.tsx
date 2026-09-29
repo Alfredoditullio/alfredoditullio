@@ -58,14 +58,17 @@ const jsonLd = {
     operatingSystem: "Web",
     url: "https://dentalcore.app",
     description:
-        "First Clinical Decision Support System (CDSS) for dentistry in Latin America. World's first dental software with integrated oral pathology diagnostic motor. 17 clinical engines, coded oral pathologies, free forever for early oral cancer detection.",
+        "First Clinical Decision Support System (CDSS) for dentistry in Latin America. World's first dental software with an integrated oral pathology detection engine: 62 clinically audited entities and 14 referral criteria with cited sources. 17 rule-based clinical engines — the system suggests, the professional signs.",
     keywords:
-        "software dental, CDSS dental, sistema apoyo decision clinica odontologia, motor clinico, diagnostico patologia oral, cancer oral, deteccion temprana, software dental Argentina, software dental Mexico, software dental Latinoamerica, dental clinical decision support, dental practice management",
+        "software dental, CDSS dental, sistema apoyo decision clinica odontologia, motor clinico, deteccion patologia oral, cancer oral, deteccion temprana, software dental Argentina, software dental Mexico, software dental Latinoamerica, dental clinical decision support, dental practice management",
+    // Precio real de dentalcore.app. Si cambia alla, cambia aca: este JSON-LD
+    // es legible por maquina y un numero viejo lo cita cualquier modelo.
     offers: {
         "@type": "Offer",
-        price: "0",
+        price: "50",
         priceCurrency: "USD",
-        description: "Free forever — full oral pathology diagnostic motor included, no credit card",
+        availability: "https://schema.org/InStock",
+        description: "One plan with everything included: USD 50/month for 2 users, plus USD 10/month per additional user. A user is anyone with their own login — not only dentists. Patients are unlimited and never charged.",
     },
     author: {
         "@type": "Person",
@@ -103,8 +106,8 @@ const jsonLd = {
     inLanguage: ["es", "en"],
     featureList: [
         "First dental Clinical Decision Support System (CDSS)",
-        "Oral pathology diagnostic motor — coded pathologies",
-        "Free forever oral cancer early detection module",
+        "Oral pathology detection engine — 62 clinically audited entities",
+        "Referral alarm channel with cited sources (NICE NG12, AAOMS, WHO)",
         "Medical interconsultation motor (18 conditions × 9 procedures)",
         "Pharmacological interaction checker",
         "Pediatric dose calculator",
@@ -135,7 +138,7 @@ export default function DentalCoreLayout({ children }: { children: React.ReactNo
                     <p>
                         DentalCore is a comprehensive clinical platform that goes beyond traditional practice
                         management software. It features 17 clinical engines that actively assist dentists
-                        during patient care: an oral pathology diagnostic motor with coded pathologies
+                        during patient care: an oral pathology detection engine with 62 clinically audited entities
                         (the first of its kind in dental software worldwide), a pharmacological interaction
                         checker, a medical interconsultation motor covering 18 conditions across 9 dental
                         procedures, a pediatric dose calculator, and a treatment planning engine with 7 phases.
@@ -143,8 +146,8 @@ export default function DentalCoreLayout({ children }: { children: React.ReactNo
                     <h2>Key Features</h2>
                     <ul>
                         <li>Digital odontogram with 47 clinical finding codes</li>
-                        <li>Oral pathology diagnostic motor — coded pathologies</li>
-                        <li>Free oral cancer early detection module</li>
+                        <li>Oral pathology detection engine — 62 clinically audited entities</li>
+                        <li>Referral alarm channel with cited sources (NICE NG12, AAOMS, WHO)</li>
                         <li>Pharmacological interaction checker</li>
                         <li>Medical interconsultation motor (18 conditions × 9 procedures)</li>
                         <li>Pediatric dose calculator</li>

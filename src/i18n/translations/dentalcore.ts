@@ -4,8 +4,8 @@ type Dict = Record<string, Record<Locale, string>>;
 export const dcHero: Dict = {
     label: { en: "First CDSS for dentistry · In production", es: "Primer CDSS para odontología · En producción" },
     summary: {
-        en: "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. It moves beyond traditional management software (PMS): seven clinical engines actively assist diagnosis, treatment planning, prescribing and risk assessment — including the world's first dental software with an integrated oral pathology diagnostic motor. Built from the chair, for the chair.",
-        es: "DentalCore es el primer Sistema de Apoyo a la Decisión Clínica (CDSS) para odontología en América Latina. Va más allá del software de gestión tradicional (PMS): siete motores clínicos asisten activamente en el diagnóstico, planificación de tratamientos, prescripción y evaluación de riesgo — incluyendo el primer software dental del mundo con motor integrado de diagnóstico de patología oral. Diseñado desde el sillón, para el sillón.",
+        en: "DentalCore is the first Clinical Decision Support System (CDSS) for dentistry in Latin America. It moves beyond traditional management software (PMS): 17 rule-based clinical engines actively support diagnosis, treatment planning, prescribing and risk assessment — including the world's first dental software with an integrated oral pathology detection engine. Built from the chair, for the chair.",
+        es: "DentalCore es el primer Sistema de Apoyo a la Decisión Clínica (CDSS) para odontología en América Latina. Va más allá del software de gestión tradicional (PMS): 17 motores clínicos de reglas asisten activamente en el diagnóstico, planificación de tratamientos, prescripción y evaluación de riesgo — incluyendo el primer software dental del mundo con motor integrado de diagnóstico de patología oral. Diseñado desde el sillón, para el sillón.",
     },
     btnLive: { en: "Visit dentalcore.app", es: "Visitar dentalcore.app" },
     btnBlog: { en: "Read for solo dentists", es: "Leer para consultorios chicos" },
@@ -26,8 +26,8 @@ export const dcCdss: Dict = {
     },
     cdssLabel: { en: "DentalCore CDSS", es: "DentalCore CDSS" },
     cdssText: {
-        en: "Everything a PMS does, plus seven clinical engines that analyze patient data in real time, raise alerts, suggest protocols and document everything for audit.",
-        es: "Todo lo que hace un PMS, más siete motores clínicos que analizan los datos del paciente en tiempo real, levantan alertas, sugieren protocolos y documentan todo de forma auditable.",
+        en: "Everything a PMS does, plus 17 clinical engines that analyze patient data in real time, raise alerts, suggest protocols and document everything for audit.",
+        es: "Todo lo que hace un PMS, más 17 motores clínicos que analizan los datos del paciente en tiempo real, levantan alertas, sugieren protocolos y documentan todo de forma auditable.",
     },
     quote: {
         en: "\"The system thinks with you. You validate and decide.\"",
@@ -37,18 +37,18 @@ export const dcCdss: Dict = {
 
 // NEW: Oral pathology motor section
 export const dcPathology: Dict = {
-    eyebrow: { en: "World first · Free forever", es: "Primera mundial · Gratis para siempre" },
-    title: { en: "The first dental software with an oral pathology diagnostic motor", es: "El primer software dental con motor de diagnóstico de patología oral" },
+    eyebrow: { en: "World first · Rule-based", es: "Primera mundial · Motor de reglas" },
+    title: { en: "The first dental software with an oral pathology detection engine", es: "El primer software dental con motor de detección de patología oral" },
     intro: {
         en: "Over 60% of oral cavity cancers are diagnosed at stage III or IV, when survival drops below 50%. When detected early, survival exceeds 80%. The bottleneck isn't will — it's tools. General dentists see these patients first but lack diagnostic support at the chair.",
         es: "Más del 60% de los cánceres de cavidad oral se diagnostican en estadio III o IV, cuando la sobrevida cae por debajo del 50%. Detectados a tiempo, la sobrevida supera el 80%. El cuello de botella no es la voluntad — son las herramientas. Los odontólogos generales ven a estos pacientes primero pero no tienen apoyo diagnóstico en el sillón.",
     },
-    statNum: { en: "100", es: "100" },
-    statLabel: { en: "oral pathologies coded", es: "patologías orales codificadas" },
-    stat2num: { en: "<2 min", es: "<2 min" },
-    stat2label: { en: "to a presumptive diagnosis", es: "para un diagnóstico presuntivo" },
-    stat3num: { en: "$0", es: "$0" },
-    stat3label: { en: "free forever — public health matters", es: "gratis para siempre — la salud pública importa" },
+    statNum: { en: "62", es: "62" },
+    statLabel: { en: "clinically audited entities", es: "entidades auditadas clínicamente" },
+    stat2num: { en: "14", es: "14" },
+    stat2label: { en: "referral criteria with cited sources", es: "criterios de derivación con fuente citada" },
+    stat3num: { en: "0", es: "0" },
+    stat3label: { en: "generative models involved — it suggests, the professional signs", es: "modelos generativos involucrados — sugiere, el profesional firma" },
     sourcesTitle: { en: "Built on international reference literature", es: "Construido sobre literatura de referencia internacional" },
     source1: { en: "Bagán, Jiménez, Murillo — Medicina Bucal (4th ed.)", es: "Bagán, Jiménez, Murillo — Medicina Bucal (4ª ed.)" },
     source2: { en: "Neville, Damm, Allen, Chi — Oral and Maxillofacial Pathology (4th ed.)", es: "Neville, Damm, Allen, Chi — Oral and Maxillofacial Pathology (4ª ed.)" },
@@ -58,7 +58,7 @@ export const dcPathology: Dict = {
 // REPLACED: dcAi → dcEngines (17 clinical engines, not "AI features")
 export const dcEngines: Dict = {
     eyebrow: { en: "Clinical intelligence", es: "Inteligencia clínica" },
-    title: { en: "Seven clinical engines, not generative AI", es: "Siete motores clínicos, no IA generativa" },
+    title: { en: "17 clinical engines, not generative AI", es: "17 motores clínicos, no IA generativa" },
     intro: {
         en: "Generative AI produces statistically probable answers — insufficient for clinical decisions. DentalCore's engines are deterministic: they apply coded medical rules to clinical variables and produce reproducible, auditable, justifiable results. AI is used only as a secondary validation layer, trained on confirmed cases.",
         es: "La IA generativa produce respuestas estadísticamente probables — insuficiente para decisiones clínicas. Los motores de DentalCore son determinísticos: aplican reglas médicas codificadas a variables clínicas y producen resultados reproducibles, auditables y justificables. La IA se usa solo como capa secundaria de validación, entrenada con casos confirmados.",
@@ -162,8 +162,8 @@ export const dcWhyItems: { title: Record<Locale, string>; text: Record<Locale, s
         text: { en: "Most dental software is built for large clinics with IT departments. DentalCore is designed so a single dentist with one chair can master it in 48 hours — not 48 days.", es: "La mayoría del software dental está pensado para clínicas grandes con departamento de IT. DentalCore está diseñado para que un odontólogo con un solo sillón lo domine en 48 horas, no en 48 días." },
     },
     {
-        title: { en: "Free to start, scales when you grow", es: "Gratis para empezar, escala cuando crecés" },
-        text: { en: "The Starter plan includes all core functionality — including the full oral pathology motor — at no cost. No credit card, no trial limits.", es: "El plan Starter incluye toda la funcionalidad principal — incluyendo el motor completo de patología oral — sin costo. Sin tarjeta de crédito, sin límites de prueba." },
+        title: { en: "One plan, everything included", es: "Un solo plan, todo incluido" },
+        text: { en: "No cut-down tier and no features held back for a pricier plan. The price follows how many people log in, not which modules you unlock.", es: "No hay versión recortada ni funciones guardadas para un plan más caro. El precio sigue a cuánta gente entra al sistema, no a qué módulos se desbloquean." },
     },
     {
         title: { en: "Built by a dentist who codes", es: "Construido por un odontólogo que programa" },
@@ -183,7 +183,7 @@ export const dcBehind: Dict = {
         es: "DentalCore nació de la intersección entre mi formación como odontólogo (UNLP, 2013) y años de ingeniería de software. Después de tiempo en la práctica clínica en Argentina, me cansé del software dental que era o un Excel glorificado o un Frankenstein de features pensadas para EE.UU. que ignoraban la realidad latinoamericana.",
     },
     p2: {
-        en: "But the real shift came from a clinical question: why do dentists, who see oral cancer patients first, have zero diagnostic support at the chair? That question reframed the whole project. DentalCore isn't trying to be \"the best PMS\" — it's creating the category of CDSS for dentistry, with the oral pathology motor free forever because early detection is a public health issue, not a feature to monetize.",
-        es: "Pero el cambio real vino de una pregunta clínica: ¿por qué los odontólogos, que ven primero a los pacientes con cáncer oral, no tienen ningún apoyo diagnóstico en el sillón? Esa pregunta reformuló todo el proyecto. DentalCore no busca ser «el mejor PMS» — está creando la categoría de CDSS para odontología, con el motor de patología oral gratis para siempre porque la detección temprana es una cuestión de salud pública, no un feature a monetizar.",
+        en: "But the real shift came from a clinical question: why do dentists, who see oral cancer patients first, have zero diagnostic support at the chair? That question reframed the whole project. DentalCore isn't trying to be \"the best PMS\" — it's creating the category of CDSS for dentistry, and the oral pathology engine ships in every plan, with no tier holding it back, because early detection is a public health issue and not a feature to ration.",
+        es: "Pero el cambio real vino de una pregunta clínica: ¿por qué los odontólogos, que ven primero a los pacientes con cáncer oral, no tienen ningún apoyo diagnóstico en el sillón? Esa pregunta reformuló todo el proyecto. DentalCore no busca ser «el mejor PMS» — está creando la categoría de CDSS para odontología, y el motor de patología oral entra en todos los planes, sin ninguna versión que lo retenga, porque la detección temprana es una cuestión de salud pública y no un feature para racionar.",
     },
 };
