@@ -88,23 +88,38 @@ export default function About() {
                                 </ul>
                             </div>
                         </div>
-                        <a
-                            href="https://zenodo.org/records/20821942"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="research-card"
-                        >
-                            <span className="research-card__label">
-                                <i className="fa-solid fa-flask"></i>{" "}
-                                {t(aboutAuthority, "researchLabel")}
-                            </span>
-                            <h3 className="research-card__title">
-                                {t(aboutAuthority, "researchTitle")}
-                            </h3>
-                            <p className="research-card__meta">
-                                {t(aboutAuthority, "researchMeta")}
-                            </p>
-                        </a>
+                        <p className="research-label">
+                            <i className="fa-solid fa-flask"></i>{" "}
+                            {t(aboutAuthority, "researchLabel")}
+                        </p>
+                        <div className="research-list">
+                            <a
+                                href="https://zenodo.org/records/23835950"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="research-card"
+                            >
+                                <h3 className="research-card__title">
+                                    {t(aboutAuthority, "paper2Title")}
+                                </h3>
+                                <p className="research-card__meta">
+                                    {t(aboutAuthority, "paper2Meta")}
+                                </p>
+                            </a>
+                            <a
+                                href="https://zenodo.org/records/20821942"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="research-card"
+                            >
+                                <h3 className="research-card__title">
+                                    {t(aboutAuthority, "researchTitle")}
+                                </h3>
+                                <p className="research-card__meta">
+                                    {t(aboutAuthority, "researchMeta")}
+                                </p>
+                            </a>
+                        </div>
 
                         {/* Official ORCID badge. rel="me" ties this page to the
                             ORCID record, which is the identity anchor shared

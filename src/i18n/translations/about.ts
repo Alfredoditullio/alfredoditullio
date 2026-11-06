@@ -13,8 +13,8 @@ export const aboutHero: Dict = {
 
 export const aboutAuthority: Dict = {
     cred: {
-        en: "I'm a licensed dentist (M.N. 40.973) currently completing a Master's in Artificial Intelligence applied to Dentistry. My research on clinical decision support in dentistry is published and openly available:",
-        es: "Soy odontólogo matriculado (M.N. 40.973), actualmente cursando una Maestría en Inteligencia Artificial aplicada a la Odontología. Mi investigación sobre apoyo a la decisión clínica en odontología está publicada y disponible en abierto:",
+        en: "I'm a licensed dentist (M.N. 40.973) currently completing a Master's in Artificial Intelligence applied to Dentistry. My research on clinical decision support and on AI literacy in dental education is published and openly available:",
+        es: "Soy odontólogo matriculado (M.N. 40.973), actualmente cursando una Maestría en Inteligencia Artificial aplicada a la Odontología. Mi investigación sobre apoyo a la decisión clínica y sobre alfabetización en IA en la educación odontológica está publicada y disponible en abierto:",
     },
     membershipsLabel: {
         en: "Memberships",
@@ -45,6 +45,14 @@ export const aboutAuthority: Dict = {
         es: "IA en Salud · Johns Hopkins University (online)",
     },
     researchLabel: { en: "Published research", es: "Investigación publicada" },
+    paper2Title: {
+        en: "¿Debe un odontólogo comprender cómo funciona la inteligencia artificial? Desafíos para la alfabetización en IA en la educación odontológica",
+        es: "¿Debe un odontólogo comprender cómo funciona la inteligencia artificial? Desafíos para la alfabetización en IA en la educación odontológica",
+    },
+    paper2Meta: {
+        en: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.23835950 · CC BY 4.0",
+        es: "Alfredo Di Tullio · 2026 · DOI 10.5281/zenodo.23835950 · CC BY 4.0",
+    },
     researchTitle: {
         en: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",
         es: "DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America",

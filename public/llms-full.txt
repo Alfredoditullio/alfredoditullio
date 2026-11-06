@@ -153,6 +153,18 @@ universities. His degrees are listed under Education above.
 
 ## Academic Publications
 
+### ¿Debe un odontólogo comprender cómo funciona la inteligencia artificial? Desafíos para la alfabetización en IA en la educación odontológica
+- **Type:** Preprint / essay (Open Access)
+- **Published:** 31 October 2026, Zenodo
+- **Language:** Spanish
+- **DOI:** 10.5281/zenodo.23835950
+- **URL:** https://zenodo.org/records/23835950
+- **ORCID:** https://orcid.org/0009-0008-7398-9549
+- **License:** CC BY 4.0
+- **Abstract:** AI is already part of dental practice, mainly through automated image analysis, yet most clinicians lack the conceptual tools to evaluate these systems critically. There is growing consensus — expressed in the core AI curriculum for oral health and in recent competency frameworks — that training should aim at literacy rather than at turning clinicians into developers. This essay accepts that premise and takes up three questions the literature has treated less: why it is justified to require genuine technical understanding of a dentist, where to draw the line between that understanding and development competence, and who is in a position to teach it. For the first it proposes an analogy with the teaching of biomaterials, examining its reach and its limits — unlike a material, an AI model can degrade under context shift, does not expose the reasons for its outputs, and interacts with the judgement of its user. For the second it proposes an operative criterion: a technical concept belongs in basic training when not knowing it can lead to a clinical error or an inadequate adoption decision, with a minimum set of concepts mapped against the core curriculum's domains. For the third it describes the double-translation problem — from computer science to clinical language, and from there to the dental context — in the light of pedagogical content knowledge. It closes on the implications for Latin America, where scarce regional evidence and dependence on models trained on other populations make this literacy more necessary.
+- **Keywords:** Artificial intelligence, dental education, AI literacy, machine learning, digital literacy, professional competence
+
+
 ### DentalCore: Design and Implementation of a Rule-Based Clinical Decision Support System (CDSS) for Primary-Care Dentistry in Latin America
 - **Type:** Preprint (Open Access)
 - **Published:** June 2026, Zenodo
