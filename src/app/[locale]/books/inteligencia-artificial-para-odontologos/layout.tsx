@@ -14,18 +14,14 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "Book",
+            "@id": "https://www.alfredoditullio.com/books/inteligencia-artificial-para-odontologos#book",
             name: "Inteligencia artificial para odontólogos",
             alternateName:
                 "Inteligencia artificial para odontólogos: una guía para comprender, usar y cuestionar la IA en el consultorio",
-            author: {
-                "@type": "Person",
-                name: "Alfredo Di Tullio",
-                url: "https://www.alfredoditullio.com/about",
-            },
+            author: { "@id": "https://www.alfredoditullio.com/#person" },
             inLanguage: "es",
             datePublished: "2026",
             bookFormat: "https://schema.org/Paperback",
-            isbn: "",
             about: [
                 "Artificial intelligence",
                 "Dentistry",
@@ -47,15 +43,8 @@ const jsonLd = {
             "@type": "Article",
             headline:
                 "Inteligencia artificial para odontólogos: por qué escribí este libro",
-            author: {
-                "@type": "Person",
-                name: "Alfredo Di Tullio",
-                url: "https://www.alfredoditullio.com/about",
-            },
-            publisher: {
-                "@type": "Person",
-                name: "Alfredo Di Tullio",
-            },
+            author: { "@id": "https://www.alfredoditullio.com/#person" },
+            publisher: { "@id": "https://www.alfredoditullio.com/#person" },
             inLanguage: "es",
             datePublished: "2026-08-09",
             mainEntityOfPage: URL,
@@ -67,6 +56,10 @@ const jsonLd = {
                 applicationCategory: "HealthApplication",
                 url: "https://dentalcore.app",
             },
+            mentions: [
+                { "@id": "https://doi.org/10.5281/zenodo.23835950" },
+                { "@id": "https://www.alfredoditullio.com/books/inteligencia-artificial-para-odontologos#book" },
+            ],
         },
     ],
 };

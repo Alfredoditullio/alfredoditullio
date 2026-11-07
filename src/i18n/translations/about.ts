@@ -110,7 +110,7 @@ export const educationItems: {
     { year: "2024", title: { en: "University Technician in Tourism", es: "Técnico Universitario en Turismo" }, org: "Universidad Nacional de Tres de Febrero" },
     { year: "2023", title: { en: "B.A. in Philosophy", es: "Licenciado en Filosofía" }, org: "Universidad TECH" },
     { year: "2018", title: { en: "International Chef Diploma", es: "Diploma de Chef Internacional" }, org: "IGA, La Plata" },
-    { year: "2013", title: { en: "Dentist (Odontólogo)", es: "Odontólogo" }, org: "Universidad Nacional de La Plata" },
+    { year: "2017", title: { en: "Dentist (Odontólogo)", es: "Odontólogo" }, org: "Universidad Nacional de La Plata" },
 ];
 
 export const experienceItems: {

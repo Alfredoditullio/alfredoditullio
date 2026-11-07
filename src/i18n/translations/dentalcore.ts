@@ -179,8 +179,8 @@ export const dcBehind: Dict = {
     eyebrow: { en: "Behind the project", es: "Detrás del proyecto" },
     title: { en: "Why I'm building this", es: "Por qué estoy construyendo esto" },
     p1: {
-        en: "DentalCore grew out of the overlap between my training as a dentist (UNLP, 2013) and years of software engineering. After spending time in clinical practice across Argentina, I got tired of dental software that was either a glorified Excel sheet or a Frankenstein of US-centric features that ignored Latin American reality.",
-        es: "DentalCore nació de la intersección entre mi formación como odontólogo (UNLP, 2013) y años de ingeniería de software. Después de tiempo en la práctica clínica en Argentina, me cansé del software dental que era o un Excel glorificado o un Frankenstein de features pensadas para EE.UU. que ignoraban la realidad latinoamericana.",
+        en: "DentalCore grew out of the overlap between my training as a dentist (UNLP, 2017) and years of software engineering. After spending time in clinical practice across Argentina, I got tired of dental software that was either a glorified Excel sheet or a Frankenstein of US-centric features that ignored Latin American reality.",
+        es: "DentalCore nació de la intersección entre mi formación como odontólogo (UNLP, 2017) y años de ingeniería de software. Después de tiempo en la práctica clínica en Argentina, me cansé del software dental que era o un Excel glorificado o un Frankenstein de features pensadas para EE.UU. que ignoraban la realidad latinoamericana.",
     },
     p2: {
         en: "But the real shift came from a clinical question: why do dentists, who see oral cancer patients first, have zero diagnostic support at the chair? That question reframed the whole project. DentalCore isn't trying to be \"the best PMS\" — it's creating the category of CDSS for dentistry, and the oral pathology engine ships in every plan, with no tier holding it back, because early detection is a public health issue and not a feature to ration.",

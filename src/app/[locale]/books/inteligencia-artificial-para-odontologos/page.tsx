@@ -133,6 +133,27 @@ export default function IaOdontologos() {
                 </Reveal>
             </article>
 
+            {/* Related research — the book's argument in academic form */}
+            <Reveal as="section" className="section book-paper">
+                <p className="research-label">
+                    <i className="fa-solid fa-flask"></i> {t(tx, "paperEyebrow")}
+                </p>
+                <p className="article__p">{t(tx, "paperIntro")}</p>
+                <a
+                    href="https://zenodo.org/records/23835950"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="research-card"
+                >
+                    <h3 className="research-card__title">{t(tx, "paperTitle")}</h3>
+                    <p className="research-card__meta">{t(tx, "paperMeta")}</p>
+                    <span className="book-paper__cta">
+                        {t(tx, "paperCta")}{" "}
+                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </a>
+            </Reveal>
+
             {/* CTA */}
             <Reveal as="section" className="section">
                 <div className="book-cta">

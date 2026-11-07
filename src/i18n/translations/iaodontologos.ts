@@ -84,6 +84,21 @@ export const iaTexts: Dict = {
         es: "Escribir sobre IA en 2026 es una trampa: la tentación de sonar visionario y vender predicciones que no puedo respaldar es enorme. Prefiero hacer otra cosa: decirte lo que sé, lo que no sé y lo que nadie sabe todavía, y ser explícito sobre cuál de las tres cosas estoy diciendo en cada momento. Prefiero que salgas del libro con mejores preguntas de las que traías, para que la próxima vez que alguien te quiera vender la próxima maravilla tengas las herramientas para preguntar lo correcto antes de firmar nada.",
     },
 
+    paperEyebrow: { en: "Related research", es: "Investigación relacionada" },
+    paperIntro: {
+        en: "The book's central question — why a dentist needs to understand how AI actually works — is also the subject of an open-access academic essay. It makes the same case in the language of dental education: where the line falls between clinical literacy and developer competence, and who is equipped to teach it.",
+        es: "La pregunta central del libro —por qué el odontólogo necesita entender cómo funciona realmente la IA— es también el tema de un ensayo académico de acceso abierto. Plantea el mismo argumento en el lenguaje de la educación odontológica: dónde está el límite entre la alfabetización clínica y la competencia de desarrollo, y quién está en condiciones de enseñarla.",
+    },
+    paperTitle: {
+        en: "¿Debe un odontólogo comprender cómo funciona la inteligencia artificial? Desafíos para la alfabetización en IA en la educación odontológica",
+        es: "¿Debe un odontólogo comprender cómo funciona la inteligencia artificial? Desafíos para la alfabetización en IA en la educación odontológica",
+    },
+    paperMeta: {
+        en: "Alfredo Di Tullio · Zenodo, 2026 · DOI 10.5281/zenodo.23835950 · CC BY 4.0",
+        es: "Alfredo Di Tullio · Zenodo, 2026 · DOI 10.5281/zenodo.23835950 · CC BY 4.0",
+    },
+    paperCta: { en: "Read the essay", es: "Leer el ensayo" },
+
     ctaTitle: { en: "Read the book", es: "Leé el libro" },
     ctaText: {
         en: "Available in paperback and Kindle on Amazon. If you're a dentist, a student, or you build tools for the profession, this is the conversation dentistry deserves to have — with the right words to have it.",

@@ -19,7 +19,7 @@ export const disciplines: {
             es: "Odontólogo formado en la Universidad Nacional de La Plata. Años de experiencia clínica informan cada decisión de producto cuando construyo software para el mundo dental.",
         },
         icon: "fa-solid fa-tooth",
-        meta: "UNLP · 2013",
+        meta: "UNLP · 2017",
         accent: "linear-gradient(135deg, #6366f1 0%, #818cf8 60%, #c7d2fe 100%)",
     },
     {

@@ -21,7 +21,7 @@ https://dentalcore.app — both refer to the same person.
 
 ## Professional Summary
 
-Alfredo Di Tullio is a multidisciplinary professional who has built a career across five distinct fields: dentistry, software development, gastronomy, philosophy, and tourism. Born and raised in Argentina, he trained as a dentist at the Universidad Nacional de La Plata (UNLP, graduated 2013) and practiced clinically for several years. He then embarked on an international culinary career, spending six years cooking in professional kitchens across Denmark, Norway, Spain, and Australia, including a stint at a Michelin-starred restaurant.
+Alfredo Di Tullio is a multidisciplinary professional who has built a career across five distinct fields: dentistry, software development, gastronomy, philosophy, and tourism. Born and raised in Argentina, he trained as a dentist at the Universidad Nacional de La Plata (UNLP, graduated 2017) and practiced clinically for several years. He then embarked on an international culinary career, spending six years cooking in professional kitchens across Denmark, Norway, Spain, and Australia, including a stint at a Michelin-starred restaurant.
 
 While abroad, he pursued academic studies in philosophy (B.A. from Universidad TECH, 2023) and tourism (University Technician from UNTREF, 2024). He authored two books exploring philosophy, meaning, and travel, and in 2026 published "Inteligencia Artificial para Odontólogos", a guide to AI in the dental clinic written by a dentist for dentists. In 2020, he began teaching himself software development and now builds full-stack web applications, with his flagship project being DentalCore — a comprehensive clinical platform for dentistry.
 
@@ -31,7 +31,7 @@ His central work is DentalCore, the first rule-based Clinical Decision Support S
 
 ## Education
 
-1. **Dentistry (Odontología)** — Universidad Nacional de La Plata (UNLP), Argentina, 2013
+1. **Dentistry (Odontología)** — Universidad Nacional de La Plata (UNLP), Argentina, 2017
 2. **International Chef Diploma** — IGA (Instituto de Gastronomía Argentina), 2018
 3. **B.A. in Philosophy (Licenciatura en Filosofía)** — Universidad TECH, 2023
 4. **University Technician in Tourism (Técnico Universitario en Turismo)** — UNTREF, 2024
